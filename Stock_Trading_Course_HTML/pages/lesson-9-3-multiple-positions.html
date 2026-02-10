@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9.3: Managing Multiple Positions - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 9.3: Managing Multiple Positions</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 9.3: Managing Multiple Positions</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 9.3: Managing Multiple Positions</h1>
+<h2>Learning Objectives</h2>
+<ul>
+<li>Track and monitor multiple open positions simultaneously</li>
+<li>Understand position correlation and portfolio risk</li>
+<li>Manage entries, exits, and stops across portfolio</li>
+<li>Balance opportunity with risk across positions</li>
+</ul>
+<h2>Challenges of Multiple Positions</h2>
+<h3>Why Multiple Positions Are Hard</h3>
+<pre><code>
+Single position (simple):
+
+- One entry to monitor
+
+- One stop loss to track
+
+- One target to manage
+
+- Focus: 100%
+
+
+
+Multiple positions (complex):
+
+- Monitor 4 entries simultaneously
+
+- Track 4 stop losses (any could trigger)
+
+- Manage 4 different targets
+
+- Mental energy divided by position count
+
+- Decision fatigue increases errors
+
+
+
+Psychological pressures with multiple positions:
+
+1. Attention deficit: Can&#39;t watch all equally
+
+2. Decision fatigue: More decisions = worse decisions
+
+3. Revenge trading: Loss in one position creates emotional trade in another
+
+4. Portfolio view vs. position view: Hard to balance all positions together
+
+5. Capital allocation: Which position gets more focus if both need attention?
+
+
+
+Managing the complexity:
+
+- Automate: Use alerts and pre-set stop losses
+
+- Systematic: Checklist for monitoring
+
+- Reduce: Start with fewer positions, build up
+
+- Focus: Dedicate time to review (not constant watching)
+
+</code></pre>
+<h2>Portfolio Monitoring System</h2>
+<h3>Daily Monitoring Checklist</h3>
+<p><strong>Morning (5 minutes):</strong></p>
+<pre><code>
+☐ Check overnight news (any gaps needed?)
+
+☐ Scan each position:
+
+  - Is stop loss still in place?
+
+  - Any price movement overnight?
+
+  - Any technical changes requiring action?
+
+☐ Identify which positions need active monitoring today
+
+☐ Plan exits or additions for today
+
+</code></pre>
+<p><strong>During market hours (30-60 minutes total):</strong></p>
+<pre><code>
+☐ 10:00 AM: Opening action review
+
+  - Opening momentum clear?
+
+  - Any entry signals triggered?
+
+  - Any stops needing adjustment?
+
+
+
+☐ 1:00 PM: Mid-day check
+
+  - Positions holding support levels?
+
+  - Any profit targets hit?
+
+  - Any concerning divergences?
+
+
+
+☐ 3:30 PM: Closing hour watch
+
+  - Positions holding or failing?
+
+  - Any closing hour reversals?
+
+  - Update stops if necessary?
+
+</code></pre>
+<p><strong>Evening (10 minutes):</strong></p>
+<pre><code>
+☐ Review all positions closed today
+
+☐ Update trading journal (wins/losses)
+
+☐ Check next day&#39;s economic calendar
+
+☐ Identify next day&#39;s key setups
+
+☐ Prepare new entry or exit targets
+
+</code></pre>
+<h3>Position Tracking Spreadsheet</h3>
+<p>Create a simple tracker:</p>
+<pre><code>
+| Ticker | Entry | Current | Stop | Target | Risk | Shares | P&amp;L | % P&amp;L |
+
+|--------|-------|---------|------|--------|------|--------|-----|-------|
+
+| AAPL   | 180   | 185     | 175  | 195    | $250 | 50     | $250 | 1.4%  |
+
+| MSFT   | 350   | 348     | 340  | 370    | $500 | 20     | -40  | -0.2% |
+
+| NVDA   | 850   | 870     | 830  | 920    | $800 | 24     | $480 | 2.3%  |
+
+| AMD    | 105   | 103     | 100  | 120    | $150 | 30     | -60  | -0.3% |
+
+
+
+Portfolio Summary:
+
+Total deployed: $26,350
+
+Total risk: $1,700
+
+Total P&amp;L: +$630
+
+Portfolio %: +2.4%
+
+Positions in profit: 2/4 (50% win rate)
+
+Largest winner: NVDA (+2.3%)
+
+Largest loser: MSFT (-0.2%)
+
+</code></pre>
+<h2>Position Correlation</h2>
+<h3>Understanding Position Correlation</h3>
+<pre><code>
+Correlation definition:
+
+- Measure of how two positions move together
+
+- Range: -1 to +1
+
+  - +1 = Perfectly correlated (move same direction together)
+
+  - 0 = No correlation (move independently)
+
+  - -1 = Perfectly inverse (move opposite)
+
+
+
+Example - Highly correlated (+0.8):
+
+- NVDA and AMD (both semiconductors)
+
+- When NVDA up 5%, AMD usually up 4-5%
+
+- When NVDA down 3%, AMD usually down 3-4%
+
+- Risk: If sector crashes, both crash together
+
+
+
+Example - Uncorrelated (0.2):
+
+- AAPL and JPM (tech vs. finance)
+
+- AAPL up 5%, JPM might be flat or down
+
+- Different sectors, different drivers
+
+- Benefit: Portfolio diversification
+
+
+
+Example - Inverse correlated (-0.3):
+
+- Tech stocks and Treasury bonds
+
+- Tech up, bonds often down (interest rate risk)
+
+- Tech down, bonds often up (flight to safety)
+
+- Good for hedging
+
+</code></pre>
+<h3>Calculating Portfolio Correlation</h3>
+<pre><code>
+For 2 positions:
+
+- Position 1 (MSFT): Up 5% this week
+
+- Position 2 (AAPL): Up 4% this week
+
+- Correlation: HIGH (+0.8 to +0.9)
+
+
+
+For 2 positions:
+
+- Position 1 (AAPL): Up 5% this week
+
+- Position 2 (JPM): Up 1% this week
+
+- Correlation: LOW to MEDIUM (+0.3 to +0.5)
+
+
+
+For 2 positions:
+
+- Position 1 (AAPL): Up 5% this week
+
+- Position 2 (TLT bonds): Down 2% this week
+
+- Correlation: INVERSE (-0.3 to -0.5)
+
+
+
+Portfolio screening:
+
+If all positions move together (correlation +0.9):
+
+- Portfolio acts like single position
+
+- Diversification not working
+
+- Problem: All 4 positions in tech = concentrated risk
+
+
+
+If positions spread across correlations:
+
+- Some +0.5 correlation (sector related)
+
+- Some 0.0 correlation (independent)
+
+- Some -0.3 correlation (inverse hedge)
+
+- Benefits: True diversification
+
+</code></pre>
+<h2>Position Management Across Portfolio</h2>
+<h3>Entry Management with Multiple Positions</h3>
+<p><strong>Scenario:</strong></p>
+<pre><code>
+You have 3 open positions. You identify a 4th high-quality entry.
+
+
+
+Decision: Add 4th position?
+
+
+
+Analysis:
+
+Current portfolio:
+
+- AAPL: Long, $5,000, 1.5% risk
+
+- MSFT: Long, $6,000, 2% risk
+
+- AMD: Long, $4,000, 1.5% risk
+
+- Total deployed: $15,000 of $20,000 account
+
+- Total risk: $175 (5%)
+
+- Cash available: $5,000
+
+
+
+New entry opportunity:
+
+- NVDA: 2% risk = $400
+
+- Capital needed: $6,000 (30% of account)
+
+- Would exceed total capital!
+
+
+
+Options:
+
+1. Reduce existing position size
+
+2. Exit weaker position to make room
+
+3. Wait for better opportunity later
+
+4. Pass on 4th position (focus on 3 best ideas)
+
+
+
+Recommendation:
+
+- Exit AMD (weakest setup)
+
+- Add NVDA (stronger momentum)
+
+- Keeps portfolio at 3 positions
+
+- Better capital allocation
+
+</code></pre>
+<h3>Exit Management with Multiple Positions</h3>
+<p><strong>Scenario:</strong></p>
+<pre><code>
+All 4 positions hitting targets simultaneously.
+
+
+
+Position 1 (AAPL): Hit Target 1 (1:1 risk-reward)
+
+- Decision: Sell 1/3 position
+
+- Lock in: $83 profit
+
+- Keep 2/3 running for Target 2
+
+
+
+Position 2 (MSFT): Hit Target 1 (1:1 risk-reward)
+
+- Decision: Sell 1/3 position
+
+- Lock in: $166 profit
+
+- Keep 2/3 running for Target 2
+
+
+
+Position 3 (AMD): Down approaching stop loss
+
+- Decision: Exit position before stop
+
+- Lock in: -$75 loss (protect remaining capital)
+
+- Free up capital for new opportunity
+
+
+
+Position 4 (NVDA): Extended move, no momentum confirmation
+
+- Decision: Hold, but tighten stop to cost basis
+
+- Reduce risk but preserve upside
+
+- Exit if support breaks
+
+
+
+Portfolio outcome:
+
+- Took partial profits: +$249
+
+- Exited loss: -$75
+
+- Net portfolio: +$174
+
+- Capital freed: $4,500
+
+- Remaining positions: 3 full + 2 partial
+
+</code></pre>
+<h3>Stop Loss Management</h3>
+<p><strong>Coordinating stops across portfolio:</strong></p>
+<pre><code>
+Position 1 - AAPL:
+
+- Stop: $175 (5% from entry $180)
+
+- Status: FIRM (maintains discipline)
+
+
+
+Position 2 - MSFT:
+
+- Stop: $340 (3% from entry $350)
+
+- Note: Wider stop due to volatility
+
+- Status: FIRM
+
+
+
+Position 3 - AMD:
+
+- Stop: $100 (5% from entry $105)
+
+- Status: FIRM
+
+
+
+Position 4 - NVDA:
+
+- Stop: $830 (2% from entry $850, very tight)
+
+- Reason: Highest volatility stock
+
+- Status: Monitor carefully
+
+
+
+Portfolio risk summary:
+
+- If all stops hit: Maximum loss $1,175
+
+- Risk as % of account: 5.9% (at tolerance)
+
+- Any single position hitting stop acceptable
+
+- Multiple stops hitting = RED FLAG
+
+
+
+Action if 2 stops hit same day:
+
+- Reassess portfolio
+
+- Reduce position sizes
+
+- Increase cash reserve
+
+- Consider market condition (crash?)
+
+</code></pre>
+<h2>Managing Profitable Positions</h2>
+<h3>Scaling Out of Winners</h3>
+<p><strong>Systematic profit-taking approach:</strong></p>
+<pre><code>
+Position: 100 shares MSFT at $350 (cost $35,000)
+
+Stock rallies to $370 (+5.7%)
+
+Profit: +$2,000
+
+
+
+Scale-out strategy:
+
+Target 1 ($360): Sell 1/3 (33 shares)
+
+- Partial profit: $330
+
+- Remaining: 67 shares
+
+
+
+Target 2 ($375): Sell 1/3 (33 shares)
+
+- Partial profit: +$825
+
+- Total profit so far: +$1,155
+
+- Remaining: 34 shares
+
+
+
+Target 3 (+15% from entry = $402.50): Sell final 1/3
+
+- Final profit: +$1,530
+
+- Total profit: +$2,685 (7.7% gain on capital)
+
+
+
+Benefits of scaling:
+
+- Lock in gains incrementally
+
+- Reduce emotional attachment to position
+
+- Free capital for new opportunities
+
+- Sleep better knowing some profit captured
+
+- Participate in remaining upside
+
+
+
+Alternative: &quot;Give it back&quot; approach
+
+- Sell 1/3 at Target 1: +$330
+
+- Move stop to cost basis: $350
+
+- Remaining 2/3 can move for free (no additional risk)
+
+- Becomes a &quot;free ride&quot; on remainder
+
+</code></pre>
+<h3>Knowing When to Hold Winners</h3>
+<pre><code>
+Hold criteria:
+
+☐ Trend still intact (price &gt; 50-day MA)
+
+☐ Momentum continuing (RSI 50-70, not exhausted at 80+)
+
+☐ Technical support holding (higher lows maintained)
+
+☐ Sector momentum supporting (not fighting sector decline)
+
+☐ Time hasn&#39;t reached target hold (too early to exit)
+
+☐ MACD histogram not rolling over (momentum failing)
+
+
+
+Exit criteria:
+
+☐ Target price reached (locked in profit)
+
+☐ Technical support broken (reversal signal)
+
+☐ Momentum divergence (price high, MACD low)
+
+☐ Trend broken (price below 50-day MA)
+
+☐ Time reached maximum hold (take profits before reversal)
+
+☐ Better opportunity elsewhere (reallocate capital)
+
+
+
+Example:
+
+Position: Long AAPL swing trade +8% in 5 days
+
+Approaching previous resistance
+
+RSI at 72 (approaching overbought)
+
+Target was 10% gain
+
+
+
+Decision:
+
+- RSI says overbought
+
+- But trend still strong
+
+- Partially exit (1/3) at current levels
+
+- Let 2/3 run toward $200 target
+
+- Sets trailing stop at $185
+
+
+
+Outcome: Captures $260 profit (partial), keeps upside
+
+</code></pre>
+<h2>Managing Losing Positions</h2>
+<h3>Exit Discipline</h3>
+<pre><code>
+Losing position example:
+
+- Entry: NVDA at $850
+
+- Stop loss: $830 (set at entry)
+
+- Current price: $832 (approaching stop)
+
+
+
+Psychological pressure:
+
+- &quot;If I close now, it&#39;s a real loss&quot;
+
+- &quot;Maybe it will bounce back&quot;
+
+- &quot;I&#39;ll give it one more day&quot;
+
+
+
+INCORRECT thinking!
+
+- Closed loss = Controlled loss ($18 loss = $432)
+
+- Stop hit = Same loss anyway ($18 loss = $432)
+
+- Bounce false hope = Often results in larger loss
+
+
+
+Correct action:
+
+- Place market order to exit at $830
+
+- Accept $432 loss (2.16% of $20K account)
+
+- Move on to next opportunity
+
+- Preserve remaining capital
+
+
+
+Exit discipline rules:
+
+1. Exit on stop loss hit (no exceptions)
+
+2. Exit on target reached (lock in profit)
+
+3. Exit on technical break (reversal signal)
+
+4. No &quot;hope trades&quot; (waiting for recovery)
+
+5. No averaging down (adding to losses)
+
+</code></pre>
+<h3>Knowing When to Cut Losses Early</h3>
+<pre><code>
+Exit early signals:
+
+- Thesis broken (reason for trade no longer valid)
+
+- Entry was clearly wrong in hindsight
+
+- Position building larger losing trend
+
+- Psychological stress unbearable
+
+- Capital needed for better opportunity
+
+- Market condition changed dramatically
+
+
+
+Example 1: Cut early to preserve capital
+
+- Entry: TSLA at $850 (momentum setup)
+
+- Stop loss: $830 (-$20)
+
+- Price: $835, approaching stop
+
+- News: Elon tweet creates doubt
+
+- Better decision: Exit at $835 (-$15)
+
+- Saves $5 per share vs. riding to stop
+
+
+
+Example 2: Exit weaker position when better one emerges
+
+- Current: AMD down -3%, stop at $100
+
+- Opportunity: AAPL breakout, high conviction setup
+
+- Capital available: Limited
+
+- Decision: Exit AMD at current price (-$150)
+
+- Free capital: $4,500
+
+- Deploy to AAPL: Better risk-reward setup
+
+</code></pre>
+<h2>Portfolio Management During Market Stress</h2>
+<h3>Extreme Market Conditions (Market crash, -5% or more)</h3>
+<pre><code>
+Scenario: S&amp;P 500 crashes -5% overnight
+
+All your positions likely down 3-8%
+
+
+
+Immediate actions (same day):
+
+1. DON&#39;T PANIC SELL (let emotion settle)
+
+2. Check each position:
+
+   - Any stop losses hit? Yes/No
+
+   - Thesis still intact? Yes/No
+
+   - Technical support still holding? Yes/No
+
+3. Assess portfolio losses:
+
+   - If down 3%: Within normal volatility, hold
+
+   - If down 8%: At risk limit, prepare to reduce
+
+   - If down 12%+: Above tolerance, reduce positions
+
+4. Reduce weakest positions only
+
+   - Best positions: Hold (strong thesis)
+
+   - Weakest positions: Exit (reduce capital at risk)
+
+   - Medium positions: Trim (raise cash)
+
+
+
+Portfolio management decision:
+
+Before crash: 4 positions, 6% risk
+
+After -8% crash: Account down $1,600
+
+Remaining portfolio risk: 6% of $18,400 = $1,104
+
+Action: Exit weakest position (-$400 loss realized)
+
+New portfolio: 3 positions, 4% account risk
+
+New cash buffer: $3,500 (19% = safer cushion)
+
+Outcome: Reduced further crash risk
+
+
+
+Next day decision:
+
+- Market bounced +2%: Relief, reassess
+
+- Market down more: Reduce further if needed
+
+- Market stabilized: Hold and rebuild
+
+</code></pre>
+<h2>Portfolio Rebalancing During Trades</h2>
+<h3>Simultaneous Profit Taking and Entry</h3>
+<pre><code>
+Scenario:
+
+- AAPL position up +12%, approaching max hold time
+
+- MSFT momentum setup triggered, high conviction
+
+
+
+Decision:
+
+- Realize some AAPL profit
+
+- Deploy to MSFT setup
+
+- Maintain overall capital usage
+
+
+
+Execution:
+
+1. Sell 50% of AAPL position
+
+   - Lock in: +$2,000 profit
+
+   - Capital freed: $5,500
+
+   - Remaining: 50 shares AAPL for further potential
+
+
+
+2. Enter MSFT with freed capital
+
+   - Position size: $5,000 (match freed capital)
+
+   - Risk: 1.5% ($300)
+
+   - Shares: 14 shares at $350
+
+   - Stop: $340
+
+
+
+Portfolio transition:
+
+- Before: 100 AAPL, 0 MSFT
+
+- After: 50 AAPL + locked +$2,000 profit, 14 MSFT started
+
+- Capital: Same ~$10,500 deployed
+
+- Risk: Slightly higher but still acceptable
+
+
+
+Benefit:
+
+- Locked in AAPL profit (real money)
+
+- Captured MSFT setup (new opportunity)
+
+- Rebalanced to best opportunities
+
+</code></pre>
+<h2>Portfolio Monitoring Tools</h2>
+<h3>Simple Spreadsheet Columns</h3>
+<pre><code>
+Portfolio tracker template:
+
+- Ticker: Stock symbol
+
+- Strategy: Day/Swing/Position trade
+
+- Entry date: When opened
+
+- Entry price: What we paid
+
+- Current price: Real-time price
+
+- Current date: Today&#39;s date
+
+- Days held: Entry date to today
+
+- Shares: Number of shares
+
+- Capital: Shares × Current price
+
+- Stop loss: Dollar amount
+
+- Risk: Capital at risk
+
+- Target: Profit target price
+
+- % gain/loss: (Current - Entry) / Entry
+
+- $ gain/loss: Shares × (Current - Entry)
+
+- Days to target: Days remaining for hold
+
+
+
+Summary rows:
+
+- Total deployed: Sum of capital
+
+- Total cash: Account - deployed
+
+- Total risk: Sum of all risks
+
+- Portfolio %: (Total P&amp;L) / (Total deployed)
+
+- Win rate: Winners / Total positions
+
+</code></pre>
+<h2>Summary</h2>
+<p>Managing multiple positions requires:</p>
+<ul>
+<li>Systematic monitoring (checklist approach)</li>
+<li>Understanding correlation (diversification)</li>
+<li>Disciplined entries and exits (no emotion)</li>
+<li>Scaling profit positions (lock gains, run winners)</li>
+<li>Tight stop discipline (accept losses)</li>
+<li>Portfolio view (balance across all positions)</li>
+<li>Simple tools (spreadsheet tracking)</li>
+</ul>
+<p>Key principle: Automation (stops, alerts) reduces mental burden.</p>
+<h2>Key Takeaways</h2>
+<ol>
+<li>Monitor 3-4 positions maximum (more = overwhelm)</li>
+<li>Use alerts for stops and targets (automate)</li>
+<li>Positions should have different correlations (diversify)</li>
+<li>Scale out winners in thirds (lock profits)</li>
+<li>Scale out losses when thesis breaks (not emotion)</li>
+<li>Exit stops without exception (discipline)</li>
+<li>Never average down (protect capital)</li>
+<li>Correlate entries/exits with cash management</li>
+<li>During stress: Reduce weakest positions first</li>
+<li>Track all positions in simple spreadsheet</li>
+</ol>
+<h2>Next Steps</h2>
+<ul>
+<li>Create portfolio tracking spreadsheet</li>
+<li>Set up price alerts for entry and stop levels</li>
+<li>Practice managing 2-3 positions simultaneously</li>
+<li>Develop decision rules for multiple target hits</li>
+<li>Create stress-test scenarios (market crash response)</li>
+</ul>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-9-2-hedging.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-9-4-trailing-stops.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
