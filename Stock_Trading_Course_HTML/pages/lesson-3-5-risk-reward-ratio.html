@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3.5: Risk-Reward Ratio Fundamentals - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 3.5: Risk-Reward Ratio Fundamentals</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 3.5: Risk-Reward Ratio Fundamentals</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 3.5: Risk-Reward Ratio Fundamentals</h1>
+<p><a href="README.md">← Back to Chapter 3</a> | <a href="lesson<em>3.4</em>stop<em>losses.md">Previous: Setting Stop Losses</a> | <a href="lesson</em>3.6_diversification.md">Next Lesson: Diversification →</a></p>
+<hr>
+<h2>Overview</h2>
+<p>In this lesson, you'll learn how to evaluate whether a trade is worth taking before you enter it. The risk-reward ratio is the mathematical tool that professional traders use to accept or reject trades. It's the final filter that determines if a trade meets professional standards. By understanding risk-reward ratios, you'll reject bad trades automatically and only take trades with positive expectancy.</p>
+<p><strong>Time to complete:</strong> 25-30 minutes</p>
+<hr>
+<h2>Prerequisites</h2>
+<ul>
+<li>Completion of Lesson 3.4 (Stop Losses)</li>
+<li>Understanding of position sizing and risk calculations</li>
+<li>Ability to calculate simple ratios</li>
+<li>Understanding of profit targets</li>
+</ul>
+<hr>
+<h2>Core Content</h2>
+<h3>What is a Risk-Reward Ratio?</h3>
+<p><strong>Definition:</strong></p>
+<p>Risk-Reward Ratio = Amount You're Willing to Lose ÷ Amount You Hope to Gain</p>
+<p>Or more formally:</p>
+<p><strong>Risk-Reward Ratio = Stop Loss Distance ÷ Profit Target Distance</strong></p>
+<p><strong>Example:</strong></p>
+<p>You buy Apple at $150.</p>
+<ul>
+<li>Stop loss: $145 (willing to lose $5)</li>
+<li>Profit target: $160 (hope to make $10)</li>
+<li>Risk-Reward Ratio: $5 ÷ $10 = 1:2 (read as "one to two")</li>
+</ul>
+<p>This means for every dollar you risk, you have the opportunity to make 2 dollars.</p>
+<h3>Understanding Risk-Reward Notation</h3>
+<p>Risk-reward ratios are written as <strong>"X:Y"</strong></p>
+<p><strong>Examples:</strong></p>
+<p>1:1 ratio = For every $1 you risk, you can make $1</p>
+<ul>
+<li>This is break-even (not worth taking)</li>
+</ul>
+<p>1:2 ratio = For every $1 you risk, you can make $2</p>
+<ul>
+<li>This is good (professional standard)</li>
+</ul>
+<p>1:3 ratio = For every $1 you risk, you can make $3</p>
+<ul>
+<li>This is very good (high-conviction trades only)</li>
+</ul>
+<p>2:1 ratio = For every $2 you risk, you can make $1</p>
+<ul>
+<li>This is bad (don't take this)</li>
+</ul>
+<p>3:1 ratio = For every $3 you risk, you can make $1</p>
+<ul>
+<li>This is terrible (never take this)</li>
+</ul>
+<h3>Why Risk-Reward Matters</h3>
+<p>Here's the fundamental insight: <strong>You don't need a high win rate if you have good risk-reward ratios.</strong></p>
+<p>#### Case Study: Two Traders with Different Win Rates</p>
+<p><strong>Trader A: High Win Rate, Poor Risk-Reward</strong></p>
+<ul>
+<li>Win rate: 70% (wins 7 out of 10 trades)</li>
+<li>Risk-Reward: 1:0.5 (risking $100 to make $50)</li>
+<li>10 trades with this ratio:</li>
+</ul>
+<p>  - 7 wins × $50 = $350</p>
+<p>  - 3 losses × $100 = -$300</p>
+<p>  - <strong>Net: +$50 (barely break-even)</strong></p>
+<p><strong>Trader B: Low Win Rate, Good Risk-Reward</strong></p>
+<ul>
+<li>Win rate: 40% (wins 4 out of 10 trades)</li>
+<li>Risk-Reward: 1:2 (risking $100 to make $200)</li>
+<li>10 trades with this ratio:</li>
+</ul>
+<p>  - 4 wins × $200 = $800</p>
+<p>  - 6 losses × $100 = -$600</p>
+<p>  - <strong>Net: +$200 (200% better than Trader A)</strong></p>
+<p><strong>This is the power of risk-reward.</strong></p>
+<p>Trader B wins fewer trades but makes more money because each win is significantly bigger than each loss.</p>
+<h3>The Minimum Acceptable Risk-Reward Ratio</h3>
+<p><strong>Professional Standard: 1:1.5 Minimum</strong></p>
+<p>Most professional traders won't take a trade unless the risk-reward ratio is at least 1:1.5.</p>
+<p><strong>Why?</strong></p>
+<ul>
+<li>Accounts for transaction costs</li>
+<li>Accounts for slippage</li>
+<li>Provides margin for error</li>
+</ul>
+<p><strong>With 1:1.5 ratio and 50% win rate:</strong></p>
+<ul>
+<li>10 trades: 5 wins × 1.5 = 7.5, minus 5 losses × 1 = 5</li>
+<li>Net: +2.5 = +25% (positive expectancy)</li>
+</ul>
+<p><strong>Recommended Minimums by Trader Type:</strong></p>
+<p>| Trader Type | Minimum Ratio | Example | Notes |</p>
+<p>|-------------|---------------|---------|-------|</p>
+<p>| Beginner | 1:1.5 | Risk $100, Gain $150 | Safety margin needed |</p>
+<p>| Intermediate | 1:2.0 | Risk $100, Gain $200 | Professional standard |</p>
+<p>| Advanced | 1:2.5 | Risk $100, Gain $250 | Higher conviction |</p>
+<p><strong>Key Principle:</strong> If a trade doesn't meet minimum risk-reward, don't take it.</p>
+<h3>Calculating Risk-Reward Ratio</h3>
+<p>The calculation is simple, but doing it correctly matters.</p>
+<p><strong>Formula:</strong></p>
+<pre><code>
+Risk-Reward Ratio = Stop Loss Distance ÷ Profit Target Distance
+
+</code></pre>
+<p><strong>Important:</strong> These are PRICES, not percentages.</p>
+<p>#### Example 1: Simple Calculation</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Entry: $100</li>
+<li>Stop Loss: $95</li>
+<li>Profit Target: $110</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<ul>
+<li>Risk = $100 - $95 = $5</li>
+<li>Reward = $110 - $100 = $10</li>
+<li>Risk-Reward = $5 ÷ $10 = <strong>1:2</strong></li>
+</ul>
+<p><strong>Result: This is a good trade</strong> (meets 1:1.5 minimum)</p>
+<p>#### Example 2: Unfavorable Ratio</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Entry: $100</li>
+<li>Stop Loss: $95</li>
+<li>Profit Target: $102</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<ul>
+<li>Risk = $100 - $95 = $5</li>
+<li>Reward = $102 - $100 = $2</li>
+<li>Risk-Reward = $5 ÷ $2 = <strong>2.5:1</strong> (or written as 1:0.4)</li>
+</ul>
+<p><strong>Result: This is a bad trade</strong> (doesn't meet minimum)</p>
+<p>#### Example 3: Professional Trade</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Entry: $250</li>
+<li>Stop Loss: $240</li>
+<li>Profit Target: $275</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<ul>
+<li>Risk = $250 - $240 = $10</li>
+<li>Reward = $275 - $250 = $25</li>
+<li>Risk-Reward = $10 ÷ $25 = <strong>1:2.5</strong></li>
+</ul>
+<p><strong>Result: This is a professional-grade trade</strong> (exceeds 1:1.5 minimum)</p>
+<h3>Setting Profit Targets</h3>
+<p><strong>Profit Target Definition:</strong></p>
+<p>The price level where you plan to take profit (exit the winning trade).</p>
+<p>This is equally important as the stop loss.</p>
+<p><strong>Methods for Setting Profit Targets:</strong></p>
+<p>#### Method 1: Technical Resistance Levels</p>
+<p><strong>How It Works:</strong></p>
+<p>Find a price level above your entry where the stock has previously faced resistance.</p>
+<p><strong>Example:</strong></p>
+<p>Stock at $100:</p>
+<ul>
+<li>Previous resistance at $108</li>
+<li>Older resistance at $115</li>
+<li>Entry: $100</li>
+<li>Stop: $95</li>
+<li>Profit target: $108 (next resistance level)</li>
+<li>Risk-Reward: $5 ÷ $8 = 1:1.6 ✓</li>
+</ul>
+<p>#### Method 2: Fixed Ratio from Entry</p>
+<p><strong>How It Works:</strong></p>
+<p>Use a percentage or fixed amount above entry.</p>
+<p>Common percentages:</p>
+<ul>
+<li>Conservative: +5% to +10% above entry</li>
+<li>Moderate: +10% to +20% above entry</li>
+<li>Aggressive: +20% to +30% above entry</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Entry at $100, using +10% profit target:</p>
+<ul>
+<li>Profit target: $110</li>
+<li>Stop: $95 (if using fixed 5% below)</li>
+<li>Risk-Reward: $5 ÷ $10 = 1:2 ✓</li>
+</ul>
+<p>#### Method 3: Risk-Reward Reversal</p>
+<p><strong>How It Works:</strong></p>
+<p>You set your stop loss first, then calculate the profit target to achieve a desired risk-reward ratio.</p>
+<p><strong>Example:</strong></p>
+<p>Entry: $100</p>
+<p>Stop: $95 (risk = $5)</p>
+<p>Desired ratio: 1:2</p>
+<p>Profit target: $100 + ($5 × 2) = $110</p>
+<p><strong>This is the most disciplined approach</strong> because you lock in a good ratio before entering.</p>
+<p>#### Method 4: Fibonacci Retracement/Extension</p>
+<p><strong>How It Works:</strong></p>
+<p>Use Fibonacci levels as profit targets.</p>
+<p><strong>Example:</strong></p>
+<p>Stock trending up at $100:</p>
+<ul>
+<li>Fibonacci extension at $115 and $130</li>
+<li>Entry: $100</li>
+<li>Stop: $95</li>
+<li>Profit target: $115 (first Fibonacci target)</li>
+<li>Risk-Reward: $5 ÷ $15 = 1:3 ✓</li>
+</ul>
+<h3>Risk-Reward Ratio in Different Market Environments</h3>
+<p>The same trade setup changes risk-reward based on market conditions.</p>
+<p>#### Bull Market (Prices Rising)</p>
+<p><strong>Typically:</strong> Easier to find good risk-reward ratios</p>
+<ul>
+<li>Stocks often have resistance far above entry</li>
+<li>Reward targets are reachable</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Entry: $100 in uptrend</li>
+<li>Stop: $95 (support holds)</li>
+<li>Target: $115 (resistance above)</li>
+<li>Ratio: 1:3 (excellent)</li>
+</ul>
+<p>#### Bear Market (Prices Falling)</p>
+<p><strong>Typically:</strong> Harder to find good risk-reward ratios</p>
+<ul>
+<li>Resistance is close</li>
+<li>Reward targets are limited</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Entry: $100 attempting a bounce in downtrend</li>
+<li>Stop: $95 (support breaks hard)</li>
+<li>Target: $103 (weak resistance nearby)</li>
+<li>Ratio: 1:0.6 (terrible)</li>
+</ul>
+<p><strong>Lesson:</strong> In bear markets, you take fewer trades but maintain discipline.</p>
+<p>#### Consolidating Market (Sideways Price Movement)</p>
+<p><strong>Typically:</strong> Moderate risk-reward ratios possible</p>
+<ul>
+<li>Multiple support/resistance levels nearby</li>
+<li>Can find reasonable targets</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Entry: $100 in consolidation range</li>
+<li>Stop: $97 (just outside range)</li>
+<li>Target: $103 (opposite side of range)</li>
+<li>Ratio: 1:2 (good)</li>
+</ul>
+<h3>Expected Value and Risk-Reward</h3>
+<p>This is where risk-reward connects to long-term profitability.</p>
+<p><strong>Expected Value Formula:</strong></p>
+<pre><code>
+Expected Value = (Win % × Average Win) - (Loss % × Average Loss)
+
+</code></pre>
+<p><strong>Example with Good Risk-Reward:</strong></p>
+<ul>
+<li>Win rate: 50% (you win half your trades)</li>
+<li>Average win: $200 (on 1:2 risk-reward with $100 risk)</li>
+<li>Average loss: $100 (your risk per trade)</li>
+<li>Expected value per trade: (0.50 × $200) - (0.50 × $100) = $100 - $50 = <strong>+$50 per trade</strong></li>
+</ul>
+<p><strong>Over 100 trades:</strong> +$50 × 100 = +$5,000 profit</p>
+<p><strong>Example with Poor Risk-Reward:</strong></p>
+<ul>
+<li>Win rate: 70% (you win 70% of trades)</li>
+<li>Average win: $50 (on 1:0.5 risk-reward with $100 risk)</li>
+<li>Average loss: $100 (your risk per trade)</li>
+<li>Expected value per trade: (0.70 × $50) - (0.30 × $100) = $35 - $30 = <strong>+$5 per trade</strong></li>
+</ul>
+<p><strong>Over 100 trades:</strong> +$5 × 100 = +$500 profit</p>
+<p><strong>The Insight:</strong></p>
+<p>With good risk-reward, you don't need a high win rate to be profitable. With poor risk-reward, you need an unrealistically high win rate.</p>
+<h3>Common Risk-Reward Scenarios</h3>
+<p>#### Scenario 1: The "Close Target" Trade</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Stock at $100</li>
+<li>You see an immediate resistance at $102</li>
+<li>Support at $97</li>
+<li>Risk-Reward: $3 ÷ $2 = 1:0.67 (POOR)</li>
+</ul>
+<p><strong>Should You Take It?</strong></p>
+<p>NO. This trade has terrible risk-reward.</p>
+<p><strong>Better Approach:</strong></p>
+<p>Skip this trade and wait for:</p>
+<ul>
+<li>A pullback to $95 (wider stop, same target)</li>
+<li>Or a breakout beyond $102 (better target)</li>
+</ul>
+<p>#### Scenario 2: The "Wide Stop, Good Target" Trade</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Stock at $100</li>
+<li>Major support at $80 (20 points away)</li>
+<li>Resistance at $130 (30 points away)</li>
+<li>Risk-Reward: $20 ÷ $30 = 1:1.5 (ACCEPTABLE)</li>
+</ul>
+<p><strong>Should You Take It?</strong></p>
+<p>Only if:</p>
+<ul>
+<li>Your account is large enough for 20-point stop</li>
+<li>You're comfortable with position sizing implications</li>
+</ul>
+<p><strong>Position Sizing Reality:</strong></p>
+<ul>
+<li>Account: $10,000</li>
+<li>Risk: 1% = $100</li>
+<li>Stop distance: $20</li>
+<li>Position size: 5 shares</li>
+<li>Position value: $500</li>
+</ul>
+<p>This works, but position is small.</p>
+<p>#### Scenario 3: The "Perfect Trade"</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Stock at $100</li>
+<li>Support at $98 (2 points away - tight stop)</li>
+<li>Resistance at $112 (12 points away - good target)</li>
+<li>Risk-Reward: $2 ÷ $12 = 1:6 (EXCELLENT)</li>
+</ul>
+<p><strong>Should You Take It?</strong></p>
+<p>YES, absolutely.</p>
+<p><strong>Position Sizing Reality:</strong></p>
+<ul>
+<li>Account: $10,000</li>
+<li>Risk: 1% = $100</li>
+<li>Stop distance: $2</li>
+<li>Position size: 50 shares</li>
+<li>Position value: $5,000</li>
+</ul>
+<p>This is an ideal trade - good ratio AND good position size.</p>
+<h3>Common Mistakes in Risk-Reward Analysis</h3>
+<p>#### Mistake 1: Using Unrealistic Profit Targets</p>
+<p><strong>Wrong Approach:</strong></p>
+<p>"Stock is at $100, I'll target $200 (100% gain)."</p>
+<p><strong>Reality:</strong></p>
+<p>Most trades don't move 100%. You're setting a target you won't reach, which ruins your analysis.</p>
+<p><strong>Right Approach:</strong></p>
+<p>Use targets based on:</p>
+<ul>
+<li>Technical resistance levels (realistic)</li>
+<li>Fibonacci extensions (realistic)</li>
+<li>Historical volatility (realistic)</li>
+<li>Not wishful thinking</li>
+</ul>
+<p>#### Mistake 2: Ignoring Transaction Costs</p>
+<p><strong>Wrong Approach:</strong></p>
+<p>"Risk $100, target $150. That's 1:1.5"</p>
+<p><strong>Reality:</strong></p>
+<p>After commissions and slippage, actual risk-reward might be 1:1.3 (not good enough).</p>
+<p><strong>Right Approach:</strong></p>
+<p>Subtract commissions from your profit target calculation.</p>
+<p>#### Mistake 3: Using Unrealistic Win Rates in Calculations</p>
+<p><strong>Wrong Approach:</strong></p>
+<p>"I'll assume an 80% win rate, so this 1:1 trade is fine."</p>
+<p><strong>Reality:</strong></p>
+<p>Most traders are closer to 50% win rate. Assuming 80% is fantasy.</p>
+<p><strong>Right Approach:</strong></p>
+<p>Plan for 50% win rate as baseline. Anything above that is a bonus.</p>
+<p>#### Mistake 4: Not Committing to the Profit Target</p>
+<p><strong>Wrong Approach:</strong></p>
+<p>"My profit target is $110, but if it gets to $105, I might take profit early."</p>
+<p><strong>Reality:</strong></p>
+<p>Inconsistent profit-taking ruins your statistics. You can't measure your actual win rate.</p>
+<p><strong>Right Approach:</strong></p>
+<p>Commit to your planned targets. Take profit at your target price level.</p>
+<p>#### Mistake 5: Confusing Risk-Reward with Win Rate</p>
+<p><strong>Wrong Approach:</strong></p>
+<p>"This trade has a 1:2 ratio, so I only need a 50% win rate."</p>
+<p><strong>Reality:</strong></p>
+<p>Risk-reward and win rate are independent. A bad trader can have a 1:2 ratio but a 20% win rate.</p>
+<p><strong>Right Approach:</strong></p>
+<p>Good risk-reward is necessary but not sufficient. You still need decent analysis to pick winners.</p>
+<hr>
+<h2>Real-World Application</h2>
+<h3>Your Trade Evaluation Checklist</h3>
+<p>Before entering ANY trade, evaluate the risk-reward:</p>
+<p><strong>Trade Evaluation Checklist:</strong></p>
+<pre><code>
+Stock: ___________________  Price: $___
+
+
+
+ENTRY SETUP:
+
+☐ Entry price: $___
+
+☐ Stop loss price: $___
+
+☐ Stop loss distance: $___
+
+
+
+PROFIT TARGET:
+
+☐ Profit target price: $___
+
+☐ Profit target distance: $___
+
+
+
+RATIO CALCULATION:
+
+☐ Risk-Reward Ratio: 1:___
+
+☐ Is ratio ≥ 1:1.5? Yes/No
+
+☐ If no, do NOT take this trade
+
+
+
+ACCOUNT IMPACT:
+
+☐ Risk amount: $___
+
+☐ Account risk %: ___%
+
+☐ Position size: ___ shares
+
+☐ Position value: $___ (% of account: __%)
+
+
+
+FINAL DECISION:
+
+☐ Ratio is acceptable: Yes/No
+
+☐ Position size is acceptable: Yes/No
+
+☐ I&#39;m entering this trade: Yes/No
+
+</code></pre>
+<h3>Example Trade Analysis</h3>
+<p><strong>Trade Setup:</strong></p>
+<p>You've identified Microsoft (MSFT) for a potential trade.</p>
+<p>Current price: $350</p>
+<p>You see technical support at: $340</p>
+<p>You see technical resistance at: $370</p>
+<p><strong>Step 1: Determine Entry</strong></p>
+<p>Entry price: $350 (current market)</p>
+<p><strong>Step 2: Determine Stop Loss</strong></p>
+<p>Support is at $340. You'll place stop just below: $339</p>
+<p>Stop loss distance: $350 - $339 = $11</p>
+<p><strong>Step 3: Determine Profit Target</strong></p>
+<p>Resistance is at $370. First target is there: $370</p>
+<p>Profit target distance: $370 - $350 = $20</p>
+<p><strong>Step 4: Calculate Risk-Reward</strong></p>
+<p>Risk-Reward = $11 ÷ $20 = 1:1.82 ✓</p>
+<p><strong>Evaluation: GOOD</strong> (exceeds 1:1.5 minimum)</p>
+<p><strong>Step 5: Calculate Position Size</strong></p>
+<p>Account: $25,000</p>
+<p>Risk: 1% = $250</p>
+<p>Position size: $250 ÷ $11 = 22.7 shares (round to 23 shares)</p>
+<p>Position value: 23 × $350 = $8,050</p>
+<p>Position is 32% of account ✓</p>
+<p><strong>Step 6: Final Decision</strong></p>
+<p>Risk-reward: 1:1.82 (GOOD) ✓</p>
+<p>Position size: 32% of account (GOOD) ✓</p>
+<p>Entry reason: Clear technicals (GOOD) ✓</p>
+<p><strong>DECISION: ENTER TRADE</strong></p>
+<p>Order to place:</p>
+<ul>
+<li>Buy 23 shares of MSFT at $350 (or limit order at $349.50)</li>
+<li>Place stop loss: Sell 23 at $339</li>
+<li>Place profit target: Sell 23 at $370</li>
+</ul>
+<h3>Real Portfolio Example: Multiple Trades</h3>
+<p><strong>Your account:</strong> $20,000</p>
+<p><strong>Position 1: Apple</strong></p>
+<ul>
+<li>Entry: $150, Stop: $145, Target: $165</li>
+<li>Risk: $5, Reward: $15, Ratio: 1:3 ✓</li>
+<li>Risk $100, Position: 20 shares</li>
+</ul>
+<p><strong>Position 2: Microsoft</strong></p>
+<ul>
+<li>Entry: $300, Stop: $290, Target: $315</li>
+<li>Risk: $10, Reward: $15, Ratio: 1:1.5 ✓</li>
+<li>Risk $100, Position: 10 shares</li>
+</ul>
+<p><strong>Position 3: Google</strong></p>
+<ul>
+<li>Entry: $140, Stop: $135, Target: $148</li>
+<li>Risk: $5, Reward: $8, Ratio: 1:1.6 ✓</li>
+<li>Risk $100, Position: 20 shares</li>
+</ul>
+<p><strong>Portfolio Analysis:</strong></p>
+<ul>
+<li>Total risk across 3 trades: $300 (1.5% of account)</li>
+<li>Average ratio: 1:2.03 (professional quality)</li>
+<li>If all three hit profit targets: +$380 gain</li>
+<li>If all three hit stops: -$300 loss</li>
+<li>Acceptable risk profile ✓</li>
+</ul>
+<hr>
+<h2>Common Mistakes to Avoid</h2>
+<h3>Mistake #1: Taking Low Risk-Reward Trades</h3>
+<p><strong>The Problem:</strong></p>
+<p>"I just want a quick 2% gain on this trade."</p>
+<p><strong>The Reality:</strong></p>
+<p>If you risk $100 to make $20, you need an 83% win rate to be profitable (impossible).</p>
+<p><strong>The Solution:</strong></p>
+<p>No trade with less than 1:1.5 ratio. Period.</p>
+<h3>Mistake #2: Using Unrealistic Targets</h3>
+<p><strong>The Problem:</strong></p>
+<p>"This stock is at $100, I'll target $200 (a 100% move)."</p>
+<p><strong>The Reality:</strong></p>
+<p>Most trades won't move 100%. You're setting yourself up for lots of losses.</p>
+<p><strong>The Solution:</strong></p>
+<p>Use targets based on technical levels and historical patterns.</p>
+<h3>Mistake #3: Not Tracking Your Actual Ratio Outcomes</h3>
+<p><strong>The Problem:</strong></p>
+<p>You calculate a 1:2 ratio but you exit early, turning it into a 1:0.5 ratio.</p>
+<p><strong>The Reality:</strong></p>
+<p>You're ruining your trading statistics and can't measure if your approach actually works.</p>
+<p><strong>The Solution:</strong></p>
+<p>Stick to your planned targets. Let winners run. Let losers hit stops.</p>
+<h3>Mistake #4: Trying to "Make Back" Poor Ratio Trades with High Win Rate</h3>
+<p><strong>The Problem:</strong></p>
+<p>"This trade is 1:0.8, but I have a 70% win rate, so it's fine."</p>
+<p><strong>The Reality:</strong></p>
+<p>You're depending on something unlikely (70% win rate) to justify something unwise (poor ratio).</p>
+<p><strong>The Solution:</strong></p>
+<p>Only take trades with good ratios. Let good win rate be a bonus.</p>
+<h3>Mistake #5: Analyzing Risk-Reward After Entry</h3>
+<p><strong>The Problem:</strong></p>
+<p>You enter a trade, then look at what your risk-reward ratio was.</p>
+<p><strong>The Reality:</strong></p>
+<p>Analysis after entry doesn't change anything. It's too late.</p>
+<p><strong>The Solution:</strong></p>
+<p>Calculate and analyze risk-reward BEFORE entering. It's part of your entry decision.</p>
+<hr>
+<h2>Quick Review</h2>
+<p><strong>What is Risk-Reward Ratio?</strong></p>
+<p>The relationship between what you're willing to lose and what you hope to make.</p>
+<ul>
+<li>1:2 = Risk $1, make $2</li>
+<li>1:3 = Risk $1, make $3</li>
+</ul>
+<p><strong>Minimum Professional Standard:</strong></p>
+<p>1:1.5 ratio (risk $1, make at least $1.50)</p>
+<p><strong>Why It Matters:</strong></p>
+<ul>
+<li>Good risk-reward requires only 50% win rate for profitability</li>
+<li>Poor risk-reward requires 70%+ win rate to profit (difficult)</li>
+<li>Professional traders prioritize ratio over win rate</li>
+</ul>
+<p><strong>How to Calculate:</strong></p>
+<p>Risk-Reward = Stop Loss Distance ÷ Profit Target Distance</p>
+<p><strong>The Core Principle:</strong></p>
+<p>Reject trades that don't meet your minimum ratio. Don't compromise on this rule.</p>
+<hr>
+<h2>Practice Exercise</h2>
+<h3>Exercise 1: Calculate Risk-Reward Ratios</h3>
+<p>For each trade, calculate the risk-reward ratio:</p>
+<p><strong>Trade 1: Apple</strong></p>
+<ul>
+<li>Entry: $150</li>
+<li>Stop: $145</li>
+<li>Target: $165</li>
+<li>Risk: $<em></em>_</li>
+<li>Reward: $<em></em>_</li>
+<li>Ratio: 1:<em></em>_</li>
+<li>Accept (≥1:1.5)? Yes/No</li>
+</ul>
+<p><strong>Trade 2: Tesla</strong></p>
+<ul>
+<li>Entry: $250</li>
+<li>Stop: $240</li>
+<li>Target: $260</li>
+<li>Risk: $<em></em>_</li>
+<li>Reward: $<em></em>_</li>
+<li>Ratio: 1:<em></em>_</li>
+<li>Accept? Yes/No</li>
+</ul>
+<p><strong>Trade 3: Microsoft</strong></p>
+<ul>
+<li>Entry: $300</li>
+<li>Stop: $290</li>
+<li>Target: $310</li>
+<li>Risk: $<em></em>_</li>
+<li>Reward: $<em></em>_</li>
+<li>Ratio: 1:<em></em>_</li>
+<li>Accept? Yes/No</li>
+</ul>
+<p><strong>Trade 4: Netflix</strong></p>
+<ul>
+<li>Entry: $400</li>
+<li>Stop: $385</li>
+<li>Target: $420</li>
+<li>Risk: $<em></em>_</li>
+<li>Reward: $<em></em>_</li>
+<li>Ratio: 1:<em></em>_</li>
+<li>Accept? Yes/No</li>
+</ul>
+<h3>Exercise 2: Reverse Engineering Profit Targets</h3>
+<p>Given entry, stop, and desired ratio, calculate the profit target:</p>
+<p><strong>Setup 1:</strong></p>
+<ul>
+<li>Entry: $100</li>
+<li>Stop: $95 (risk = $5)</li>
+<li>Desired ratio: 1:2</li>
+<li>Profit target: $100 + ($5 × 2) = $<strong></strong>_</li>
+</ul>
+<p><strong>Setup 2:</strong></p>
+<ul>
+<li>Entry: $200</li>
+<li>Stop: $190 (risk = $10)</li>
+<li>Desired ratio: 1:3</li>
+<li>Profit target: $<strong></strong>_</li>
+</ul>
+<p><strong>Setup 3:</strong></p>
+<ul>
+<li>Entry: $50</li>
+<li>Stop: $46 (risk = $4)</li>
+<li>Desired ratio: 1:1.5</li>
+<li>Profit target: $<strong></strong>_</li>
+</ul>
+<h3>Exercise 3: Expected Value Calculation</h3>
+<p>Calculate expected value for these scenarios:</p>
+<p><strong>Scenario A: Good Ratio</strong></p>
+<ul>
+<li>Win rate: 50%</li>
+<li>Average win: $200 (1:2 ratio with $100 risk)</li>
+<li>Average loss: $100</li>
+<li>Expected value: (0.50 × $200) - (0.50 × $100) = $<strong></strong>_</li>
+<li>Per 100 trades: $<strong></strong>_</li>
+</ul>
+<p><strong>Scenario B: Poor Ratio</strong></p>
+<ul>
+<li>Win rate: 60%</li>
+<li>Average win: $50 (1:0.5 ratio with $100 risk)</li>
+<li>Average loss: $100</li>
+<li>Expected value: (0.60 × $50) - (0.40 × $100) = $<strong></strong>_</li>
+<li>Per 100 trades: $<strong></strong>_</li>
+</ul>
+<h3>Exercise 4: Real Trade Evaluation</h3>
+<p>You have a $15,000 account. You've identified a stock with these characteristics:</p>
+<ul>
+<li>Current price: $120</li>
+<li>Support level: $115</li>
+<li>Resistance level: $135</li>
+<li>You want 1% risk</li>
+</ul>
+<p>Calculate and evaluate:</p>
+<ol>
+<li>Entry: $120</li>
+<li>Stop loss: $<strong></strong>_ (just below support)</li>
+<li>Profit target: $<strong></strong>_ (at resistance)</li>
+<li>Stop distance: $<strong></strong>_</li>
+<li>Risk amount: $<strong></strong>_ (1% of $15,000)</li>
+<li>Risk-Reward ratio: 1:<strong></strong>_</li>
+<li>Position size: <strong></strong>_ shares</li>
+<li>Would you take this trade? Yes/No (explain)</li>
+</ol>
+<hr>
+<h2>Next Steps</h2>
+<p>Congratulations! You now understand risk-reward ratios and how to evaluate trades.</p>
+<p><strong>In the next lesson</strong>, you'll learn:</p>
+<ul>
+<li>Why diversification matters</li>
+<li>How to avoid over-concentration</li>
+<li>Building a balanced portfolio</li>
+</ul>
+<h3>Before Moving Forward:</h3>
+<ul>
+<li>[ ] Complete all practice exercises</li>
+<li>[ ] Understand that risk-reward is non-negotiable</li>
+<li>[ ] Commit to 1:1.5 minimum ratio</li>
+<li>[ ] Never enter a trade without calculating ratio first</li>
+<li>[ ] Understand expected value mechanics</li>
+</ul>
+<p><strong>Ready to continue?</strong> → <a href="lesson<em>3.6</em>diversification.md">Lesson 3.6: Diversification for Beginners</a></p>
+<hr>
+<h2>Additional Resources</h2>
+<p><strong>For Deeper Learning</strong> (Optional):</p>
+<ul>
+<li>Research: "Expected Value" in trading books</li>
+<li>Calculate: Expected value for your own past trades (if applicable)</li>
+<li>Study: How professional traders set profit targets</li>
+<li>Practice: Identify resistance levels on real stocks for profit targets</li>
+<li>Reflect: Write down why you sometimes don't hit your profit targets</li>
+</ul>
+<hr>
+<p><strong>Remember:</strong> Risk-reward ratio is not negotiable. It's the mathematical foundation of successful trading. Good traders obsess over their ratios because that's where long-term profitability comes from.</p>
+<hr>
+<p><a href="README.md">← Back to Chapter 3</a> | <a href="../../MASTER<em>INDEX.md">↑ Back to Course Index</a> | <a href="lesson</em>3.6_diversification.md">Next Lesson →</a></p>
+<hr>
+<p><em>Lesson 3.5 Complete | Next: Lesson 3.6 - Diversification for Beginners</em></p>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-3-4-stop-losses.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-3-6-diversification.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

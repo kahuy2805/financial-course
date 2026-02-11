@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2.5: Market Orders vs Limit Orders vs Stop Orders - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 2.5: Market Orders vs Limit Orders vs Stop Orders</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 2.5: Market Orders vs Limit Orders vs Stop Orders</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 2.5: Market Orders vs Limit Orders vs Stop Orders</h1>
+<p><a href="README.md">← Back to Chapter 2</a> | <a href="lesson<em>2.6</em>bid<em>ask</em>spread.md">Next Lesson: Understanding Bid-Ask Spread →</a></p>
+<hr>
+<h2>Overview</h2>
+<p>In the last lesson, you learned to place a "market order." But there are other order types that give you more control over execution price and risk. This lesson explains the three most common order types and when to use each one. You'll learn to match the right order type to your trading situation.</p>
+<p><strong>Time to complete:</strong> 15-20 minutes</p>
+<hr>
+<h2>Prerequisites</h2>
+<ul>
+<li>Completed Lessons 2.1-2.4 (understand brokers, accounts, quotes, and how to trade)</li>
+<li>Understand bid-ask spread (price difference between buyers and sellers)</li>
+<li>Comfortable with basic trading process</li>
+</ul>
+<hr>
+<h2>Core Content</h2>
+<h3>Why Order Types Matter</h3>
+<p>Think of order types like different ways to buy a car:</p>
+<p><strong>Market Order:</strong> "I want this car NOW, whatever price the dealer asks"</p>
+<ul>
+<li>Immediate, but price unknown until deal closes</li>
+</ul>
+<p><strong>Limit Order:</strong> "I want this car BUT only if the price is $20,000 or less"</p>
+<ul>
+<li>You control the price, but might not get the car</li>
+</ul>
+<p><strong>Stop Order:</strong> "I want to sell this car IF the price drops to $15,000"</p>
+<ul>
+<li>Protects against big losses if price crashes</li>
+</ul>
+<p>Each has different purposes. Choosing the right one matters.</p>
+<h3>1. Market Order (The Default)</h3>
+<p><strong>What It Is:</strong></p>
+<p>An order to buy or sell AT WHATEVER THE CURRENT MARKET PRICE IS, executed immediately.</p>
+<p><strong>How It Works:</strong></p>
+<p>You decide to buy Apple:</p>
+<ol>
+<li>You place a Market Order: "Buy 10 shares of AAPL"</li>
+<li>Your broker immediately executes</li>
+<li>You get shares at the current asking price (whatever it is right now)</li>
+<li>Order fills within seconds</li>
+</ol>
+<p><strong>Real Example:</strong></p>
+<ul>
+<li>You see Apple bid-ask: $195.47 - $195.48</li>
+<li>You place Market Order to buy</li>
+<li>Actually fills at $195.50 (price moved slightly while processing)</li>
+<li>You got your shares instantly, but price was slightly higher</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Guaranteed execution</strong> - You WILL get the stock (if liquid)</li>
+<li><strong>Fast</strong> - Executes within seconds</li>
+<li><strong>Simple</strong> - No complexity, just buy/sell</li>
+<li><strong>Good for</strong> - Stocks with high volume (easy to fill)</li>
+<li><strong>Best for</strong> - Your first few trades while learning</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>Price uncertainty</strong> - Exact price unknown until execution</li>
+<li><strong>Slippage</strong> - Actual price might be worse than quoted</li>
+<li><strong>Bad in volatile markets</strong> - Price can move significantly while order processes</li>
+<li><strong>Not good for</strong> - Expensive stocks with large spreads, low-volume stocks, or volatile times</li>
+</ul>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>Buying quality stocks with good volume (like AAPL, MSFT, GOOGL)</li>
+<li>You want immediate execution (buying ASAP)</li>
+<li>Markets are calm and not volatile</li>
+<li>Stock spread is very tight (small difference between bid-ask)</li>
+</ul>
+<p><strong>When NOT to Use:</strong></p>
+<ul>
+<li>Stock has low trading volume (illiquid)</li>
+<li>Market is very volatile (prices moving rapidly)</li>
+<li>Exact price matters to you</li>
+<li>Buying small, speculative companies</li>
+<li>During earnings announcements or news events</li>
+</ul>
+<p><strong>Example Trade:</strong></p>
+<pre><code>
+Stock: Apple (AAPL)
+
+Current Price: $195.48 (asking price)
+
+Your Order: Market order, buy 100 shares
+
+
+
+What Happens:
+
+- You submit order at 2:47 PM
+
+- Order reaches exchange at 2:47:001 PM
+
+- Price is now $195.52 (moved up slightly)
+
+- Broker buys your 100 shares at $195.52
+
+- You pay $19,552 instead of expected $19,548
+
+- Difference: $4 (slippage)
+
+- Completely normal!
+
+</code></pre>
+<h3>2. Limit Order (The Controlled Order)</h3>
+<p><strong>What It Is:</strong></p>
+<p>An order to buy or sell, BUT ONLY at a specified price or better.</p>
+<p><strong>How It Works:</strong></p>
+<p>You want to buy Apple, but you think $195 is the max you'll pay:</p>
+<ol>
+<li>Place Limit Order: "Buy 10 shares of AAPL at $195.00 or less"</li>
+<li>If price drops to $195 or lower, order fills automatically</li>
+<li>If price never reaches $195, order never fills (you don't buy)</li>
+</ol>
+<p><strong>Real Example:</strong></p>
+<ul>
+<li>Apple is at $195.48</li>
+<li>You place: "Buy 10 shares, limit price $195.00"</li>
+<li>Price drops to $194.95 during the day</li>
+<li>Your order fills at $194.95</li>
+<li>You paid less than market price!</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Price control</strong> - You choose maximum (buy) or minimum (sell) price</li>
+<li><strong>Better executions</strong> - Often get better prices than market orders</li>
+<li><strong>No slippage</strong> - Price won't be worse than your limit</li>
+<li><strong>Good for</strong> - Expensive stocks, volatile stocks, limit buy/sell prices</li>
+<li><strong>Best for</strong> - Experienced traders, specific price targets</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>No guarantee</strong> - Order might never fill if price doesn't reach your limit</li>
+<li><strong>Missed opportunities</strong> - Stock might go up and you don't buy</li>
+<li><strong>Partial fills</strong> - Might buy 10 of your 100 share order (stock too illiquid)</li>
+<li><strong>Complexity</strong> - More to think about than market orders</li>
+</ul>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>You have a specific price in mind</li>
+<li>Trying to buy cheaper than current market</li>
+<li>Trying to sell higher than current market</li>
+<li>Stock is volatile (prices change rapidly)</li>
+<li>Stock has low volume (need to control price)</li>
+<li>Large orders that might move the market</li>
+</ul>
+<p><strong>When NOT to Use:</strong></p>
+<ul>
+<li>You need immediate execution</li>
+<li>Stock is very illiquid (might never fill)</li>
+<li>Trading during fast-moving markets</li>
+<li>First-time traders (adds complexity)</li>
+<li>Stock spreads are very tight (limit adds little value)</li>
+</ul>
+<p><strong>Buy Limit Order Example:</strong></p>
+<pre><code>
+Stock: Apple (AAPL)
+
+Current Market Price: $195.48
+
+Your Limit Order: Buy 10 shares at $194.50 or less
+
+
+
+Scenarios:
+
+A) Price drops to $194.45 → Order fills at $194.45 (great!)
+
+B) Price stays at $195+ → Order never fills (you don&#39;t buy)
+
+C) Price drops to $194.45 then bounces to $195 → You own 10 @ $194.45
+
+</code></pre>
+<p><strong>Sell Limit Order Example:</strong></p>
+<pre><code>
+Stock: Apple (AAPL)
+
+Current Market Price: $195.48
+
+Your Limit Order: Sell 10 shares at $200.00 or higher
+
+
+
+Scenarios:
+
+A) Price rises to $200.50 → Order fills at $200.50 (great!)
+
+B) Price drops to $190 → Order never fills (you still own stock)
+
+C) Price rises to $200.05 → Order fills at $200.05
+
+</code></pre>
+<p><strong>Common Limit Strategies:</strong></p>
+<p><strong>Strategy 1: Buy the Dip</strong></p>
+<ul>
+<li>Stock usually trades at $100</li>
+<li>Currently down to $95 on news</li>
+<li>Place limit: "Buy at $92"</li>
+<li>If it drops further, you get it cheap</li>
+<li>If it bounces back, order doesn't fill but you weren't forced to overpay</li>
+</ul>
+<p><strong>Strategy 2: Sell at Target</strong></p>
+<ul>
+<li>You bought stock at $50</li>
+<li>Goal is to sell at $75 (50% profit)</li>
+<li>Place limit: "Sell at $75"</li>
+<li>When stock reaches $75, automatically sells</li>
+<li>You don't have to watch constantly</li>
+</ul>
+<p><strong>Strategy 3: Scaling In</strong></p>
+<ul>
+<li>Want to buy 100 shares of stock</li>
+<li>Think price might drop gradually</li>
+<li>Place 4 limit orders:</li>
+</ul>
+<p>  - Buy 25 @ $95</p>
+<p>  - Buy 25 @ $90</p>
+<p>  - Buy 25 @ $85</p>
+<p>  - Buy 25 @ $80</p>
+<ul>
+<li>As price drops, you accumulate gradually</li>
+</ul>
+<h3>3. Stop Order (The Protective Order)</h3>
+<p><strong>What It Is:</strong></p>
+<p>An order that becomes a market order when the stock price reaches a specific price (the "stop price").</p>
+<p><strong>Think of it like:</strong> Setting a trap that springs when price hits a certain level.</p>
+<p><strong>How It Works:</strong></p>
+<p>You own Apple at $195. You're worried it might crash, so you set a safety net:</p>
+<ol>
+<li>Place Stop Order: "If AAPL drops to $180, sell my shares at market price"</li>
+<li>Stock stays above $180 → Nothing happens, order sits</li>
+<li>Stock drops to $180 → Order automatically becomes market order</li>
+<li>Shares sell immediately (protecting against further drop)</li>
+</ol>
+<p><strong>Real Example:</strong></p>
+<ul>
+<li>You bought Apple at $195</li>
+<li>Current price: $198 (you're up $3)</li>
+<li>You set a stop at $185 (willing to accept $10 loss)</li>
+<li>Stock soars to $210 → Stop order sits (you're protected)</li>
+<li>Breaking news hits, stock crashes to $182 → Stop order triggers</li>
+<li>Your shares sell at market price (maybe $181.50)</li>
+<li>You limited loss to about $13.50 instead of unlimited loss</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Loss protection</strong> - Prevents catastrophic losses</li>
+<li><strong>Emotional protection</strong> - Remove temptation to hold falling stock</li>
+<li><strong>Sleep at night</strong> - Know your maximum loss</li>
+<li><strong>Automatic</strong> - Works even if you're not watching</li>
+<li><strong>Good for</strong> - Protecting profits, limiting losses</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>Stop loss triggers</strong> - Temporary dips can trigger exit (annoying!)</li>
+<li><strong>Whipsaw effect</strong> - Stop hits, sell, then stock rebounds (regret!)</li>
+<li><strong>Gap risk</strong> - Stock might gap past your stop (sell at much worse price)</li>
+<li><strong>Emotional exits</strong> - Limits help, but might exit good long-term holdings</li>
+<li><strong>Complexity</strong> - More to think about</li>
+</ul>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>You own a stock and want downside protection</li>
+<li>Protecting profits (taking profits off table)</li>
+<li>Limiting losses on risky positions</li>
+<li>Can't monitor stock (goes on vacation, busy)</li>
+<li>Trading volatile stocks where big moves are common</li>
+</ul>
+<p><strong>When NOT to Use:</strong></p>
+<ul>
+<li>Buying stock (place stop after you own it)</li>
+<li>Very volatile stocks (stops might trigger on normal swings)</li>
+<li>Long-term holdings in good companies (don't want to exit on dips)</li>
+<li>Thinly traded stocks (might execute at terrible prices)</li>
+</ul>
+<p><strong>Stop Order Example 1: Protect Profit</strong></p>
+<pre><code>
+Stock: Microsoft (MSFT)
+
+You bought at: $300
+
+Current price: $320 (you&#39;re up $20)
+
+Stop order: Sell if drops to $310
+
+
+
+Scenarios:
+
+A) Price rises to $330 → Stop sits, you keep gaining
+
+B) Price drops to $310 → Automatic sell at market
+
+   → You lock in at least $10 profit
+
+C) Price drops to $308 → Sell triggers at maybe $307
+
+   → You keep most of your profit
+
+</code></pre>
+<p><strong>Stop Order Example 2: Limit Loss</strong></p>
+<pre><code>
+Stock: Risky Company (RISKY)
+
+You bought at: $50
+
+Current price: $52 (up $2)
+
+Stop order: Sell if drops to $45
+
+
+
+Scenarios:
+
+A) Price rises to $70 → Stop sits, up $20
+
+B) Disaster news, stock crashes to $30
+
+   → Stop at $45 triggers
+
+   → Sell at market price (maybe $44)
+
+   → You limited loss to $6 instead of $20
+
+</code></pre>
+<h3>Stop-Limit Order (Advanced)</h3>
+<p><strong>What It Is:</strong></p>
+<p>Combination of stop and limit orders. Becomes a limit order (not market order) when triggered.</p>
+<p><strong>How It Works:</strong></p>
+<p>"If stock drops to $180, sell 10 shares BUT ONLY at $178 or higher"</p>
+<p><strong>Advantage:</strong> Better control of exit price (not forced to sell at market)</p>
+<p><strong>Disadvantage:</strong> Might not fill if stock gaps past limit price</p>
+<p><strong>When to Use:</strong> Protecting positions in volatile stocks where you care about exit price</p>
+<p><strong>When NOT to Use:</strong> If protecting downside, accept worst price (use regular stop)</p>
+<p><strong>Advanced:</strong> We'll skip this for beginners.</p>
+<h3>Order Type Comparison Chart</h3>
+<p>| Feature | Market | Limit | Stop |</p>
+<p>|---------|--------|-------|------|</p>
+<p>| <strong>Execution Speed</strong> | Immediate | Might wait | Immediate (when triggered) |</p>
+<p>| <strong>Price Control</strong> | No | Yes | No |</p>
+<p>| <strong>Guarantee Fill</strong> | Almost always | No | Yes (when triggered) |</p>
+<p>| <strong>Best For</strong> | Immediate entry/exit | Specific prices | Loss protection |</p>
+<p>| <strong>Risk</strong> | Slippage | Missed opportunity | Emotional exits |</p>
+<p>| <strong>Complexity</strong> | Simple | Moderate | Moderate |</p>
+<p>| <strong>Beginner-friendly</strong> | YES | Okay | Okay |</p>
+<hr>
+<h2>Real-World Application</h2>
+<h3>Michael's Trading Decisions</h3>
+<p><strong>Scenario 1: Buying a Great Company</strong></p>
+<p>Michael researches Apple and decides to buy.</p>
+<ul>
+<li>Apple is highly liquid</li>
+<li>He wants to enter immediately</li>
+<li>Spreads are tight (bid-ask difference tiny)</li>
+<li><strong>Decision:</strong> Market order</li>
+<li><strong>Why:</strong> Volume is high, slippage will be tiny, immediate execution is better</li>
+</ul>
+<p><strong>Scenario 2: Buying a Cheaper Stock</strong></p>
+<p>Michael likes Acme Corp but thinks $30 is too high.</p>
+<ul>
+<li>Current price: $31.50</li>
+<li>He believes it might drop to $28</li>
+<li>Willing to wait for better entry</li>
+<li><strong>Decision:</strong> Limit order at $28</li>
+<li><strong>Why:</strong> More patient, wants better price, willing to miss trade if price doesn't drop</li>
+</ul>
+<p><strong>Scenario 3: Protecting a Profit</strong></p>
+<p>Michael bought Tesla at $200, now at $250 (up $50).</p>
+<ul>
+<li>Market is volatile</li>
+<li>Earnings coming up (risky event)</li>
+<li>Wants to protect gains</li>
+<li><strong>Decision:</strong> Stop order at $220 (willing to give back $30 to protect $30)</li>
+<li><strong>Why:</strong> Protects profit, limits downside risk, sleeps better</li>
+</ul>
+<p><strong>Scenario 4: Volatile Stock Purchase</strong></p>
+<p>Michael wants to buy a small biotech stock.</p>
+<ul>
+<li>Stock is volatile (price swings wildly)</li>
+<li>Low volume (hard to trade)</li>
+<li>Tight execution is important</li>
+<li><strong>Decision:</strong> Limit order at exact price he'll pay</li>
+<li><strong>Why:</strong> Controls slippage in volatile, illiquid environment</li>
+</ul>
+<h3>Janet's Learning Journey</h3>
+<p><strong>Week 1:</strong></p>
+<p>Janet buys first stock (Apple) with market order.</p>
+<ul>
+<li>Got shares immediately</li>
+<li>Slippage was only $0.05 (negligible)</li>
+<li>Good experience</li>
+</ul>
+<p><strong>Week 2:</strong></p>
+<p>Janet sees discount company priced at $45.</p>
+<ul>
+<li>She researches and thinks it's worth $40</li>
+<li>Places limit order at $40</li>
+<li>Waits 3 days</li>
+<li>Stock drops to $39.50, her order fills</li>
+<li>She's happy she got better price</li>
+</ul>
+<p><strong>Week 3:</strong></p>
+<p>Janet is nervous stock market is getting risky.</p>
+<ul>
+<li>She owns 100 shares at $95</li>
+<li>Places stop order at $80 (willing to give back $15 max)</li>
+<li>Stock drops to $81 next day</li>
+<li>Stop triggers</li>
+<li>She sells at $80.50</li>
+<li>Relieved she protected most of her position</li>
+</ul>
+<p><strong>Learning:</strong> Janet discovered that order types matter. Different situations call for different orders.</p>
+<hr>
+<h2>Common Mistakes to Avoid</h2>
+<h3>Mistake #1: Using Limit Orders for Fast-Moving Stocks</h3>
+<p><strong>Reality:</strong> If you want to buy a stock that's rising fast, your limit might never fill. Market order is better.</p>
+<h3>Mistake #2: Stop Losses Too Tight</h3>
+<p><strong>Reality:</strong> Normal stock volatility might trigger your stop, forcing you to sell good stock at bottom. Use 5-10% stop, not 2-3%.</p>
+<h3>Mistake #3: Stop Orders on Short-Term Moves</h3>
+<p><strong>Reality:</strong> If holding stock long-term, don't use stops on normal daily swings. You'll exit good holdings on temporary dips.</p>
+<h3>Mistake #4: Assuming Limit Orders Will Definitely Get Better Prices</h3>
+<p><strong>Reality:</strong> Limit orders might not fill if price doesn't reach your limit. Sometimes market order is more efficient overall.</p>
+<h3>Mistake #5: Not Canceling Old Limit Orders</h3>
+<p><strong>Reality:</strong> Old limit orders sitting in your account might fill unexpectedly. Cancel orders you don't plan to fill.</p>
+<h3>Mistake #6: Setting Stop Losses Right Below Support Levels</h3>
+<p><strong>Reality:</strong> Smart traders know where others' stops are. Stock might dip below support to trigger stops, then bounce. Use stops just beyond noise.</p>
+<h3>Mistake #7: Using Stop Orders Expecting Exact Price</h3>
+<p><strong>Reality:</strong> Stop becomes market order when triggered. You might sell at much worse price if stock gaps down. Accept this risk.</p>
+<hr>
+<h2>Quick Review</h2>
+<p><strong>Key Takeaways:</strong></p>
+<p><strong>Market Order:</strong></p>
+<ul>
+<li>Buy/sell immediately at current price</li>
+<li>No price control, but guaranteed execution</li>
+<li>Best for: Beginner first trades, liquid stocks, immediate entry/exit needed</li>
+<li>Avoid when: Stock is illiquid, volatile, or has wide spreads</li>
+</ul>
+<p><strong>Limit Order:</strong></p>
+<ul>
+<li>Buy/sell ONLY at specified price or better</li>
+<li>Price control, but not guaranteed to fill</li>
+<li>Best for: Specific price targets, illiquid stocks, patient traders</li>
+<li>Avoid when: Need immediate execution, stock is very illiquid</li>
+</ul>
+<p><strong>Stop Order:</strong></p>
+<ul>
+<li>Becomes market order when price hits "stop price"</li>
+<li>Protects against losses or locks in profits</li>
+<li>Best for: Loss protection, protecting profits, risk management</li>
+<li>Avoid when: Already holding long-term without exits planned</li>
+</ul>
+<p><strong>Selection Logic:</strong></p>
+<ol>
+<li><strong>Buying quality stock immediately?</strong> → Market order</li>
+<li><strong>Buying, but want better price?</strong> → Limit order</li>
+<li><strong>Own stock, want to protect against big drop?</strong> → Stop order</li>
+<li><strong>Own stock, want to lock in profit?</strong> → Stop order</li>
+</ol>
+<hr>
+<h2>Practice Exercise</h2>
+<h3>Exercise 1: Match Orders to Situations</h3>
+<p>For each situation, choose the best order type (Market, Limit, or Stop):</p>
+<ol>
+<li>You want to buy Apple right now</li>
+</ol>
+<p>   → <strong></strong><strong></strong><strong></strong>_</p>
+<ol>
+<li>You bought Tesla and want to protect against drop</li>
+</ol>
+<p>   → <strong></strong><strong></strong><strong></strong>_</p>
+<ol>
+<li>You want to buy a cheaper stock but only at a lower price</li>
+</ol>
+<p>   → <strong></strong><strong></strong><strong></strong>_</p>
+<ol>
+<li>You're selling stock to buy something else immediately</li>
+</ol>
+<p>   → <strong></strong><strong></strong><strong></strong>_</p>
+<ol>
+<li>You set a profit target of 20% gain</li>
+</ol>
+<p>   → <strong></strong><strong></strong><strong></strong>_</p>
+<h3>Exercise 2: Order Type Scenarios</h3>
+<p>Write down what would happen:</p>
+<p><strong>Scenario 1:</strong></p>
+<ul>
+<li>Stock trading at $100</li>
+<li>You place market order to buy</li>
+<li>What will happen?</li>
+<li>Why?</li>
+</ul>
+<p><strong>Scenario 2:</strong></p>
+<ul>
+<li>Stock trading at $100</li>
+<li>You place limit order to buy at $95</li>
+<li>Stock never reaches $95</li>
+<li>What will happen?</li>
+</ul>
+<p><strong>Scenario 3:</strong></p>
+<ul>
+<li>You own stock at $100</li>
+<li>Stock drops to $95</li>
+<li>You have stop order at $90</li>
+<li>What happens?</li>
+</ul>
+<h3>Exercise 3: Plan Your Orders</h3>
+<p>Plan your next 3 trades. For each:</p>
+<ol>
+<li>Stock to buy/sell (ticker)</li>
+<li>Action (buy or sell)</li>
+<li>Order type (market, limit, or stop)</li>
+<li>Why you chose this order type</li>
+<li>Limit price or stop price (if applicable)</li>
+</ol>
+<h3>Exercise 4: Risk Management</h3>
+<p>Create a simple rule for yourself:</p>
+<p>"I will use stop orders to protect positions when <strong></strong><strong></strong><strong></strong><em></em>_"</p>
+<p>Think about when you'd want loss protection.</p>
+<h3>Exercise 5: Paper Trade Different Orders</h3>
+<p>Using paper trading on your broker:</p>
+<ol>
+<li>Place a market order (buy 10 shares of any stock)</li>
+<li>Place a limit order (try to buy at lower price)</li>
+<li>Place a stop order (create protection level)</li>
+<li>Watch what happens</li>
+<li>See which fills, which doesn't</li>
+<li>Understand execution in real time</li>
+</ol>
+<hr>
+<h2>Next Steps</h2>
+<p>Congratulations! You now understand the three main order types and when to use each.</p>
+<p><strong>In the next lesson</strong>, you'll learn:</p>
+<ul>
+<li>Bid-ask spread (what it is and why it matters)</li>
+<li>Liquidity and how it affects your trades</li>
+<li>How to calculate costs in your trading</li>
+</ul>
+<h3>Before Moving Forward:</h3>
+<ul>
+<li>[ ] Understand market orders</li>
+<li>[ ] Understand limit orders</li>
+<li>[ ] Understand stop orders</li>
+<li>[ ] Know when to use each</li>
+<li>[ ] Know advantages/disadvantages of each</li>
+<li>[ ] Can match order types to situations</li>
+</ul>
+<p><strong>Ready to continue?</strong> → <a href="lesson<em>2.6</em>bid<em>ask</em>spread.md">Lesson 2.6: Understanding Bid-Ask Spread and Liquidity</a></p>
+<hr>
+<h2>Additional Resources</h2>
+<p><strong>For Deeper Learning</strong> (Optional):</p>
+<ul>
+<li>Investopedia - Order Types Guide</li>
+<li>Your broker's help section (detailed for their platform)</li>
+<li>FINRA.org - Order types and execution</li>
+<li>YouTube: "How to use limit orders" "How to use stop orders"</li>
+<li>Paper trade to practice different orders risk-free</li>
+</ul>
+<hr>
+<p><strong>Remember:</strong> Different situations need different order types. Market orders are simplest but limit and stop orders give you control. As you gain experience, you'll naturally use all three.</p>
+<hr>
+<p><a href="README.md">← Back to Chapter 2</a> | <a href="../../MASTER<em>INDEX.md">↑ Back to Course Index</a> | <a href="lesson</em>2.6<em>bid</em>ask_spread.md">Next Lesson →</a></p>
+<hr>
+<p><em>Lesson 2.5 Complete | Next: Lesson 2.6 - Understanding Bid-Ask Spread and Liquidity</em></p>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-2-4-first-trade.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-2-6-bid-ask-spread.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

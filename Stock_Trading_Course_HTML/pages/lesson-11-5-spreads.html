@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11.5: Options Spread Strategies - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 11.5: Options Spread Strategies</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 11.5: Options Spread Strategies</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 11.5: Options Spread Strategies</h1>
+<h2>Introduction</h2>
+<p>A <strong>spread</strong> is an options strategy involving two or more options of the same type (calls or puts) but with different strikes and/or expirations.</p>
+<p>Spreads are used to:</p>
+<ul>
+<li>Reduce the cost of buying options</li>
+<li>Cap risk while limiting profit</li>
+<li>Create defined-risk positions</li>
+<li>Trade specific market conditions with precision</li>
+</ul>
+<p>This lesson covers three major spread categories: vertical, calendar, and diagonal spreads.</p>
+<hr>
+<h2>Why Use Spreads?</h2>
+<h3>Advantages</h3>
+<ol>
+<li><strong>Lower Cost</strong>: Selling a call offsets the cost of buying another</li>
+<li><strong>Defined Risk</strong>: You know maximum loss upfront</li>
+<li><strong>Defined Profit</strong>: You know maximum profit upfront</li>
+<li><strong>Better Greeks</strong>: Theta is more balanced, gamma more manageable</li>
+<li><strong>Precision</strong>: Trade specific outcomes, not directional bets</li>
+</ol>
+<h3>Example of Cost Reduction</h3>
+<pre><code>
+Bullish on AAPL, wants call option exposure:
+
+
+
+Strategy 1: Buy Call (Simple)
+
+- Buy $180 call for $3.50
+
+- Cost: $350 per contract
+
+- Profit: Unlimited
+
+- Loss: Full $350 if expires worthless
+
+
+
+Strategy 2: Buy Call, Sell Call (Bull Call Spread)
+
+- Buy $180 call for $3.50
+
+- Sell $185 call for $1.20
+
+- Net cost: $3.50 - $1.20 = $2.30 = $230
+
+- Profit: Limited to $5 × 100 = $500
+
+- Loss: Limited to $230
+
+- Return on investment: 217% if stock moves above $185 (better than 100%+ return)
+
+</code></pre>
+<hr>
+<h2>Vertical Spreads</h2>
+<p>A <strong>vertical spread</strong> involves buying and selling options of the same type with the same expiration but different strikes.</p>
+<p>The name comes from looking at an option chain vertically (different strikes).</p>
+<h3>Bull Call Spread (Bullish Strategy)</h3>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Buy lower strike call (ITM or ATM)</li>
+<li>Sell higher strike call (OTM)</li>
+<li>Same expiration date</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<pre><code>
+AAPL at $180, bullish outlook, 30 days to expiration
+
+
+
+Buy $175 call for $6.50
+
+Sell $185 call for $1.20
+
+Net debit: $6.50 - $1.20 = $5.30 per share = $530
+
+
+
+Risk Profile:
+
+- Max profit: $185 - $175 - $5.30 = $4.70 per share = $470
+
+- Max loss: Net debit = $530
+
+- Breakeven: $175 + $5.30 = $180.30
+
+
+
+Return on Risk: $470/$530 = 89% return if profitable
+
+</code></pre>
+<p><strong>P&L at Expiration:</strong></p>
+<pre><code>
+Stock Price | Long $175 | Short $185 | Net P&amp;L
+
+------------|----------|-----------|--------
+
+$170        | -$5.30   | $1.20 | -$4.10 (loss)
+
+$175        | $0       | $1.20 | $1.20 (small loss)
+
+$180        | $5.00    | $1.20 | $6.20 - $5.30 cost = $0.90 (small profit)
+
+$185        | $10.00   | -$5.00 | $5.00 - $5.30 cost = -$0.30 (small loss)
+
+$190        | $15.00   | -$10.00 | $5.00 - $5.30 cost = -$0.30 (max loss)
+
+
+
+Profit Zone: $180.30 to $185
+
+</code></pre>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>Moderately bullish outlook</li>
+<li>Want to reduce cost of long call</li>
+<li>Stock likely to rise, but not by huge amount</li>
+<li>Want defined risk/reward</li>
+</ul>
+<p><strong>Greeks Profile:</strong></p>
+<ul>
+<li>Delta: Positive (bullish)</li>
+<li>Gamma: Mixed (positive on long, negative on short)</li>
+<li>Theta: Slightly positive (sold premium helps)</li>
+<li>Vega: Slightly negative (short premium effect)</li>
+</ul>
+<hr>
+<h3>Bear Call Spread (Bearish Strategy)</h3>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Sell higher strike call (OTM)</li>
+<li>Buy lower strike call (ITM or ATM)</li>
+<li>Same expiration date</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<pre><code>
+AAPL at $180, bearish outlook, 30 days to expiration
+
+
+
+Sell $185 call for $1.20
+
+Buy $190 call for $0.40
+
+Net credit: $1.20 - $0.40 = $0.80 per share = $80
+
+
+
+Risk Profile:
+
+- Max profit: $0.80 = $80 (if stock below $185)
+
+- Max loss: $5.00 - $0.80 = $4.20 per share = $420
+
+- Breakeven: $185 - $0.80 = $184.20
+
+
+
+Return on Risk: $80/$420 = 19% return if profitable
+
+</code></pre>
+<p><strong>P&L at Expiration:</strong></p>
+<pre><code>
+Stock Price | Short $185 | Long $190 | Net P&amp;L
+
+------------|-----------|----------|--------
+
+$170        | $1.20 | -$0.40 | $0.80 (max profit)
+
+$180        | $1.20 | -$0.40 | $0.80 (profit)
+
+$184.20     | $0.80 | -$0.40 | $0.40 (breakeven)
+
+$185        | $0 | -$0.40 | -$0.40 (loss)
+
+$190        | -$5.00 | $0 | -$4.20 (max loss)
+
+
+
+Profit Zone: Below $184.20
+
+</code></pre>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>Moderately bearish outlook</li>
+<li>Want to collect premium</li>
+<li>Expect stock to stay flat or fall</li>
+<li>Want defined risk with income</li>
+</ul>
+<p><strong>Greeks Profile:</strong></p>
+<ul>
+<li>Delta: Negative (bearish)</li>
+<li>Gamma: Mixed (short dominant, overall negative)</li>
+<li>Theta: Positive (seller benefits from decay)</li>
+<li>Vega: Positive (short OTM helps)</li>
+</ul>
+<hr>
+<h3>Bull Put Spread (Bullish Strategy, Income Focus)</h3>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Sell lower strike put (ITM or ATM)</li>
+<li>Buy higher strike put (OTM)</li>
+<li>Same expiration date</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<pre><code>
+AAPL at $180, bullish outlook, wants income, 30 days to expiration
+
+
+
+Sell $175 put for $3.50
+
+Buy $170 put for $1.20
+
+Net credit: $3.50 - $1.20 = $2.30 per share = $230
+
+
+
+Risk Profile:
+
+- Max profit: $2.30 = $230 (if stock above $175)
+
+- Max loss: $5.00 - $2.30 = $2.70 per share = $270
+
+- Breakeven: $175 - $2.30 = $172.70
+
+
+
+Return on Risk: $230/$270 = 85% return if profitable
+
+</code></pre>
+<p><strong>P&L at Expiration:</strong></p>
+<pre><code>
+Stock Price | Short $175 | Long $170 | Net P&amp;L
+
+------------|-----------|----------|--------
+
+$165        | -$10.00 | $5.00 | -$2.70 (max loss)
+
+$170        | -$5.00 | $0 | -$2.70 (max loss)
+
+$172.70     | -$2.70 | $0 | $0 (breakeven)
+
+$175        | $0 | $0 | $2.30 (max profit)
+
+$180        | $0 | $0 | $2.30 (profit)
+
+
+
+Profit Zone: Above $172.70
+
+</code></pre>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>Bullish outlook</li>
+<li>Want to generate income (credit spread)</li>
+<li>Stock likely to stay above support level</li>
+<li>Want defined risk with income potential</li>
+</ul>
+<p><strong>Greeks Profile:</strong></p>
+<ul>
+<li>Delta: Positive (bullish)</li>
+<li>Gamma: Negative (seller affected)</li>
+<li>Theta: Positive (strong time decay benefit)</li>
+<li>Vega: Slightly positive (short ITM benefits from IV drop)</li>
+</ul>
+<hr>
+<h3>Bear Put Spread (Bearish Strategy, Income Focus)</h3>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Sell higher strike put (OTM)</li>
+<li>Buy lower strike put (ITM or ATM)</li>
+<li>Same expiration date</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<pre><code>
+AAPL at $180, bearish outlook, wants income, 30 days to expiration
+
+
+
+Sell $170 put for $1.20
+
+Buy $165 put for $0.40
+
+Net credit: $1.20 - $0.40 = $0.80 per share = $80
+
+
+
+Risk Profile:
+
+- Max profit: $0.80 = $80 (if stock above $170)
+
+- Max loss: $5.00 - $0.80 = $4.20 per share = $420
+
+- Breakeven: $170 - $0.80 = $169.20
+
+
+
+Return on Risk: $80/$420 = 19% return if profitable
+
+</code></pre>
+<p><strong>P&L at Expiration:</strong></p>
+<pre><code>
+Stock Price | Short $170 | Long $165 | Net P&amp;L
+
+------------|-----------|----------|--------
+
+$160        | -$10.00 | $5.00 | -$4.20 (max loss)
+
+$165        | -$5.00 | $0 | -$4.20 (max loss)
+
+$169.20     | -$0.80 | $0 | $0 (breakeven)
+
+$170        | $0 | $0 | $0.80 (profit)
+
+$180        | $0 | $0 | $0.80 (max profit)
+
+
+
+Profit Zone: Above $169.20
+
+</code></pre>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>Bearish outlook</li>
+<li>Want to generate premium income</li>
+<li>Expect stock to stay above lower support</li>
+<li>Want defined risk with income</li>
+</ul>
+<p><strong>Greeks Profile:</strong></p>
+<ul>
+<li>Delta: Negative (bearish)</li>
+<li>Gamma: Negative (seller affected)</li>
+<li>Theta: Positive (strong time decay benefit)</li>
+<li>Vega: Negative (OTM benefits from IV drop)</li>
+</ul>
+<hr>
+<h2>Vertical Spread Comparison</h2>
+<p>| Spread | View | Buy/Sell | Cost | Max Profit | Max Loss | Best When |</p>
+<p>|--------|------|----------|------|-----------|----------|-----------|</p>
+<p>| <strong>Bull Call</strong> | Bullish | Buy Low/Sell High | Debit | Capped | Debit | Moderate bullish |</p>
+<p>| <strong>Bear Call</strong> | Bearish | Sell High/Buy Low | Credit | Credit | Capped | Moderate bearish |</p>
+<p>| <strong>Bull Put</strong> | Bullish | Sell Low/Buy Lower | Credit | Credit | Capped | Bullish on income |</p>
+<p>| <strong>Bear Put</strong> | Bearish | Sell High/Buy Lower | Credit | Credit | Capped | Bearish on income |</p>
+<hr>
+<h2>Calendar Spreads (Time Spreads)</h2>
+<p>A <strong>calendar spread</strong> involves buying and selling options of the same type and strike but different expirations.</p>
+<h3>Strategy: Long Calendar Spread</h3>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Buy far-term option (e.g., 60 days out)</li>
+<li>Sell near-term option (e.g., 30 days out)</li>
+<li>Same strike, same type</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<pre><code>
+AAPL at $180, neutral outlook, 60 days to expiration
+
+
+
+Buy $180 call (60 days): $4.00
+
+Sell $180 call (30 days): $3.50
+
+Net debit: $4.00 - $3.50 = $0.50 per share = $50
+
+
+
+The Goal:
+
+- The 30-day option decays faster (theta decay accelerates)
+
+- Pocket the premium as it decays
+
+- Then have long 30-day option remaining
+
+- Repeat by selling the next 30-day call
+
+
+
+Profit Scenario:
+
+Day 30 (near-term expires):
+
+- Stock still at $180 (no movement)
+
+- Far-term now has 30 days left
+
+- Buy it back (should be ~$2.50 instead of $4.00)
+
+- Realize loss on long side: -$1.50
+
+
+
+But wait... the 30-day short expired:
+
+- Expired worthless (at-the-money)
+
+- Already pocketed $3.50 credit
+
+- Net: $3.50 - $1.50 = $2.00 profit on minimal move
+
+
+
+More realistic example with theta:
+
+Day 30:
+
+- Stock still at $180
+
+- Near-term expires worthless: gain $3.50
+
+- Far-term (now 30 days out): worth $2.00
+
+- Original cost: $4.00
+
+- Unrealized loss: -$2.00
+
+- Net profit: $3.50 - $2.00 = $1.50
+
+- Return: $1.50/$50 net debit = 3000% return!
+
+</code></pre>
+<p><strong>When to Use:</strong></p>
+<ul>
+<li>Neutral outlook (stock will stay range-bound)</li>
+<li>Want to profit from time decay</li>
+<li>IV is stable to declining</li>
+<li>Stock near resistance/support (predictable)</li>
+</ul>
+<p><strong>Greeks Profile:</strong></p>
+<ul>
+<li>Delta: Near zero (neutral)</li>
+<li>Gamma: Slightly negative (long-term dominates short-term)</li>
+<li>Theta: Positive (short-term decay is faster)</li>
+<li>Vega: Slightly positive (long-term IV benefits)</li>
+</ul>
+<hr>
+<h2>Diagonal Spreads</h2>
+<p>A <strong>diagonal spread</strong> combines vertical and calendar spread characteristics:</p>
+<ul>
+<li>Different strikes AND different expirations</li>
+<li>Combines directional view with time decay</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code>
+AAPL at $180, bullish outlook, 60 days available
+
+
+
+Buy $175 call (60 days): $6.50
+
+Sell $185 call (30 days): $0.80
+
+Net debit: $6.50 - $0.80 = $5.70
+
+
+
+Benefits:
+
+- Bullish directional position (long lower strike)
+
+- Funded by short-term premium
+
+- Can roll up after 30 days if bullish
+
+
+
+If AAPL at $190 after 30 days:
+
+- Short $185 call assigned or closed at profit
+
+- Long $175 call now worth $15+
+
+- Close long for large profit
+
+</code></pre>
+<hr>
+<h2>Risk Management with Spreads</h2>
+<h3>Position Sizing</h3>
+<pre><code>
+Bull Call Spread Example:
+
+- Max risk: $530 per spread
+
+- Account size: $50,000
+
+- Risk per trade: 1% = $500
+
+- Can do approximately 1 spread safely
+
+- 2-3 spreads = 2-3% risk (aggressive)
+
+
+
+Rule of Thumb:
+
+- Risk no more than 2% per trade
+
+- For $50,000 account: max $1,000 risk per trade
+
+- Plan max loss before entering
+
+</code></pre>
+<h3>Early Exit Rules</h3>
+<pre><code>
+Spread becomes 50% of max profit:
+
+- Bull call spread with $470 max profit
+
+- When profit reaches $235, exit with profit
+
+- Don&#39;t wait for expiration
+
+- Lock in gains, reduce theta risk
+
+
+
+Spread hits 50% of max loss:
+
+- Bull call spread with $530 max loss
+
+- When loss hits $265, exit to cut losses
+
+- Prevents maximum loss from happening
+
+- Protects capital
+
+</code></pre>
+<h3>Rolling Spreads</h3>
+<pre><code>
+Original Bull Call Spread:
+
+- Buy $175 call, sell $185 call
+
+- Stock rises to $190 (short call threatened)
+
+
+
+Roll Up:
+
+Day 1:
+
+- Close: Sell $175 call at $16, buy $185 call at $6
+
+- Profit on original spread: $16 - $6 - $5.30 cost = $4.70
+
+
+
+Day 2:
+
+- Open new spread: Buy $185 call, sell $195 call
+
+- Different strikes, further out in time
+
+- Extends the position with more profit potential
+
+</code></pre>
+<hr>
+<h2>Spread Strategy Comparison Table</h2>
+<p>| Strategy | Market View | Profit Source | Risk Level | Time Factor |</p>
+<p>|----------|-------------|---------------|-----------|------------|</p>
+<p>| Bull Call Spread | Bullish | Stock rise | Limited | Theta negative |</p>
+<p>| Bear Call Spread | Bearish | Premium decay | Limited | Theta positive |</p>
+<p>| Bull Put Spread | Bullish | Premium decay | Limited | Theta positive |</p>
+<p>| Bear Put Spread | Bearish | Premium decay | Limited | Theta positive |</p>
+<p>| Calendar Spread | Neutral | Time decay | Limited | Theta positive |</p>
+<p>| Diagonal Spread | Bullish/Bearish | Direction + time | Limited | Theta neutral |</p>
+<hr>
+<h2>Key Takeaways</h2>
+<ol>
+<li><strong>Spreads reduce cost</strong> by selling one option to finance buying another</li>
+<li><strong>Vertical spreads</strong> use different strikes to cap risk and profit</li>
+<li><strong>Bull spreads</strong> are bullish; <strong>bear spreads</strong> are bearish</li>
+<li><strong>Credit spreads</strong> generate income; <strong>debit spreads</strong> need capital</li>
+<li><strong>Calendar spreads</strong> profit from time decay with neutral positions</li>
+<li><strong>Diagonal spreads</strong> combine vertical and calendar benefits</li>
+<li><strong>Always know maximum risk and profit before entering</strong></li>
+<li><strong>Exit at 50% profit</strong> rather than waiting for expiration</li>
+</ol>
+<hr>
+<h2>In the Next Lessons</h2>
+<ul>
+<li>Lesson 11.6 shows how to use spreads and other strategies for income generation</li>
+<li>Lesson 11.7 applies these spreads to risk management</li>
+<li>Lesson 11.8 explores exercises with realistic scenarios</li>
+</ul>
+<hr>
+<h2>Self-Assessment Questions</h2>
+<ol>
+<li>Why does buying a call and selling a call (bull call spread) reduce your cost?</li>
+<li>What's the maximum profit on a bull call spread if the stock soars far above your sold strike?</li>
+<li>How does a calendar spread profit if the stock stays flat?</li>
+<li>When would you choose a bull put spread instead of a bull call spread?</li>
+<li>In a bear call spread, why do you need to buy the higher strike call?</li>
+</ol>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-11-4-greeks.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-11-6-income-generation.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4.7: Introduction to Moving Averages - The Smoothing Tool of Technical Analysis - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 4.7: Introduction to Moving Averages - The Smoothing Tool of Technical Analysis</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 4.7: Introduction to Moving Averages - The Smoothing Tool of Technical Analysis</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 4.7: Introduction to Moving Averages - The Smoothing Tool of Technical Analysis</h1>
+<p><a href="README.md">← Back to Chapter 4</a> | <a href="lesson<em>4.6</em>chart_patterns.md">Previous: Chart Patterns</a> | <a href="exercises.md">Next: Chapter Exercises →</a></p>
+<hr>
+<h2>Overview</h2>
+<p>Moving averages are lines drawn on charts that show the average price over a specific number of days. They filter out daily noise and reveal the true trend. In this lesson, you'll learn how moving averages work, the most popular types, and how to use them to confirm trends and find support.</p>
+<p><strong>Time to complete:</strong> 20-25 minutes</p>
+<hr>
+<h2>Prerequisites</h2>
+<ul>
+<li>Completed Lessons 4.1-4.6 (Charts through Patterns)</li>
+<li>Comfortable reading candlestick charts</li>
+<li>Understand trends and support/resistance</li>
+<li>Access to a charting platform (TradingView, your broker)</li>
+</ul>
+<hr>
+<h2>Core Content</h2>
+<h3>What is a Moving Average?</h3>
+<p>A <strong>moving average</strong> is a line that shows the average price over a certain number of days.</p>
+<p><strong>Simple Definition:</strong></p>
+<pre><code>
+5-day moving average = Average of the last 5 closing prices
+
+
+
+Day 1: $100
+
+Day 2: $102
+
+Day 3: $101
+
+Day 4: $103
+
+Day 5: $104
+
+
+
+Average = (100+102+101+103+104) ÷ 5 = $102
+
+
+
+The line on Day 5 is at $102 (the average)
+
+
+
+Next day:
+
+Day 6: $105
+
+New average = (102+101+103+104+105) ÷ 5 = $103
+
+
+
+The line moves to $103 (hence &quot;moving&quot; average)
+
+</code></pre>
+<h3>Why Moving Averages Matter</h3>
+<p><strong>Main Purpose:</strong> Filter out noise and show the true trend.</p>
+<p><strong>Visual Example:</strong></p>
+<pre><code>
+WITHOUT Moving Average (Noisy):
+
+Price
+
+ 110  ▓░░░▓░░░▓░░░▓░░░
+
+ 105  ░░░▓░░░▓░░░▓░░░▓  ← Looks random, can&#39;t see trend
+
+ 100
+
+       Day 1-20
+
+
+
+WITH Moving Average (Clean):
+
+Price
+
+ 110  ▓▓▓▓░░░░░░░░░░░░
+
+ 105  ░░░░▓▓▓▓▓▓▓▓▓░░░  ← Clear uptrend!
+
+ 100  ════════════════ ← 20-day MA smooths the noise
+
+       Day 1-20
+
+</code></pre>
+<p>The moving average removes daily noise and shows the true trend.</p>
+<hr>
+<h2>How Moving Averages Work</h2>
+<h3>Step-by-Step Example: 10-Day Moving Average</h3>
+<p><strong>Daily Prices:</strong></p>
+<pre><code>
+Day 1: $100
+
+Day 2: $101
+
+Day 3: $99
+
+Day 4: $102
+
+Day 5: $103
+
+Day 6: $101
+
+Day 7: $104
+
+Day 8: $105
+
+Day 9: $103
+
+Day 10: $106
+
+
+
+MA = (100+101+99+102+103+101+104+105+103+106) ÷ 10 = $102.40
+
+
+
+Day 11: $107
+
+(Need to drop Day 1, add Day 11)
+
+
+
+New MA = (101+99+102+103+101+104+105+103+106+107) ÷ 10 = $103.10
+
+
+
+The MA &quot;moves&quot; to $103.10 (slightly higher)
+
+</code></pre>
+<h3>Visual: How Moving Averages Follow Price</h3>
+<pre><code>
+Price   Price      Moving
+
+Per Day  Line       Average Line
+
+
+
+$110                    ╱──── MA moves up as price stays high
+
+$108    ╱╲╱╱╲          ╱
+
+$106    ╱  ╲          ╱ ← Smoother, clearer trend
+
+$104    ╱  ╲        ╱
+
+$102    ╱ ╱╲ ╲      ╱
+
+$100  ═════════════╱
+
+
+
+MA lags behind price slightly,
+
+but shows clearer trend
+
+</code></pre>
+<hr>
+<h2>Popular Moving Average Lengths</h2>
+<h3>Short-Term Moving Averages</h3>
+<p>#### 5-Day MA (Very Short-Term)</p>
+<p><strong>Use Case:</strong> Intraday traders, scalpers</p>
+<p><strong>What it shows:</strong> Last week's trend</p>
+<p><strong>Lag:</strong> Very little lag</p>
+<p><strong>Noise:</strong> Still quite noisy</p>
+<p><strong>Best for:</strong> Active traders during the day</p>
+<pre><code>
+Price
+
+ 110  ╱╲
+
+ 105  ╱  ╲╱╲  ← 5-day MA (very responsive, wiggly)
+
+ 100
+
+</code></pre>
+<p>#### 10-Day MA (Short-Term)</p>
+<p><strong>Use Case:</strong> Day traders, short-term traders</p>
+<p><strong>What it shows:</strong> Last 2 weeks' trend</p>
+<p><strong>Lag:</strong> Small lag</p>
+<p><strong>Noise:</strong> Some noise filtered</p>
+<p><strong>Best for:</strong> Active traders</p>
+<p>#### 20-Day MA (Short-Term)</p>
+<p><strong>Use Case:</strong> Traders, swing traders</p>
+<p><strong>What it shows:</strong> Last month's trend (1 month ≈ 20 trading days)</p>
+<p><strong>Lag:</strong> Moderate lag</p>
+<p><strong>Noise:</strong> Good noise filtering</p>
+<p><strong>Best for:</strong> Most swing traders use this</p>
+<pre><code>
+Price
+
+ 110      ╱────╲
+
+ 105      ╱      ╲   ← 20-day MA (cleaner than 5-day)
+
+ 100  ────────────
+
+</code></pre>
+<h3>Medium-Term Moving Averages</h3>
+<p>#### 50-Day MA (Medium-Term)</p>
+<p><strong>Use Case:</strong> Swing traders, position traders</p>
+<p><strong>What it shows:</strong> Last ~2.5 months trend</p>
+<p><strong>Lag:</strong> Moderate to higher lag</p>
+<p><strong>Noise:</strong> Most noise filtered</p>
+<p><strong>Best for:</strong> Position traders, medium-term analysis</p>
+<p>#### 100-Day MA (Medium-Term)</p>
+<p><strong>Use Case:</strong> Position traders, investors</p>
+<p><strong>What it shows:</strong> Last ~5 months trend</p>
+<p><strong>Lag:</strong> Higher lag</p>
+<p><strong>Noise:</strong> Very clean</p>
+<p><strong>Best for:</strong> Longer-term trend confirmation</p>
+<h3>Long-Term Moving Averages</h3>
+<p>#### 200-Day MA (Long-Term)</p>
+<p><strong>Use Case:</strong> Investors, position traders</p>
+<p><strong>What it shows:</strong> Year-long trend (200 trading days ≈ 1 year)</p>
+<p><strong>Lag:</strong> Significant lag</p>
+<p><strong>Noise:</strong> Completely filtered</p>
+<p><strong>Best for:</strong> Determining the "main" trend</p>
+<pre><code>
+Price   Stock over 1 year:
+
+$200   ╱
+
+$190   ╱    ╲  ← Price moves up and down
+
+$180  ╱╱╱╱╱╱╲╲╱╱╱╱╱╱  (chaotic looking)
+
+$170            ╲
+
+$160  ═════════════════ ← 200-day MA (clearly shows year&#39;s trend)
+
+</code></pre>
+<hr>
+<h2>Types of Moving Averages</h2>
+<h3>Simple Moving Average (SMA)</h3>
+<p><strong>Calculation:</strong></p>
+<p>Average of last N closing prices, with all prices weighted equally.</p>
+<p><strong>Formula:</strong></p>
+<p>SMA = (Price1 + Price2 + Price3 + ... + PriceN) ÷ N</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Most common type</li>
+<li>Easy to understand</li>
+<li>Fair weighting to all prices</li>
+<li>Slower to react to recent changes</li>
+</ul>
+<p><strong>Best for:</strong> Most traders, beginners</p>
+<h3>Exponential Moving Average (EMA)</h3>
+<p><strong>Calculation:</strong></p>
+<p>Gives MORE weight to recent prices, LESS weight to older prices.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Faster to react to price changes</li>
+<li>More responsive than SMA</li>
+<li>Better for fast-moving markets</li>
+<li>Can give more false signals</li>
+</ul>
+<p><strong>Best for:</strong> Active traders wanting faster signals</p>
+<p><strong>Note:</strong> Most platforms default to SMA. For this course, we'll use SMA.</p>
+<hr>
+<h2>Using Moving Averages to Identify Trends</h2>
+<h3>Uptrend: Price Above Moving Average</h3>
+<pre><code>
+Price
+
+ 120  ╱───────── Price is above MA
+
+ 110  │╱╲╱╲╱╲╱  (uptrend confirmed)
+
+ 100  │
+
+  90  ════════════ 20-day MA
+
+       (MA is rising)
+
+
+
+Interpretation: Stock is in UPTREND
+
+Trading decision: Look for BUYING opportunities
+
+</code></pre>
+<h3>Downtrend: Price Below Moving Average</h3>
+<pre><code>
+Price
+
+ 120  ════════════ 20-day MA
+
+ 110  │           (MA is falling)
+
+ 100  │╲╱╲╱╲╱╲╱──
+
+  90  └───────────
+
+       Price is below MA (downtrend confirmed)
+
+
+
+Interpretation: Stock is in DOWNTREND
+
+Trading decision: Look for SELLING opportunities or stay out
+
+</code></pre>
+<h3>Sideways/Choppy: Price Crossing Moving Average</h3>
+<pre><code>
+Price
+
+ 110  ────────────
+
+ 105  ╱╲╱╲╱╲╱╲╱╲  Price crossing MA repeatedly
+
+ 100  ════════════ MA (flat)
+
+
+
+Interpretation: Stock is CHOPPY, no clear trend
+
+Trading decision: AVOID (high false signals)
+
+</code></pre>
+<hr>
+<h2>Moving Averages as Support and Resistance</h2>
+<h3>Moving Average as Dynamic Support</h3>
+<p>In an uptrend, the moving average acts as support (like a rising support line).</p>
+<pre><code>
+Price
+
+ 120  ╱────── Resistance
+
+ 115  ╱╲
+
+ 110  ╱  ╱╲
+
+ 105  ╱  ╱  ╲ ← Price bounces OFF the MA
+
+ 100  ════════════ 20-day MA (acts as support)
+
+
+
+When price touches MA, it often bounces up
+
+This acts just like a support level
+
+</code></pre>
+<h3>Moving Average as Dynamic Resistance</h3>
+<p>In a downtrend, the moving average acts as resistance (like a falling resistance line).</p>
+<pre><code>
+Price
+
+ 120  ════════════ 20-day MA (acts as resistance)
+
+ 115  ╱╲╱╲╱╲╱╲╱╲
+
+ 110         ╲
+
+ 105          ╲
+
+ 100           ╲────── Support
+
+
+
+When price bounces up to MA, it gets rejected
+
+This acts just like a resistance level
+
+</code></pre>
+<hr>
+<h2>Multiple Moving Averages</h2>
+<p>Professional traders often use MULTIPLE moving averages to get a complete picture.</p>
+<h3>The 20/50/200 System</h3>
+<p><strong>Common setup used by professionals:</strong></p>
+<pre><code>
+200-day MA (yellow) = &quot;Main trend&quot;
+
+50-day MA (red) = &quot;Medium trend&quot;
+
+20-day MA (blue) = &quot;Short-term trend&quot;
+
+
+
+When all three line up:
+
+- All sloping up = STRONG UPTREND
+
+- All sloping down = STRONG DOWNTREND
+
+- Spread apart = Clear trend
+
+- Tangled together = Choppy, avoid trading
+
+</code></pre>
+<h3>Example: 20/50/200 Alignment</h3>
+<p><strong>Strong Uptrend:</strong></p>
+<pre><code>
+Price
+
+$150  ╱        200-day MA (highest)
+
+$145  ╱
+
+$140  ╱ ╱      50-day MA (middle)
+
+$135  ╱ ╱
+
+$130  ╱ ╱ ╱    20-day MA (lowest/most responsive)
+
+$125  ╱ ╱ ╱
+
+       ╱ ╱ ╱
+
+
+
+All three MAs sloping UP, all spread apart
+
+= STRONG UPTREND, solid buying opportunity
+
+</code></pre>
+<p><strong>Choppy/Uncertain:</strong></p>
+<pre><code>
+Price
+
+$110  ╱╲╱╲╱╲╱╲╱╲╱╲
+
+$105  ─────────────  All three MAs tangled together
+
+      (Can&#39;t see which is which)
+
+
+
+= CHOPPY, avoid trading, wait for clarity
+
+</code></pre>
+<hr>
+<h2>Moving Average Crossovers (Advanced)</h2>
+<h3>Golden Cross (Bullish Signal)</h3>
+<p>When a SHORT-term MA crosses ABOVE a LONG-term MA.</p>
+<p><strong>Example:</strong></p>
+<p>20-day MA crosses above 200-day MA</p>
+<pre><code>
+Price
+
+$150           ╱╱╱ ← 20-day MA
+
+$140         ╱╱ (rises above)
+
+$130  200-day MA ← 200-day MA
+
+       (slower, declining)
+
+
+
+This is called a &quot;Golden Cross&quot;
+
+= STRONG BUYING SIGNAL
+
+
+
+This often signals: Downtrend ending, uptrend beginning
+
+</code></pre>
+<h3>Death Cross (Bearish Signal)</h3>
+<p>When a SHORT-term MA crosses BELOW a LONG-term MA.</p>
+<p><strong>Example:</strong></p>
+<p>20-day MA crosses below 200-day MA</p>
+<pre><code>
+Price
+
+$150  200-day MA ← 200-day MA
+
+$140         ╲╲  (declining)
+
+$130           ╲╲ ← 20-day MA
+
+               ╲╲ (falls below)
+
+
+
+This is called a &quot;Death Cross&quot;
+
+= STRONG SELLING SIGNAL
+
+
+
+This often signals: Uptrend ending, downtrend beginning
+
+</code></pre>
+<hr>
+<h2>Real-World Application</h2>
+<h3>Scenario 1: Confirming an Uptrend</h3>
+<p><strong>What You See:</strong></p>
+<p>Apple (AAPL) daily chart:</p>
+<ul>
+<li>Price at $150</li>
+<li>20-day MA at $145 (below price)</li>
+<li>50-day MA at $140 (below price)</li>
+<li>200-day MA at $130 (well below price)</li>
+</ul>
+<p><strong>Your Analysis:</strong></p>
+<p>All three MAs below price and properly stacked.</p>
+<p><strong>Your Conclusion:</strong></p>
+<p>STRONG UPTREND. This is a good buying opportunity.</p>
+<p><strong>Your Setup:</strong></p>
+<ul>
+<li>Buy on dips to the 20-day MA ($145)</li>
+<li>Stop loss: Below 50-day MA ($140)</li>
+<li>Target: Previous resistance $155</li>
+</ul>
+<h3>Scenario 2: Detecting Trend Change</h3>
+<p><strong>What You Observe:</strong></p>
+<p>Stock had been rising (price above all MAs).</p>
+<p>Now you notice:</p>
+<ul>
+<li>Price dips and doesn't bounce from 20-day MA</li>
+<li>Price closes below 20-day MA</li>
+<li>20-day MA starts to flatten</li>
+</ul>
+<p><strong>Your Interpretation:</strong></p>
+<p>Uptrend might be ending. Caution is needed.</p>
+<p><strong>Your Response:</strong></p>
+<ul>
+<li>Reduce position size</li>
+<li>Move stop loss up to protect profits</li>
+<li>Watch for 20-day MA to flatten or turn down</li>
+<li>If price breaks below 50-day MA, EXIT the position</li>
+</ul>
+<h3>Scenario 3: Using MA as Entry Point</h3>
+<p><strong>Your Trading Plan:</strong></p>
+<p>Buy Apple at the 20-day MA during an uptrend.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>20-day MA is at $145</li>
+<li>Price is rising, pulling back toward $145</li>
+<li>You set a BUY alert at $145.50</li>
+</ul>
+<p><strong>When Alert Triggers:</strong></p>
+<ul>
+<li>Price touched 20-day MA</li>
+<li>Expected bounce up from support</li>
+<li>Volume confirms buyers appearing</li>
+</ul>
+<p><strong>Your Action:</strong></p>
+<p>BUY at $145.50</p>
+<p>Stop: Below 20-day MA at $144</p>
+<p>Target: Previous high at $155</p>
+<h3>Scenario 4: Golden Cross Setup</h3>
+<p><strong>What Happens:</strong></p>
+<p>Tesla (TSLA) 20-day MA crosses above 200-day MA.</p>
+<p><strong>Your Recognition:</strong></p>
+<p>Golden Cross = bullish signal</p>
+<p><strong>Criteria Check:</strong></p>
+<ul>
+<li>Was it on higher volume? YES</li>
+<li>Did price close above both MAs? YES</li>
+<li>Were both MAs flat/rising before cross? YES</li>
+</ul>
+<p><strong>Your Action:</strong></p>
+<p>BUY on the golden cross (entry).</p>
+<p><strong>Target:</strong></p>
+<p>Look for previous resistance, usually 2-3 weeks ahead.</p>
+<p><strong>Why This Works:</strong></p>
+<p>Professional traders program in golden cross signals. When cross happens, automatic buying from many programs creates upward move.</p>
+<hr>
+<h2>Common Mistakes to Avoid</h2>
+<h3>Mistake #1: Using Too Many Moving Averages</h3>
+<p><strong>What Traders Do Wrong:</strong></p>
+<p>"I'll use 5, 10, 15, 20, 50, 100, and 200-day MAs."</p>
+<p><strong>Why It's Wrong:</strong></p>
+<p>Too many lines = visual confusion = hard to trade</p>
+<p><strong>The Right Way:</strong></p>
+<p>Start with 2-3 MAs max (20, 50, 200 are standard)</p>
+<h3>Mistake #2: Ignoring the MA Slope</h3>
+<p><strong>Reality:</strong> A flat MA shows choppy markets. A steep MA shows strong trend.</p>
+<p>Don't just look at price/MA relationship. Look at how steep the MA is sloping.</p>
+<h3>Mistake #3: Trading Choppy Markets Based on MA</h3>
+<p><strong>What Traders Do Wrong:</strong></p>
+<p>"Price bounced off the 20-day MA three times today, so it's a great signal."</p>
+<p><strong>Why It's Wrong:</strong></p>
+<p>In choppy markets, MAs give many false signals. Skip trading when MAs are tangled.</p>
+<p><strong>The Right Way:</strong></p>
+<p>Only trade MA bounces when all MAs are clearly aligned and the trend is obvious.</p>
+<h3>Mistake #4: Over-Relying on Moving Averages Alone</h3>
+<p><strong>Reality:</strong> MAs are just one tool. Use them with:</p>
+<ul>
+<li>Support/resistance levels</li>
+<li>Chart patterns</li>
+<li>Volume confirmation</li>
+<li>Trend lines</li>
+</ul>
+<p>MAs alone = incomplete picture.</p>
+<h3>Mistake #5: Not Adjusting MA for Timeframe</h3>
+<p><strong>Reality:</strong> On a 1-minute chart, use 10-20 period MA. On daily, use 20/50/200.</p>
+<p>Don't blindly use 200-period MA on a 5-minute chart.</p>
+<hr>
+<h2>Quick Review</h2>
+<p><strong>Moving Averages Fundamentals:</strong></p>
+<p><strong>What They Are:</strong></p>
+<ul>
+<li>Line showing average closing price over N days</li>
+<li>Filters out noise, reveals true trend</li>
+</ul>
+<p><strong>Popular Types:</strong></p>
+<ul>
+<li>SMA (Simple, most common)</li>
+<li>EMA (Exponential, more responsive)</li>
+</ul>
+<p><strong>Popular Lengths:</strong></p>
+<ul>
+<li>20-day: Short-term trend (month)</li>
+<li>50-day: Medium-term trend (2.5 months)</li>
+<li>200-day: Long-term trend (year)</li>
+</ul>
+<p><strong>Reading MAs:</strong></p>
+<ul>
+<li>Price above MA = Uptrend (buy signals)</li>
+<li>Price below MA = Downtrend (sell signals)</li>
+<li>MAs tangled = Choppy (avoid trading)</li>
+</ul>
+<p><strong>MA as Support:</strong></p>
+<ul>
+<li>In uptrends: MA acts as support (bounces)</li>
+<li>In downtrends: MA acts as resistance (bounces down)</li>
+</ul>
+<p><strong>Multiple MAs:</strong></p>
+<ul>
+<li>All aligned and spread = Clear trend</li>
+<li>All tangled together = Choppy/uncertain</li>
+</ul>
+<p><strong>Golden/Death Crosses:</strong></p>
+<ul>
+<li>Golden Cross (short MA ↑ above long MA) = Buy signal</li>
+<li>Death Cross (short MA ↓ below long MA) = Sell signal</li>
+</ul>
+<p><strong>Key Principle:</strong></p>
+<p>Moving averages show "the big picture." They filter out daily noise and reveal whether stock is truly in uptrend or downtrend.</p>
+<hr>
+<h2>Practice Exercise</h2>
+<h3>Exercise 1: Adding Moving Averages to Your Chart</h3>
+<ol>
+<li>Go to TradingView or your charting platform</li>
+<li>Add a 20-day SMA to a daily chart</li>
+<li>Add a 50-day SMA</li>
+<li>Add a 200-day SMA</li>
+<li>Observe how they line up on your favorite stock</li>
+</ol>
+<h3>Exercise 2: Identifying Trend with MAs</h3>
+<p>Look at 5 different stocks. For each:</p>
+<ol>
+<li>Is price above or below the 20-day MA?</li>
+<li>Is price above or below the 200-day MA?</li>
+<li>Are the MAs aligned or tangled?</li>
+<li>What is the trend: Up, down, or choppy?</li>
+</ol>
+<h3>Exercise 3: Finding MA Support/Resistance Bounces</h3>
+<p>Look at a daily chart where price bounces from the 20-day MA.</p>
+<ol>
+<li>How many times did price bounce from this MA?</li>
+<li>Was each bounce on higher volume?</li>
+<li>Is this a reliable support level?</li>
+<li>Would you buy at this MA? (Explain)</li>
+</ol>
+<h3>Exercise 4: Golden/Death Cross Research</h3>
+<p>Research a stock that had a golden or death cross in the past.</p>
+<ol>
+<li>When did the cross happen?</li>
+<li>What happened to price after?</li>
+<li>Did it work or fail?</li>
+<li>What was the % move?</li>
+</ol>
+<h3>Exercise 5: MA in Different Timeframes</h3>
+<p>Pick one stock. Look at:</p>
+<ol>
+<li>1-hour chart: Where are the MAs?</li>
+<li>4-hour chart: Where are the MAs?</li>
+<li>Daily chart: Where are the MAs?</li>
+<li>Do all timeframes show the same trend direction?</li>
+</ol>
+<hr>
+<h2>Next Steps</h2>
+<p>Congratulations! You've completed all 7 lessons on reading stock charts and technical analysis basics.</p>
+<p><strong>In the final section</strong>, you'll practice:</p>
+<ul>
+<li>Chart reading exercises</li>
+<li>Pattern recognition challenges</li>
+<li>Multi-tool analysis combining everything learned</li>
+</ul>
+<h3>Before Moving Forward:</h3>
+<ul>
+<li>[ ] Understand what moving averages are</li>
+<li>[ ] Know the 3 most common MA lengths (20/50/200)</li>
+<li>[ ] Understand MA as support/resistance</li>
+<li>[ ] Know what golden cross and death cross mean</li>
+<li>[ ] Can read MAs on real charts</li>
+</ul>
+<p><strong>Ready for the exercises?</strong> → <a href="exercises.md">Chapter 4 Exercises: Chart Reading Practice</a></p>
+<hr>
+<h2>Additional Resources</h2>
+<p><strong>For Deeper Learning</strong> (Optional):</p>
+<ul>
+<li>TradingView - Add and experiment with different MA periods</li>
+<li>Practice: Find 10 examples of MA support bounces</li>
+<li>Golden Cross: Research historical golden crosses on major indices</li>
+<li>Trading: Many strategies are built on MA crossovers</li>
+</ul>
+<hr>
+<p><strong>Remember:</strong> Moving averages are like glasses for stock charts. Without them, the chart looks chaotic and noisy. With them, the true trend becomes crystal clear. They're one of the most important tools in technical analysis.</p>
+<hr>
+<p><a href="README.md">← Back to Chapter 4</a> | <a href="../../MASTER_INDEX.md">↑ Back to Course Index</a> | <a href="exercises.md">Next Section →</a></p>
+<hr>
+<p><em>Lesson 4.7 Complete | Next: Chapter 4 Exercises</em></p>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-4-6-chart-patterns.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-5-1-emotional-cycle.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

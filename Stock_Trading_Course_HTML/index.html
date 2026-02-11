@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Mastery: From Zero to Hero</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons... (Ctrl+K)" class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Getting Started</div>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="pages/course-overview.html" class="nav-item">Course Overview</a>
+                <a href="pages/how-to-use.html" class="nav-item">How to Use</a>
+                <a href="pages/prerequisites.html" class="nav-item">Prerequisites</a>
+                <a href="pages/glossary.html" class="nav-item">Glossary</a>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-expand-btn expanded">▼</button>
+                <div class="nav-section-title">Foundation (Ch 1-5)</div>
+                <div class="nav-subsection">
+                    <a href="#" class="nav-item">Chapter 1: Market Fundamentals
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-1-1-what-is-stock-market.html" class="nav-sub-item">Lesson 1.1: What is Stock Market</a>
+                        <a href="pages/lesson-1-2-stock-exchanges.html" class="nav-sub-item">Lesson 1.2: Stock Exchanges</a>
+                        <a href="pages/lesson-1-3-market-participants.html" class="nav-sub-item">Lesson 1.3: Market Participants</a>
+                        <a href="pages/lesson-1-4-types-of-securities.html" class="nav-sub-item">Lesson 1.4: Types of Securities</a>
+                        <a href="pages/lesson-1-5-bull-bear-markets.html" class="nav-sub-item">Lesson 1.5: Bull vs Bear Markets</a>
+                        <a href="pages/lesson-1-6-market-hours.html" class="nav-sub-item">Lesson 1.6: Market Hours</a>
+                        <a href="pages/chapter-1-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 2: Getting Started
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-2-1-choosing-broker.html" class="nav-sub-item">Lesson 2.1: Choosing Broker</a>
+                        <a href="pages/lesson-2-2-account-types.html" class="nav-sub-item">Lesson 2.2: Account Types</a>
+                        <a href="pages/lesson-2-3-reading-quotes.html" class="nav-sub-item">Lesson 2.3: Reading Quotes</a>
+                        <a href="pages/lesson-2-4-first-trade.html" class="nav-sub-item">Lesson 2.4: First Trade</a>
+                        <a href="pages/lesson-2-5-order-types.html" class="nav-sub-item">Lesson 2.5: Order Types</a>
+                        <a href="pages/lesson-2-6-bid-ask-spread.html" class="nav-sub-item">Lesson 2.6: Bid-Ask Spread</a>
+                        <a href="pages/chapter-2-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 3: Risk Management
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-3-1-why-traders-lose.html" class="nav-sub-item">Lesson 3.1: Why Traders Lose</a>
+                        <a href="pages/lesson-3-2-golden-rule.html" class="nav-sub-item">Lesson 3.2: Golden Rule</a>
+                        <a href="pages/lesson-3-3-position-sizing.html" class="nav-sub-item">Lesson 3.3: Position Sizing</a>
+                        <a href="pages/lesson-3-4-stop-losses.html" class="nav-sub-item">Lesson 3.4: Stop Losses</a>
+                        <a href="pages/lesson-3-5-risk-reward-ratio.html" class="nav-sub-item">Lesson 3.5: Risk-Reward Ratio</a>
+                        <a href="pages/lesson-3-6-diversification.html" class="nav-sub-item">Lesson 3.6: Diversification</a>
+                        <a href="pages/chapter-3-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 4: Reading Charts
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-4-1-price-charts.html" class="nav-sub-item">Lesson 4.1: Price Charts</a>
+                        <a href="pages/lesson-4-2-timeframes.html" class="nav-sub-item">Lesson 4.2: Timeframes</a>
+                        <a href="pages/lesson-4-3-support-resistance.html" class="nav-sub-item">Lesson 4.3: Support & Resistance</a>
+                        <a href="pages/lesson-4-4-trend-lines.html" class="nav-sub-item">Lesson 4.4: Trend Lines</a>
+                        <a href="pages/lesson-4-5-volume-analysis.html" class="nav-sub-item">Lesson 4.5: Volume Analysis</a>
+                        <a href="pages/lesson-4-6-chart-patterns.html" class="nav-sub-item">Lesson 4.6: Chart Patterns</a>
+                        <a href="pages/lesson-4-7-moving-averages.html" class="nav-sub-item">Lesson 4.7: Moving Averages</a>
+                        <a href="pages/chapter-4-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 5: Psychology Foundation
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-5-1-emotional-cycle.html" class="nav-sub-item">Lesson 5.1: Emotional Cycle</a>
+                        <a href="pages/lesson-5-2-fear-and-greed.html" class="nav-sub-item">Lesson 5.2: Fear & Greed</a>
+                        <a href="pages/lesson-5-3-discipline-patience.html" class="nav-sub-item">Lesson 5.3: Discipline</a>
+                        <a href="pages/lesson-5-4-trading-journal.html" class="nav-sub-item">Lesson 5.4: Trading Journal</a>
+                        <a href="pages/lesson-5-5-learning-from-losses.html" class="nav-sub-item">Lesson 5.5: Learning Losses</a>
+                        <a href="pages/lesson-5-6-paper-trading.html" class="nav-sub-item">Lesson 5.6: Paper Trading</a>
+                        <a href="pages/chapter-5-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-expand-btn">▼</button>
+                <div class="nav-section-title">Intermediate (Ch 6-10)</div>
+                <div class="nav-subsection collapsed">
+                    <a href="#" class="nav-item">Chapter 6: Technical Analysis
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-6-1-moving-average-strategies.html" class="nav-sub-item">Lesson 6.1: Moving Averages</a>
+                        <a href="pages/lesson-6-2-rsi.html" class="nav-sub-item">Lesson 6.2: RSI</a>
+                        <a href="pages/lesson-6-3-macd.html" class="nav-sub-item">Lesson 6.3: MACD</a>
+                        <a href="pages/lesson-6-4-bollinger-bands.html" class="nav-sub-item">Lesson 6.4: Bollinger Bands</a>
+                        <a href="pages/lesson-6-5-fibonacci.html" class="nav-sub-item">Lesson 6.5: Fibonacci</a>
+                        <a href="pages/lesson-6-6-advanced-patterns.html" class="nav-sub-item">Lesson 6.6: Advanced Patterns</a>
+                        <a href="pages/lesson-6-7-timeframe-analysis.html" class="nav-sub-item">Lesson 6.7: Timeframe Analysis</a>
+                        <a href="pages/chapter-6-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 7: Fundamental Analysis
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-7-1-intro-fundamental.html" class="nav-sub-item">Lesson 7.1: Intro</a>
+                        <a href="pages/lesson-7-2-financial-statements.html" class="nav-sub-item">Lesson 7.2: Financial Statements</a>
+                        <a href="pages/lesson-7-3-financial-ratios.html" class="nav-sub-item">Lesson 7.3: Financial Ratios</a>
+                        <a href="pages/lesson-7-4-earnings-reports.html" class="nav-sub-item">Lesson 7.4: Earnings Reports</a>
+                        <a href="pages/lesson-7-5-sector-analysis.html" class="nav-sub-item">Lesson 7.5: Sector Analysis</a>
+                        <a href="pages/lesson-7-6-economic-indicators.html" class="nav-sub-item">Lesson 7.6: Economic Indicators</a>
+                        <a href="pages/lesson-7-7-combining-analysis.html" class="nav-sub-item">Lesson 7.7: Combining Analysis</a>
+                        <a href="pages/chapter-7-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 8: Trading Strategies
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-8-1-day-trading.html" class="nav-sub-item">Lesson 8.1: Day Trading</a>
+                        <a href="pages/lesson-8-2-swing-trading.html" class="nav-sub-item">Lesson 8.2: Swing Trading</a>
+                        <a href="pages/lesson-8-3-position-trading.html" class="nav-sub-item">Lesson 8.3: Position Trading</a>
+                        <a href="pages/lesson-8-4-momentum-trading.html" class="nav-sub-item">Lesson 8.4: Momentum Trading</a>
+                        <a href="pages/lesson-8-5-breakout-trading.html" class="nav-sub-item">Lesson 8.5: Breakout Trading</a>
+                        <a href="pages/lesson-8-6-pullback-trading.html" class="nav-sub-item">Lesson 8.6: Pullback Trading</a>
+                        <a href="pages/lesson-8-7-range-trading.html" class="nav-sub-item">Lesson 8.7: Range Trading</a>
+                        <a href="pages/chapter-8-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 9: Advanced Risk
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-9-1-portfolio-allocation.html" class="nav-sub-item">Lesson 9.1: Portfolio Allocation</a>
+                        <a href="pages/lesson-9-2-hedging.html" class="nav-sub-item">Lesson 9.2: Hedging</a>
+                        <a href="pages/lesson-9-3-multiple-positions.html" class="nav-sub-item">Lesson 9.3: Multiple Positions</a>
+                        <a href="pages/lesson-9-4-trailing-stops.html" class="nav-sub-item">Lesson 9.4: Trailing Stops</a>
+                        <a href="pages/lesson-9-5-earnings-risk.html" class="nav-sub-item">Lesson 9.5: Earnings Risk</a>
+                        <a href="pages/lesson-9-6-position-scaling.html" class="nav-sub-item">Lesson 9.6: Position Scaling</a>
+                        <a href="pages/chapter-9-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 10: Psychology Mastery
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-10-1-cognitive-biases.html" class="nav-sub-item">Lesson 10.1: Cognitive Biases</a>
+                        <a href="pages/lesson-10-2-revenge-trading.html" class="nav-sub-item">Lesson 10.2: Revenge Trading</a>
+                        <a href="pages/lesson-10-3-streaks.html" class="nav-sub-item">Lesson 10.3: Streaks</a>
+                        <a href="pages/lesson-10-4-fomo.html" class="nav-sub-item">Lesson 10.4: FOMO</a>
+                        <a href="pages/lesson-10-5-trading-routine.html" class="nav-sub-item">Lesson 10.5: Trading Routine</a>
+                        <a href="pages/lesson-10-6-stress-management.html" class="nav-sub-item">Lesson 10.6: Stress Management</a>
+                        <a href="pages/chapter-10-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-expand-btn">▼</button>
+                <div class="nav-section-title">Advanced (Ch 11-14)</div>
+                <div class="nav-subsection collapsed">
+                    <a href="#" class="nav-item">Chapter 11: Options Trading
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-11-1-options-basics.html" class="nav-sub-item">Lesson 11.1: Options Basics</a>
+                        <a href="pages/lesson-11-2-options-terminology.html" class="nav-sub-item">Lesson 11.2: Terminology</a>
+                        <a href="pages/lesson-11-3-basic-strategies.html" class="nav-sub-item">Lesson 11.3: Strategies</a>
+                        <a href="pages/lesson-11-4-greeks.html" class="nav-sub-item">Lesson 11.4: Greeks</a>
+                        <a href="pages/lesson-11-5-spreads.html" class="nav-sub-item">Lesson 11.5: Spreads</a>
+                        <a href="pages/lesson-11-6-income-generation.html" class="nav-sub-item">Lesson 11.6: Income Generation</a>
+                        <a href="pages/lesson-11-7-options-risk.html" class="nav-sub-item">Lesson 11.7: Risk Management</a>
+                        <a href="pages/chapter-11-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 12: Advanced Strategies
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-12.1.html" class="nav-sub-item">Lesson 12.1: Algorithmic</a>
+                        <a href="pages/lesson-12.2.html" class="nav-sub-item">Lesson 12.2: Statistical Arbitrage</a>
+                        <a href="pages/lesson-12.3.html" class="nav-sub-item">Lesson 12.3: Sector Rotation</a>
+                        <a href="pages/lesson-12.4.html" class="nav-sub-item">Lesson 12.4: Event-Driven</a>
+                        <a href="pages/lesson-12.5.html" class="nav-sub-item">Lesson 12.5: Extended Hours</a>
+                        <a href="pages/lesson-12.6.html" class="nav-sub-item">Lesson 12.6: Advanced Orders</a>
+                        <a href="pages/chapter-12-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 13: Portfolio Management
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-13-1-asset-allocation.html" class="nav-sub-item">Lesson 13.1: Asset Allocation</a>
+                        <a href="pages/lesson-13-2-rebalancing.html" class="nav-sub-item">Lesson 13.2: Rebalancing</a>
+                        <a href="pages/lesson-13-3-performance-metrics.html" class="nav-sub-item">Lesson 13.3: Performance Metrics</a>
+                        <a href="pages/lesson-13-4-tax-efficiency.html" class="nav-sub-item">Lesson 13.4: Tax Efficiency</a>
+                        <a href="pages/lesson-13-5-dividend-investing.html" class="nav-sub-item">Lesson 13.5: Dividend Investing</a>
+                        <a href="pages/lesson-13-6-income-streams.html" class="nav-sub-item">Lesson 13.6: Income Streams</a>
+                        <a href="pages/lesson-13-7-scaling-account.html" class="nav-sub-item">Lesson 13.7: Scaling Account</a>
+                        <a href="pages/chapter-13-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+
+                    <a href="#" class="nav-item">Chapter 14: Professional Practices
+                        <button class="nav-expand-btn">▼</button>
+                    </a>
+                    <div class="nav-subsection">
+                        <a href="pages/lesson-14-1-tax-implications.html" class="nav-sub-item">Lesson 14.1: Tax Implications</a>
+                        <a href="pages/lesson-14-2-record-keeping.html" class="nav-sub-item">Lesson 14.2: Record Keeping</a>
+                        <a href="pages/lesson-14-3-business-plan.html" class="nav-sub-item">Lesson 14.3: Business Plan</a>
+                        <a href="pages/lesson-14-4-continuous-improvement.html" class="nav-sub-item">Lesson 14.4: Continuous Improvement</a>
+                        <a href="pages/lesson-14-5-communities.html" class="nav-sub-item">Lesson 14.5: Communities</a>
+                        <a href="pages/lesson-14-6-fulltime-transition.html" class="nav-sub-item">Lesson 14.6: Full-Time Trading</a>
+                        <a href="pages/lesson-14-7-path-forward.html" class="nav-sub-item">Lesson 14.7: Path Forward</a>
+                        <a href="pages/chapter-14-exercises.html" class="nav-sub-item">Exercises</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-expand-btn">▼</button>
+                <div class="nav-section-title">Practical Labs</div>
+                <div class="nav-subsection collapsed">
+                    <a href="pages/case-studies.html" class="nav-sub-item">Case Studies (15)</a>
+                    <a href="pages/simulation-scenarios.html" class="nav-sub-item">Scenarios (10)</a>
+                    <a href="pages/portfolio-projects.html" class="nav-sub-item">Projects (5)</a>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <button class="nav-expand-btn">▼</button>
+                <div class="nav-section-title">Mentorship</div>
+                <div class="nav-subsection collapsed">
+                    <a href="pages/self-assessment.html" class="nav-sub-item">Self-Assessment</a>
+                    <a href="pages/learning-paths.html" class="nav-sub-item">Learning Paths</a>
+                    <a href="pages/progress-tracking.html" class="nav-sub-item">Progress Tracking</a>
+                    <a href="pages/coaching-guides.html" class="nav-sub-item">Coaching Guides</a>
+                    <a href="pages/troubleshooting.html" class="nav-sub-item">Troubleshooting</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Progress Tracker -->
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+                <div style="margin-top: 1rem; font-size: 0.85rem;">
+                    <button onclick="exportProgress()" class="nav-btn" style="display: inline-block; margin-right: 0.5rem;">Export Progress</button>
+                    <button onclick="importProgress()" class="nav-btn" style="display: inline-block; margin-right: 0.5rem;">Import Progress</button>
+                    <button onclick="resetProgress()" class="nav-btn" style="display: inline-block; background: #dc3545;">Reset</button>
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Master Stock Trading</h1>
+                <p>From Complete Beginner to Confident, Professional Trader</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">93</span>
+                        <span class="stat-label">Comprehensive Lessons</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">14</span>
+                        <span class="stat-label">In-Depth Chapters</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Real Case Studies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">65-95</span>
+                        <span class="stat-label">Hours Training</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Overview -->
+            <div class="course-section">
+                <h2 class="section-title">About This Course</h2>
+                <p>Welcome to <strong>Stock Trading Mastery: From Zero to Hero</strong> - a comprehensive educational journey designed to take you from complete beginner to confident, knowledgeable trader.</p>
+
+                <div class="alert alert-warning">
+                    <strong>⚠️ Important Disclaimer:</strong><br>
+                    This course provides educational content only and is not financial advice. Stock trading involves substantial risk of loss. Past performance does not guarantee future results. Always consult with a licensed financial advisor before making investment decisions. Most traders lose money, especially when starting.
+                </div>
+
+                <h3>What You'll Achieve</h3>
+                <ul>
+                    <li>Master fundamental and technical analysis</li>
+                    <li>Develop professional risk management skills</li>
+                    <li>Build a personalized trading strategy</li>
+                    <li>Understand market psychology and emotions</li>
+                    <li>Learn from real-world case studies</li>
+                    <li>Create sustainable trading practices</li>
+                </ul>
+
+                <h3>Course Structure</h3>
+                <ul>
+                    <li><strong>93 Lessons</strong> across 14 chapters</li>
+                    <li><strong>3 Progressive Levels</strong> (Foundation → Intermediate → Advanced)</li>
+                    <li><strong>15 Case Studies</strong> with real market examples</li>
+                    <li><strong>Complete Mentorship Framework</strong> for personalized learning</li>
+                </ul>
+
+                <h3>Estimated Time Commitment</h3>
+                <ul>
+                    <li><strong>Reading:</strong> 25-35 hours</li>
+                    <li><strong>Practice:</strong> 40-60 hours</li>
+                    <li><strong>Total:</strong> 65-95 hours (flexible, self-paced)</li>
+                </ul>
+            </div>
+
+            <!-- Learning Paths -->
+            <div class="course-section">
+                <h2 class="section-title">Recommended Learning Paths</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h3>Path 1: Complete Beginner</h3>
+                        <p>Follow the course sequentially from Chapter 1 to 14 for a comprehensive foundation.</p>
+                        <div class="course-card-meta">
+                            <span>3-6 months</span>
+                            <span>⭐ Recommended</span>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <h3>Path 2: Fast Track</h3>
+                        <p>Focus on Foundation (Ch 1-5) → Trading Strategies (Ch 8) → Risk Management (Ch 9).</p>
+                        <div class="course-card-meta">
+                            <span>6-8 weeks</span>
+                            <span>For those with prior knowledge</span>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <h3>Path 3: Technical Trader</h3>
+                        <p>Foundation → Technical Analysis → Trading Strategies → Advanced.</p>
+                        <div class="course-card-meta">
+                            <span>2-4 months</span>
+                            <span>Chart-focused</span>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <h3>Path 4: Fundamental Investor</h3>
+                        <p>Foundation → Fundamental Analysis → Portfolio Management → Professional Practices.</p>
+                        <div class="course-card-meta">
+                            <span>2-4 months</span>
+                            <span>Long-term focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Levels -->
+            <div class="course-section">
+                <h2 class="section-title">Course Levels</h2>
+
+                <h3>Level 1: Foundation (Chapters 1-5)</h3>
+                <p>Build essential knowledge about markets, trading basics, risk management, and psychology.</p>
+                <div class="course-grid">
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 1: Market Fundamentals</h3>
+                        <p>Understand the stock market ecosystem, exchanges, and participants.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 2-3 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 2: Getting Started</h3>
+                        <p>Practical setup and first steps into trading.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 2-3 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 3: Risk Management Essentials</h3>
+                        <p>Protect your capital from day one with proven techniques.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 2-3 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 4: Reading Stock Charts</h3>
+                        <p>Introduction to technical analysis and chart reading.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 3-4 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 5: Psychology Foundation</h3>
+                        <p>Build the right mindset and emotional control.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 2-3 hours</span>
+                        </div>
+                    </a>
+                </div>
+
+                <h3 style="margin-top: 2.5rem;">Level 2: Intermediate (Chapters 6-10)</h3>
+                <p>Build analytical and trading skills with advanced techniques and strategies.</p>
+                <div class="course-grid">
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 6: Technical Analysis Deep Dive</h3>
+                        <p>Advanced charting, indicators, and analysis techniques.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 4-5 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 7: Fundamental Analysis</h3>
+                        <p>Understand company value and financial statements.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 4-5 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 8: Trading Strategies</h3>
+                        <p>Day trading, swing trading, and actionable trading approaches.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 4-5 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 9: Advanced Risk Management</h3>
+                        <p>Professional-level capital protection strategies.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 3-4 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 10: Trading Psychology Mastery</h3>
+                        <p>Overcome biases and master your emotions.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 3-4 hours</span>
+                        </div>
+                    </a>
+                </div>
+
+                <h3 style="margin-top: 2.5rem;">Level 3: Advanced (Chapters 11-14)</h3>
+                <p>Professional trading mastery and sustainable wealth building.</p>
+                <div class="course-grid">
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 11: Options Trading</h3>
+                        <p>Expand your toolkit with options strategies and risk management.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 4-5 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 12: Advanced Trading Strategies</h3>
+                        <p>Professional execution techniques and advanced methods.</p>
+                        <div class="course-card-meta">
+                            <span>6 lessons</span>
+                            <span>⏱ 3-4 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 13: Portfolio Management</h3>
+                        <p>Build sustainable wealth through strategic management.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 4-5 hours</span>
+                        </div>
+                    </a>
+                    <a href="pages/course-overview.html" class="course-card">
+                        <h3>Chapter 14: Professional Trading Practices</h3>
+                        <p>Operating like a professional trader with proper business practices.</p>
+                        <div class="course-card-meta">
+                            <span>7 lessons</span>
+                            <span>⏱ 4-5 hours</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Practical Labs Section -->
+            <div class="course-section">
+                <h2 class="section-title">Practical Labs & Projects</h2>
+                <div class="course-grid">
+                    <a href="pages/case-studies.html" class="course-card">
+                        <h3>15 Real Case Studies</h3>
+                        <p>Analyze real-world market examples and learn from actual trading scenarios.</p>
+                        <div class="course-card-meta">
+                            <span>Case Studies</span>
+                            <span>Apply knowledge</span>
+                        </div>
+                    </a>
+                    <a href="pages/simulation-scenarios.html" class="course-card">
+                        <h3>10 Simulation Scenarios</h3>
+                        <p>Practice trading in realistic scenarios without real money.</p>
+                        <div class="course-card-meta">
+                            <span>Simulations</span>
+                            <span>Safe practice</span>
+                        </div>
+                    </a>
+                    <a href="pages/portfolio-projects.html" class="course-card">
+                        <h3>5 Portfolio Projects</h3>
+                        <p>Build complete portfolio strategies for different goals.</p>
+                        <div class="course-card-meta">
+                            <span>Projects</span>
+                            <span>Hands-on</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mentorship Section -->
+            <div class="course-section">
+                <h2 class="section-title">Mentorship Framework</h2>
+                <p>Personalized learning support and guidance tools to accelerate your progress.</p>
+                <div class="course-grid">
+                    <a href="pages/self-assessment.html" class="course-card">
+                        <h3>Self-Assessment Tools</h3>
+                        <p>Determine your current skill level and identify knowledge gaps.</p>
+                    </a>
+                    <a href="pages/learning-paths.html" class="course-card">
+                        <h3>Personalized Learning Paths</h3>
+                        <p>Custom roadmaps based on your goals and experience level.</p>
+                    </a>
+                    <a href="pages/progress-tracking.html" class="course-card">
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your development and celebrate milestones.</p>
+                    </a>
+                    <a href="pages/coaching-guides.html" class="course-card">
+                        <h3>Coaching Guides</h3>
+                        <p>Framework for personalized guidance and support.</p>
+                    </a>
+                    <a href="pages/troubleshooting.html" class="course-card">
+                        <h3>Common Problems & Solutions</h3>
+                        <p>Overcome typical challenges traders face.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Getting Started -->
+            <div class="course-section">
+                <h2 class="section-title">Ready to Begin?</h2>
+                <p>Start your journey to becoming a confident trader. Choose your learning path and dive in:</p>
+
+                <div style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+                    <h3 style="margin-top: 0;">Recommended First Steps</h3>
+                    <ol>
+                        <li><a href="pages/how-to-use.html"><strong>How to Use This Course</strong></a> - Learn the optimal way to progress through the material</li>
+                        <li><a href="pages/prerequisites.html"><strong>Prerequisites Check</strong></a> - Ensure you have the foundational knowledge</li>
+                        <li><a href="pages/lesson-1-1-what-is-stock-market.html"><strong>Lesson 1.1: What is the Stock Market</strong></a> - Begin your foundation journey</li>
+                        <li><a href="pages/learning-paths.html"><strong>Choose Your Learning Path</strong></a> - Pick a path that matches your goals</li>
+                    </ol>
+                </div>
+
+                <div class="alert alert-success">
+                    <strong>💡 Pro Tip:</strong> The course is designed for you to complete lessons sequentially. Use the progress tracker to monitor your advancement, bookmark lessons you want to revisit, and take your time to absorb each concept thoroughly.
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="course-section">
+                <h2 class="section-title">Course Features</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h3>🎯 Clear Learning Objectives</h3>
+                        <p>Each lesson has specific, measurable learning goals to keep you focused.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>📚 Comprehensive Content</h3>
+                        <p>Detailed explanations with real examples and case studies throughout.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>✏️ Practice Exercises</h3>
+                        <p>Each chapter includes exercises to reinforce learning and test knowledge.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>📊 Progress Tracking</h3>
+                        <p>Monitor your completion status and track advancement through the course.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>🌙 Dark Mode</h3>
+                        <p>Easy on the eyes with a beautiful dark mode toggle for comfortable learning.</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>📱 Mobile Friendly</h3>
+                        <p>Responsive design works perfectly on any device - learn on the go.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Reminder -->
+            <div class="alert alert-danger" style="margin-top: 3rem;">
+                <strong>⚠️ Final Important Reminder:</strong><br><br>
+                <strong>Trading is risky.</strong> Most traders lose money, especially in the beginning. This course prepares you with knowledge and strategies, but success requires:<br>
+                <ul style="margin-top: 1rem;">
+                    <li>Discipline and patience</li>
+                    <li>Continuous learning and adaptation</li>
+                    <li>Proper risk management at all times</li>
+                    <li>Emotional control and psychological strength</li>
+                    <li>Realistic expectations and long-term perspective</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Start with paper trading. Never risk money you can't afford to lose. Always consult licensed professionals for personalized advice.</strong></p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+        <p>This course is for educational purposes only and does not constitute financial advice.</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">Built with modern responsive design | <a href="#" onclick="exportProgress()">Export Progress</a> | <a href="#" onclick="importProgress()">Import Progress</a></p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

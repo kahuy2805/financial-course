@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6.4: Bollinger Bands and Volatility - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 6.4: Bollinger Bands and Volatility</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 6.4: Bollinger Bands and Volatility</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 6.4: Bollinger Bands and Volatility</h1>
+<p><a href="README.md">← Back to Chapter 6</a> | <a href="lesson<em>6.5</em>fibonacci.md">Next Lesson: Fibonacci Retracement Levels →</a></p>
+<hr>
+<h2>Overview</h2>
+<p>Bollinger Bands are a unique tool that combines trend, support/resistance, and volatility in one visual indicator. Master Bollinger Bands and you'll immediately see when stocks are oversold or overbought, when volatility is high or low, and where the next big move will come from.</p>
+<p><strong>Time to complete:</strong> 25-30 minutes</p>
+<hr>
+<h2>Prerequisites</h2>
+<ul>
+<li>Completion of Lesson 6.1: Moving Averages</li>
+<li>Understanding of volatility concepts</li>
+<li>Familiarity with standard deviation (basic math)</li>
+</ul>
+<hr>
+<h2>Core Content</h2>
+<h3>What are Bollinger Bands?</h3>
+<p><strong>Bollinger Bands</strong> consist of three lines that adjust based on volatility:</p>
+<ol>
+<li><strong>Middle Band</strong> = 20-period SMA (moving average)</li>
+<li><strong>Upper Band</strong> = Middle Band + 2 standard deviations</li>
+<li><strong>Lower Band</strong> = Middle Band - 2 standard deviations</li>
+</ol>
+<p><strong>Key Concept:</strong> Bollinger Bands act like a dynamic "channel" that widens when volatility increases and narrows when volatility decreases.</p>
+<p><strong>Real-World Analogy:</strong></p>
+<p>Imagine a rubber band around your wrist:</p>
+<ul>
+<li><strong>Tight rubber band</strong> = Normal volatility, bands narrow</li>
+<li><strong>Stretched rubber band</strong> = High volatility, bands widen</li>
+<li>Price bouncing between the bands = Normal trading behavior</li>
+<li>Price breaking the bands = Extreme move about to happen</li>
+</ul>
+<h3>Understanding Standard Deviation</h3>
+<p><strong>What It Is:</strong> A measure of how much prices deviate from the average.</p>
+<p><strong>Simple Example:</strong></p>
+<pre><code>
+Stock prices over 5 days: $100, $102, $98, $101, $99
+
+
+
+Average = $100
+
+- All prices are within $2 of average = LOW standard deviation
+
+- Result: Bollinger Bands would be NARROW
+
+
+
+Stock prices over 5 days: $100, $120, $80, $110, $90
+
+
+
+Average = $100
+
+- Prices vary wildly from average = HIGH standard deviation
+
+- Result: Bollinger Bands would be WIDE
+
+</code></pre>
+<p><strong>What It Means for Trading:</strong></p>
+<p>| Standard Deviation | Volatility | Bands Width | Trading Implication |</p>
+<p>|---|---|---|---|</p>
+<p>| 1 Std Dev | Low | Narrow | Quiet market, small moves expected |</p>
+<p>| 2 Std Dev | Normal | Medium | Normal trading conditions |</p>
+<p>| 3+ Std Dev | High | Wide | Panic/euphoria, big moves possible |</p>
+<h3>The Three Components</h3>
+<p>#### The Middle Band (20-day SMA)</p>
+<p><strong>What It Is:</strong></p>
+<ul>
+<li>Simple moving average of closing prices</li>
+<li>Acts as a trend indicator</li>
+<li>Dynamic support/resistance</li>
+</ul>
+<p><strong>What It Means:</strong></p>
+<ul>
+<li>Price above middle band = Uptrend</li>
+<li>Price below middle band = Downtrend</li>
+<li>Price on middle band = Neutral/consolidation</li>
+</ul>
+<p><strong>Real Example: Apple Daily Chart</strong></p>
+<pre><code>
+Price: $195 (above middle band at $190)
+
+Signal: Uptrend is in place
+
+Action: Focus on BUY opportunities on dips to middle band
+
+</code></pre>
+<p>#### The Upper Band (High Volatility Boundary)</p>
+<p><strong>What It Is:</strong></p>
+<ul>
+<li>Middle band + 2 standard deviations</li>
+<li>Upper boundary of normal price range</li>
+<li>Acts as resistance level</li>
+</ul>
+<p><strong>What It Means:</strong></p>
+<ul>
+<li>Price touching upper band = Overbought, pullback likely</li>
+<li>Price breaking above upper band = Extreme volatility, potential reversal</li>
+<li>Price bouncing off upper band = Strong trend</li>
+</ul>
+<p><strong>Real Example: Tesla Intraday</strong></p>
+<pre><code>
+Upper band: $290
+
+Price moves to $290 = Touching resistance
+
+Signal: Overbought, sell or take profits
+
+Result: Price drops to $285
+
+
+
+Price breaks above $290 = Breaking upper band
+
+Signal: Extreme move, trend might continue OR reverse
+
+</code></pre>
+<p>#### The Lower Band (Oversold Boundary)</p>
+<p><strong>What It Is:</strong></p>
+<ul>
+<li>Middle band - 2 standard deviations</li>
+<li>Lower boundary of normal price range</li>
+<li>Acts as support level</li>
+</ul>
+<p><strong>What It Means:</strong></p>
+<ul>
+<li>Price touching lower band = Oversold, bounce likely</li>
+<li>Price breaking below lower band = Extreme volatility, potential reversal</li>
+<li>Price bouncing off lower band = Strong support</li>
+</ul>
+<p><strong>Real Example: Microsoft Daily Chart</strong></p>
+<pre><code>
+Lower band: $410
+
+Price drops to $410 = Touching support
+
+Signal: Oversold, buy or add to position
+
+Result: Price bounces to $420
+
+
+
+Price breaks below $410 = Breaking lower band
+
+Signal: Extreme move, downtrend might accelerate OR reverse
+
+</code></pre>
+<h3>The Three Core Strategies</h3>
+<p>#### Strategy 1: Band Bounce Trading</p>
+<p>The most common Bollinger Band strategy: Buy bounces from lower band, sell bounces from upper band.</p>
+<p><strong>Lower Band Bounce (Buy Signal)</strong></p>
+<p>In an established uptrend, price pulls back to the lower band and bounces.</p>
+<p><strong>Setup:</strong></p>
+<ol>
+<li>Confirm uptrend (price above 50-day MA)</li>
+<li>Price pulls back and touches lower band</li>
+<li>Look for reversal candlestick (hammer, doji)</li>
+<li>BUY on reversal confirmation</li>
+<li>Stop loss just below lower band</li>
+</ol>
+<p><strong>Real Example: Nvidia in Uptrend</strong></p>
+<pre><code>
+Trend: NVDA in strong uptrend
+
+Price: Rallies from $800 to $850
+
+Pullback: Drops back to $820 (touches lower band)
+
+Reversal: Hammer candlestick forms at lower band
+
+Signal: BUY at $820
+
+Stop Loss: $810 (just below lower band)
+
+Result: Price rallies to $880 (+$60 or 7.3% gain)
+
+</code></pre>
+<p><strong>Why This Works:</strong></p>
+<ul>
+<li>Bollinger Bands act as dynamic support/resistance</li>
+<li>Lower band in uptrend = Buyers step in</li>
+<li>80% of touches on lower band in uptrend = Bounce</li>
+<li>Exact entry point and stop loss defined</li>
+</ul>
+<p><strong>Upper Band Bounce (Sell Signal)</strong></p>
+<p>In an established downtrend, price rallies to the upper band and reverses down.</p>
+<p><strong>Setup:</strong></p>
+<ol>
+<li>Confirm downtrend (price below 50-day MA)</li>
+<li>Price rallies and touches upper band</li>
+<li>Look for reversal candlestick (shooting star)</li>
+<li>SELL or SHORT on reversal confirmation</li>
+<li>Stop loss just above upper band</li>
+</ol>
+<p><strong>Real Example: Amazon in Downtrend</strong></p>
+<pre><code>
+Trend: AMZN in downtrend
+
+Price: Drops from $200 to $180
+
+Rally: Bounces back to $190 (touches upper band)
+
+Reversal: Shooting star candlestick at upper band
+
+Signal: SELL at $190
+
+Stop Loss: $200 (just above upper band)
+
+Result: Price drops to $165 (-$25 or 13% loss avoided)
+
+</code></pre>
+<p><strong>Key Rules for Band Bounces:</strong></p>
+<p>✓ Confirm trend direction first</p>
+<p>✓ Wait for price to touch the band</p>
+<p>✓ Look for reversal candlestick</p>
+<p>✓ Don't buy/sell just touching the band - wait for confirmation</p>
+<p>✓ Place stop loss beyond the band</p>
+<p>#### Strategy 2: Bollinger Band Squeeze</p>
+<p>When volatility is very low, the bands squeeze together. This signals a big move is coming.</p>
+<p><strong>What It Is:</strong></p>
+<p>When the upper and lower bands become very close (squeezed), prices are locked in a tight range. This creates potential energy.</p>
+<p><strong>Visual:</strong></p>
+<pre><code>
+Normal Bands:        Squeeze:
+
+─────────────────   ────
+
+Price bouncing      Price
+
+─────────────────   ────
+
+              ↓
+
+        Big Expansion Coming
+
+</code></pre>
+<p><strong>Real Example: Tesla Consolidation</strong></p>
+<pre><code>
+Day 1:  Upper band = $290, Lower band = $280 (10 point range - squeeze!)
+
+Day 2:  Bands still tight = squeeze continues
+
+Day 3:  News breaks: Positive earnings
+
+Day 4:  Upper band = $310, Lower band = $270 (40 point range - explosion!)
+
+        Price rallies to $320
+
+</code></pre>
+<p><strong>Trading the Squeeze:</strong></p>
+<ol>
+<li>Identify squeeze (bands very close together)</li>
+<li>Identify catalyst (earnings, economic data, news)</li>
+<li>Take position in expected direction</li>
+<li>When band expands, take profits</li>
+<li>Typical move = Size of squeeze × 2</li>
+</ol>
+<p><strong>Real Example Calculation: Apple</strong></p>
+<pre><code>
+Squeeze identified:
+
+- Upper band: $195
+
+- Lower band: $190
+
+- Squeeze width: $5
+
+
+
+Expected move after squeeze breaks:
+
+- If breaks up: Target = $200 + $5 = $205
+
+- If breaks down: Target = $190 - $5 = $185
+
+</code></pre>
+<p><strong>Why This Works:</strong></p>
+<ul>
+<li>Tight bands = Low volatility = Energy building</li>
+<li>When volatility rises, move is often sharp</li>
+<li>Pre-squeeze positioning = Big profits on breakout</li>
+<li>Works across ALL timeframes</li>
+</ul>
+<p>#### Strategy 3: Band Break Reversals</p>
+<p>When price breaks outside the Bollinger Bands, it's an extreme move that often leads to reversals.</p>
+<p><strong>Upper Band Break (Overbought Extreme)</strong></p>
+<p>When price breaks ABOVE the upper band, it's extremely overbought. Usually leads to pullback or reversal.</p>
+<p><strong>Real Example: Stock Rally</strong></p>
+<pre><code>
+Price: $150
+
+Upper band: $148
+
+Price rallies to $152 (breaks above upper band - extreme!)
+
+Interpretation: Price went too far too fast
+
+Result: Price pulls back to $145 (reversal confirmed)
+
+</code></pre>
+<p><strong>The Logic:</strong></p>
+<ul>
+<li>Upper band = 2 standard deviations, 97.5% of moves stay within</li>
+<li>Breaking above = Extreme overextension</li>
+<li>Mean reversion = Price wants to return to middle band</li>
+<li>Potential 5-10% pullback</li>
+</ul>
+<p><strong>Lower Band Break (Oversold Extreme)</strong></p>
+<p>When price breaks BELOW the lower band, it's extremely oversold. Usually leads to bounce or reversal.</p>
+<p><strong>Real Example: Stock Panic Sell</strong></p>
+<pre><code>
+Price: $100
+
+Lower band: $102
+
+Price drops to $98 (breaks below lower band - extreme!)
+
+Interpretation: Price fell too far too fast
+
+Result: Price bounces to $105 (reversal confirmed)
+
+</code></pre>
+<p><strong>The Logic:</strong></p>
+<ul>
+<li>Lower band = 2 standard deviations, 97.5% of moves stay within</li>
+<li>Breaking below = Extreme panic</li>
+<li>Value buyers step in = Bottom may be in</li>
+<li>Potential 5-10% bounce</li>
+</ul>
+<p><strong>Band Break Action Plan:</strong></p>
+<pre><code>
+If break happens:
+
+1. Doesn&#39;t mean immediate reversal
+
+2. Can continue 1-2 days before reversing
+
+3. Watch for reversal candlestick at middle band
+
+4. Enter on reversal from middle band (not on break)
+
+</code></pre>
+<h3>Combining Bollinger Bands with Other Indicators</h3>
+<p><strong>Complete Band Setup:</strong></p>
+<pre><code>
+1. Identify trend with Moving Averages
+
+   → Price relationship to middle band
+
+
+
+2. Check RSI for confirmation
+
+   → Overbought (&gt; 70) when at upper band
+
+   → Oversold (&lt; 30) when at lower band
+
+
+
+3. Look for squeeze
+
+   → Are bands converging?
+
+
+
+4. Enter on bounce
+
+   → From band with confirmation
+
+   → Place stop loss beyond band
+
+</code></pre>
+<p><strong>Real Trading Example: Microsoft Rally</strong></p>
+<p>Setup:</p>
+<ul>
+<li><strong>Trend:</strong> Uptrend confirmed (price > 20, 50 MA)</li>
+<li><strong>Bollinger Band:</strong> Price pulls back to lower band</li>
+<li><strong>Middle Band:</strong> Lower band at $420, middle at $430</li>
+<li><strong>RSI:</strong> At 35 (oversold, ready to bounce)</li>
+<li><strong>Setup:</strong> PERFECT BUY</li>
+</ul>
+<p>Trade:</p>
+<ul>
+<li>BUY: $420 (at lower band)</li>
+<li>Stop: $410 (below lower band)</li>
+<li>Target: $445 (upper band in strong trend)</li>
+</ul>
+<hr>
+<h2>Common Mistakes to Avoid</h2>
+<h3>Mistake #1: Trading Band Touches Without Confirmation</h3>
+<p><strong>Problem:</strong> Price touches upper band, immediately sell. Price continues higher.</p>
+<p><strong>Solution:</strong> Wait for reversal candlestick (shooting star, hammer) before trading.</p>
+<h3>Mistake #2: Using Squeeze Without Catalyst</h3>
+<p><strong>Problem:</strong> Bands squeeze, you expect move. Nothing happens for 3 weeks.</p>
+<p><strong>Solution:</strong> Identify squeeze AND look for catalyst (earnings, Fed news, etc.)</p>
+<h3>Mistake #3: Ignoring Trend Direction</h3>
+<p><strong>Problem:</strong> Shorting upper band bounce in strong uptrend. Price continues rallying.</p>
+<p><strong>Solution:</strong> Always trade WITH the trend. In uptrends, target lower band bounces for buys.</p>
+<h3>Mistake #4: Holding Through Band Breaks</h3>
+<p><strong>Problem:</strong> Price breaks above upper band. You hold thinking reversal. Price runs 20% higher.</p>
+<p><strong>Solution:</strong> Band breaks can signal trend acceleration. Use middle band as profit target, not upper band.</p>
+<h3>Mistake #5: Using Default Bollinger Band Settings Everywhere</h3>
+<p><strong>Problem:</strong> Using 20-period bands on 1-minute charts. Too many false signals.</p>
+<p><strong>Solution:</strong> Match settings to timeframe: 20-period for daily, 10-period for hourly.</p>
+<hr>
+<h2>Real-World Application</h2>
+<h3>Bollinger Bands Across Timeframes</h3>
+<p><strong>Long-Term Investor (Daily Charts):</strong></p>
+<ul>
+<li>Watches for squeeze = Preparing for big move</li>
+<li>Buys lower band bounces in uptrends</li>
+<li>Ignores short-term band touches</li>
+<li>Long-term hold strategy</li>
+</ul>
+<p><strong>Swing Trader (4-Hour Charts):</strong></p>
+<ul>
+<li>Uses Bollinger Bands for entry/exit</li>
+<li>Band bounces = Entry points</li>
+<li>Band breaks = Exit signals</li>
+<li>3-5 day holding period</li>
+</ul>
+<p><strong>Day Trader (1-Hour Charts):</strong></p>
+<ul>
+<li>Tight bands = Consolidation, wait for break</li>
+<li>Band squeeze = Prepare for explosive move</li>
+<li>Multiple trades per day</li>
+<li>Exits when price leaves band</li>
+</ul>
+<h3>Success Story: Earnings Season Trading</h3>
+<p>Many traders use Bollinger Bands around earnings:</p>
+<p><strong>Strategy:</strong></p>
+<ol>
+<li>Week before earnings: Identify squeeze</li>
+<li>Day of earnings: Expect band expansion (volatility increases)</li>
+<li>Earnings beat: Price breaks upper band</li>
+<li>Enter short when price breaks upper band (mean reversion)</li>
+<li>Target = Middle band</li>
+</ol>
+<p><strong>Results:</strong> 70% win rate on earnings reversals</p>
+<hr>
+<h2>Practice Exercise</h2>
+<h3>Exercise 1: Interpret Band Positions</h3>
+<p>For each scenario, identify what Bollinger Bands tell you:</p>
+<p><strong>Scenario A:</strong></p>
+<ul>
+<li>Price: $200 (at upper band)</li>
+<li>Middle band: $190</li>
+<li>RSI: 78 (overbought)</li>
+</ul>
+<p><strong>Your Analysis:</strong></p>
+<ul>
+<li>Price position: <strong></strong><strong></strong><strong></strong>_</li>
+<li>Signal: <strong></strong><strong></strong><strong></strong>_</li>
+<li>Expected action: <strong></strong><strong></strong><strong></strong>_</li>
+</ul>
+<p><strong>Scenario B:</strong></p>
+<ul>
+<li>Price: $180 (at lower band)</li>
+<li>Middle band: $190</li>
+<li>RSI: 22 (oversold)</li>
+<li>Uptrend confirmed (price > 50-day MA)</li>
+</ul>
+<p><strong>Your Analysis:</strong></p>
+<ul>
+<li>Price position: <strong></strong><strong></strong><strong></strong>_</li>
+<li>Signal: <strong></strong><strong></strong><strong></strong>_</li>
+<li>Expected action: <strong></strong><strong></strong><strong></strong>_</li>
+</ul>
+<p><strong>Answer Key:</strong></p>
+<ul>
+<li>Scenario A: At upper band, overbought, sell/take profits</li>
+<li>Scenario B: At lower band in uptrend, oversold, buy/add position</li>
+</ul>
+<h3>Exercise 2: Identify Squeeze</h3>
+<p>Analyze this band data:</p>
+<pre><code>
+Day 1:  Upper = $155, Lower = $145 (10 point range)
+
+Day 2:  Upper = $152, Lower = $148 (4 point range - squeeze!)
+
+Day 3:  Upper = $150, Lower = $150 (1 point range - extreme squeeze!)
+
+Day 4:  News: Great earnings report
+
+Day 5:  Upper = $160, Lower = $140 (20 point range - explosion!)
+
+        Price: $162
+
+</code></pre>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What happened on Day 3?</li>
+<li>What does this forecast?</li>
+<li>What was the likely trading setup?</li>
+</ol>
+<p><strong>Answer Key:</strong></p>
+<ol>
+<li>Extreme Bollinger Band squeeze</li>
+<li>Volatility explosion (expansion from 1 to 20 points)</li>
+<li>Enter long on squeeze confirmation expecting upside break</li>
+</ol>
+<h3>Exercise 3: Real Chart Analysis</h3>
+<ol>
+<li>Open a charting platform and select a daily chart</li>
+<li>Add Bollinger Bands (20-period, 2 standard deviations)</li>
+<li>Analyze:</li>
+</ol>
+<p>   - Where is price relative to bands?</p>
+<p>   - Are bands squeezing or expanding?</p>
+<p>   - Are bands wide or narrow?</p>
+<p>   - What does this tell you about volatility?</p>
+<p>   - Can you identify a good entry point?</p>
+<p><strong>Report:</strong> Write 4-5 sentences describing the Bollinger Band setup and your trading plan.</p>
+<hr>
+<h2>Key Takeaways</h2>
+<p>✓ <strong>Middle Band</strong> = 20-day SMA, shows trend</p>
+<p>✓ <strong>Upper/Lower Bands</strong> = Volatility boundaries, support/resistance</p>
+<p>✓ <strong>Band Bounce</strong> = Sell upper band, buy lower band (in established trends)</p>
+<p>✓ <strong>Squeeze</strong> = Low volatility, big move coming soon</p>
+<p>✓ <strong>Band Break</strong> = Extreme move, often leads to reversion</p>
+<p>✓ <strong>Confirmation Required</strong> = Wait for reversal candlestick</p>
+<p>✓ <strong>Volatility Indicator</strong> = Bands widen = High volatility</p>
+<hr>
+<h2>Next Steps</h2>
+<p><strong>Before moving to Lesson 6.5:</strong></p>
+<ul>
+<li>[ ] Understand the three Bollinger Band lines</li>
+<li>[ ] Identify the difference between band touches and band breaks</li>
+<li>[ ] Spot Bollinger Band squeezes</li>
+<li>[ ] Add Bollinger Bands to your charting platform</li>
+<li>[ ] Practice identifying entry points using band bounces</li>
+</ul>
+<hr>
+<p><a href="README.md">← Back to Chapter 6</a> | <a href="../../MASTER<em>INDEX.md">↑ Back to Course Index</a> | <a href="lesson</em>6.5_fibonacci.md">Next Lesson →</a></p>
+<hr>
+<p><em>Lesson 6.4 Complete | Next: Lesson 6.5 - Fibonacci Retracement Levels</em></p>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-6-3-macd.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-6-5-fibonacci.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

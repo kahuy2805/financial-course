@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6.2: RSI - Relative Strength Index - Stock Trading Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
+            <div class="nav-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
+                </div>
+                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
+                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar" class="sidebar">
+            <div class="nav-section">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="course-overview.html" class="nav-item">Course Overview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="progress-section">
+                <div class="progress-header">Your Progress</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0 / 133 lessons completed (0%)</div>
+            </div>
+
+            <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Chapter 0</span> <span>/</span> <span>Lesson 6.2: RSI - Relative Strength Index</span></div>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <h1 class="lesson-title">Lesson 6.2: RSI - Relative Strength Index</h1>
+                    <div class="lesson-meta">
+                        <div class="lesson-meta-item">
+                            <span>Chapter 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Lesson 6.2: RSI - Relative Strength Index</h1>
+<p><a href="README.md">← Back to Chapter 6</a> | <a href="lesson<em>6.3</em>macd.md">Next Lesson: MACD - Moving Average Convergence Divergence →</a></p>
+<hr>
+<h2>Overview</h2>
+<p>The Relative Strength Index (RSI) is one of the most popular oscillators used by traders worldwide. Unlike moving averages that show direction, RSI measures momentum and overbought/oversold conditions. Master this indicator and you'll have a powerful tool to identify when prices are about to reverse.</p>
+<p><strong>Time to complete:</strong> 25-30 minutes</p>
+<hr>
+<h2>Prerequisites</h2>
+<ul>
+<li>Completion of Lesson 6.1: Moving Average Strategies</li>
+<li>Understanding of uptrends and downtrends</li>
+<li>Familiarity with basic price momentum concepts</li>
+</ul>
+<hr>
+<h2>Core Content</h2>
+<h3>What is RSI?</h3>
+<p><strong>RSI (Relative Strength Index)</strong> is a momentum oscillator that measures the speed and change of price movements on a scale of 0 to 100.</p>
+<p><strong>Key Concept:</strong> RSI tells you if a stock is:</p>
+<ul>
+<li><strong>Overbought</strong> (RSI > 70) - Price has risen too much, too fast → Potential sell signal</li>
+<li><strong>Oversold</strong> (RSI < 30) - Price has fallen too much, too fast → Potential buy signal</li>
+<li><strong>Neutral</strong> (RSI 30-70) - Normal momentum levels</li>
+</ul>
+<p><strong>Real-World Analogy:</strong></p>
+<p>RSI is like a speedometer on your car:</p>
+<ul>
+<li>0-30 = Reversing fast (oversold, buyers may step in)</li>
+<li>30-70 = Normal speed (neutral zone)</li>
+<li>70-100 = Going too fast (overbought, collision risk!)</li>
+</ul>
+<h3>How RSI Works</h3>
+<p><strong>The Basic Calculation:</strong></p>
+<p>RSI is based on comparing "up moves" to "down moves" over a specific period (usually 14 days).</p>
+<p><strong>Simplified Formula:</strong></p>
+<pre><code>
+RSI = 100 - (100 / (1 + RS))
+
+
+
+Where RS = Average of UP days ÷ Average of DOWN days
+
+</code></pre>
+<p><strong>Real Example: Apple Stock - Last 14 Days</strong></p>
+<p>Let's say over 14 days, Apple had:</p>
+<ul>
+<li><strong>9 days UP</strong> with average gains of $2.50</li>
+<li><strong>5 days DOWN</strong> with average losses of $1.80</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<ul>
+<li>Average Gain = (9 × $2.50) ÷ 14 = $1.607</li>
+<li>Average Loss = (5 × $1.80) ÷ 14 = $0.643</li>
+<li>RS = $1.607 ÷ $0.643 = 2.50</li>
+<li>RSI = 100 - (100 ÷ 3.50) = 71.4</li>
+</ul>
+<p><strong>Interpretation:</strong> RSI of 71.4 = Overbought territory (above 70)</p>
+<h3>The RSI Scale Explained</h3>
+<p><strong>0-100 Scale:</strong></p>
+<p>| RSI Level | Meaning | Action |</p>
+<p>|---|---|---|</p>
+<p>| 70-100 | <strong>Overbought</strong> | Potential sell, expect pullback |</p>
+<p>| 50-70 | <strong>Strong uptrend</strong> | Momentum still bullish |</p>
+<p>| 50 | <strong>Neutral</strong> | No clear direction |</p>
+<p>| 30-50 | <strong>Weak uptrend</strong> | Losing momentum |</p>
+<p>| 0-30 | <strong>Oversold</strong> | Potential buy, expect bounce |</p>
+<h3>The Three Core Strategies</h3>
+<p>#### Strategy 1: Overbought/Oversold Trading</p>
+<p>The most straightforward RSI strategy: Buy oversold, sell overbought.</p>
+<p><strong>Overbought Setup (RSI > 70 - Sell Signal)</strong></p>
+<p>When RSI exceeds 70, the stock has risen very quickly. This often means:</p>
+<ul>
+<li>Buyers are exhausted</li>
+<li>A pullback or reversal is likely</li>
+<li>Traders who bought low want to take profits</li>
+</ul>
+<p><strong>Real Example: Tesla (TSLA) - August 2024</strong></p>
+<p>Scenario: TSLA rallies hard on earnings news</p>
+<ul>
+<li>Price: $290 (up 8% in 2 days)</li>
+<li>RSI: 78 (deeply overbought)</li>
+<li>Signal: SELL or take profits</li>
+<li>Expected outcome: 2-3% pullback in next few days</li>
+</ul>
+<p><strong>What Happened:</strong></p>
+<ul>
+<li>Price did pull back to $282</li>
+<li>Traders who sold at RSI 78 avoided $8 loss</li>
+<li>Timing: Sold near the local top</li>
+</ul>
+<p><strong>Oversold Setup (RSI < 30 - Buy Signal)</strong></p>
+<p>When RSI falls below 30, the stock has fallen very quickly. This often means:</p>
+<ul>
+<li>Sellers are exhausted</li>
+<li>A bounce or reversal is likely</li>
+<li>Smart money is buying the dip</li>
+</ul>
+<p><strong>Real Example: Microsoft (MSFT) - Intraday Trading</strong></p>
+<p>Scenario: Market-wide sell-off hits MSFT hard</p>
+<ul>
+<li>Price: $420 (down 5% in one day)</li>
+<li>RSI: 22 (oversold)</li>
+<li>Signal: BUY or position for bounce</li>
+<li>Expected outcome: 2-4% bounce in next few days</li>
+</ul>
+<p><strong>What Happened:</strong></p>
+<ul>
+<li>Price bounced to $440</li>
+<li>Traders who bought at RSI 22 gained 4.8%</li>
+<li>Timing: Bought near the local bottom</li>
+</ul>
+<p><strong>Rules for Overbought/Oversold Trading:</strong></p>
+<p>✓ Wait for RSI to cross 70 (overbought) - don't trade at RSI 75, too much deviation</p>
+<p>✓ Look for a reversal candlestick (bearish candle above resistance)</p>
+<p>✓ Exit when RSI drops below 70 OR price breaks support</p>
+<p>✓ For oversold (RSI < 30), mirror the logic for buys</p>
+<p>#### Strategy 2: RSI Divergence</p>
+<p>A <strong>divergence</strong> is when RSI and price move in opposite directions. This is a powerful reversal signal.</p>
+<p><strong>Bearish Divergence (Price makes higher high, RSI makes lower high)</strong></p>
+<p>This suggests the uptrend is losing momentum and about to reverse.</p>
+<p><strong>Visual Example:</strong></p>
+<pre><code>
+Price Chart:           RSI Chart:
+
+$190 ←— New High       70% ← Previous high
+
+     ╲                  60% ← NEW lower high (divergence!)
+
+$185 ←— Previous High
+
+     ╲
+
+$180
+
+</code></pre>
+<p><strong>What This Means:</strong></p>
+<ul>
+<li>Price reached new high ($190)</li>
+<li>RSI didn't reach a new high (stuck at 60%)</li>
+<li>Fewer buyers are willing to keep pushing</li>
+<li>Reversal likely</li>
+</ul>
+<p><strong>Real Example: Netflix (NFLX) - September 2024</strong></p>
+<p><strong>Day 1:</strong> Price = $650, RSI = 75 (strong uptrend)</p>
+<p><strong>Day 2:</strong> Price = $655 (new high), RSI = 72 (lower high!)</p>
+<p><strong>Day 3:</strong> Price = $660 (even higher), RSI = 68 (even lower!)</p>
+<p><strong>What Happened:</strong></p>
+<ul>
+<li>Bearish divergence was clear</li>
+<li>Price reversed hard, dropped to $620 (3% loss)</li>
+<li>Smart traders exited before the reversal</li>
+</ul>
+<p><strong>Bullish Divergence (Price makes lower low, RSI makes higher low)</strong></p>
+<p>This suggests the downtrend is losing momentum and about to reverse.</p>
+<p><strong>Visual Example:</strong></p>
+<pre><code>
+Price Chart:           RSI Chart:
+
+$180                    30% ← NEW higher low (divergence!)
+
+     ╲
+
+$175 ←— New Low         25% ← Previous low
+
+     ╲
+
+$170 ←— Previous Low
+
+</code></pre>
+<p><strong>What This Means:</strong></p>
+<ul>
+<li>Price reached new low ($170)</li>
+<li>RSI didn't reach a new low (bounced to 30%)</li>
+<li>Fewer sellers are willing to keep pushing</li>
+<li>Reversal likely</li>
+</ul>
+<p><strong>Real Example: Amazon (AMZN) - February 2024</strong></p>
+<p><strong>Day 1:</strong> Price = $180, RSI = 18 (strong downtrend)</p>
+<p><strong>Day 2:</strong> Price = $175 (new low), RSI = 22 (higher low!)</p>
+<p><strong>Day 3:</strong> Price = $170 (even lower), RSI = 26 (even higher!)</p>
+<p><strong>What Happened:</strong></p>
+<ul>
+<li>Bullish divergence was clear</li>
+<li>Price reversed hard, climbed to $195 (5% gain)</li>
+<li>Smart traders entered long before the bounce</li>
+</ul>
+<p>#### Strategy 3: RSI Support and Resistance</p>
+<p>RSI itself has support and resistance levels that can signal reversals.</p>
+<p><strong>RSI = 50 as Dynamic Support</strong></p>
+<p>When RSI bounces off the 50 level during an uptrend, it signals strength.</p>
+<p><strong>Real Example: Apple in Uptrend</strong></p>
+<ul>
+<li>Uptrend established (price above all moving averages)</li>
+<li>Price pulls back: RSI falls to 48</li>
+<li>RSI bounces off 50 (doesn't go to 30)</li>
+<li>Signal: Uptrend is healthy, bounce likely</li>
+<li>Action: BUY on the bounce</li>
+</ul>
+<p><strong>Why This Works:</strong></p>
+<ul>
+<li>RSI 50 = The midpoint between overbought and oversold</li>
+<li>Respecting this level shows trend is strong but not overextended</li>
+<li>Bouncing off 50 = Buyers are stepping in, not letting price fall</li>
+</ul>
+<p><strong>Key Levels to Watch:</strong></p>
+<p>| RSI Level | Significance |</p>
+<p>|---|---|</p>
+<p>| 70 | Overbought threshold |</p>
+<p>| 60 | Strong uptrend midpoint |</p>
+<p>| 50 | Major pivot point |</p>
+<p>| 40 | Weak downtrend midpoint |</p>
+<p>| 30 | Oversold threshold |</p>
+<h3>Combining RSI with Moving Averages</h3>
+<p>The most powerful setup combines RSI with moving averages for confirmation.</p>
+<p><strong>The Complete Setup:</strong></p>
+<pre><code>
+1. Confirm trend with Moving Averages
+
+   → Price above 20, 50, 200 = Uptrend confirmed
+
+
+
+2. Check RSI for confirmation
+
+   → RSI &gt; 50 = Confirms uptrend momentum
+
+   → RSI &lt; 30 = Dip is good entry point
+
+
+
+3. Enter on bounce
+
+   → Price pulls back to moving average
+
+   → RSI bounces off support (50 or 30)
+
+   → Both indicators confirm buy signal
+
+</code></pre>
+<p><strong>Real Trading Example: Nvidia (NVDA)</strong></p>
+<p>Setup:</p>
+<ul>
+<li><strong>Trend:</strong> Uptrend confirmed (price > 20, 50, 200 EMA)</li>
+<li><strong>Price action:</strong> Pulls back toward 20-day EMA</li>
+<li><strong>RSI:</strong> Falls to 35 (oversold but not panic)</li>
+<li><strong>Setup:</strong> PERFECT BUY</li>
+</ul>
+<p>Why perfect?</p>
+<ul>
+<li>Moving averages = Trend is UP</li>
+<li>RSI 35 = Oversold enough to bounce but uptrend is intact</li>
+<li>Risk/reward = Clear stop loss below 20-day EMA</li>
+</ul>
+<h3>Common RSI Settings</h3>
+<p><strong>14-period RSI</strong> (Most popular)</p>
+<ul>
+<li>Best for: Swing trading (3-5 day trades)</li>
+<li>Sensitivity: Standard</li>
+<li>Used by: 80% of traders</li>
+</ul>
+<p><strong>7-period RSI</strong> (Faster)</p>
+<ul>
+<li>Best for: Day trading, intraday</li>
+<li>Sensitivity: Very responsive, more false signals</li>
+<li>Benefit: Earlier entries</li>
+</ul>
+<p><strong>21-period RSI</strong> (Slower)</p>
+<ul>
+<li>Best for: Position trading, longer holds</li>
+<li>Sensitivity: Less noise, fewer signals</li>
+<li>Benefit: Fewer false signals</li>
+</ul>
+<p><strong>Rule of Thumb:</strong> Match RSI period to your timeframe</p>
+<ul>
+<li>Day trading (hourly charts) = 7-period RSI</li>
+<li>Swing trading (daily charts) = 14-period RSI</li>
+<li>Position trading (weekly charts) = 21-period RSI</li>
+</ul>
+<hr>
+<h2>Common Mistakes to Avoid</h2>
+<h3>Mistake #1: Trading Overbought/Oversold Without Confirmation</h3>
+<p><strong>Problem:</strong> RSI > 70, so you sell. Price continues to 80.</p>
+<p><strong>Solution:</strong> Wait for RSI to TURN DOWN from overbought, not just be overbought.</p>
+<h3>Mistake #2: Ignoring the Trend</h3>
+<p><strong>Problem:</strong> Shorting oversold RSI in a strong uptrend.</p>
+<p><strong>Solution:</strong> Overbought/oversold works best within established trends.</p>
+<h3>Mistake #3: Over-trading Divergences</h3>
+<p><strong>Problem:</strong> Every small divergence is a reversal signal? Actually, it's not.</p>
+<p><strong>Solution:</strong> Confirm divergence with price action (candlestick reversal) before trading.</p>
+<h3>Mistake #4: Using Too Many RSI Settings</h3>
+<p><strong>Problem:</strong> 7, 14, and 21 period RSI all giving conflicting signals.</p>
+<p><strong>Solution:</strong> Stick to ONE RSI period that matches your timeframe.</p>
+<h3>Mistake #5: Forgetting That Strong Trends Override RSI</h3>
+<p><strong>Problem:</strong> Stock in strong uptrend, RSI 75, so you sell. Stock rallies 20% more.</p>
+<p><strong>Solution:</strong> In strong trends, respect the trend first. RSI overbought in uptrends is normal.</p>
+<hr>
+<h2>Real-World Application</h2>
+<h3>RSI in Different Trading Styles</h3>
+<p><strong>Day Trader (Multiple trades per day):</strong></p>
+<ul>
+<li>Uses 7-period RSI on 1-hour chart</li>
+<li>Buys when RSI bounces off 30</li>
+<li>Sells when RSI touches 70</li>
+<li>Closes all positions by end of day</li>
+</ul>
+<p><strong>Swing Trader (3-5 day trades):</strong></p>
+<ul>
+<li>Uses 14-period RSI on daily chart</li>
+<li>Enters when price pulls back + RSI 30-40</li>
+<li>Exits when RSI divergence confirms</li>
+<li>Holds 3-5 days per trade</li>
+</ul>
+<p><strong>Position Trader (Weeks/months):</strong></p>
+<ul>
+<li>Uses 21-period RSI on daily/weekly chart</li>
+<li>Uses RSI to time better entry points</li>
+<li>Ignores short-term overbought/oversold</li>
+<li>Focuses on major divergences</li>
+</ul>
+<h3>RSI Success Stories</h3>
+<p><strong>Case Study: Quarterly Earnings Bounces</strong></p>
+<p>Many stocks drop hard on earnings disappointment, creating oversold RSI. Smart traders:</p>
+<ol>
+<li>Wait for RSI < 20 (panic selling)</li>
+<li>Confirm with moving average support</li>
+<li>Buy the bottom</li>
+<li>Exit on 50% bounce</li>
+</ol>
+<p><strong>Result:</strong> 4-8% gains in 3-5 days</p>
+<hr>
+<h2>Practice Exercise</h2>
+<h3>Exercise 1: Interpret RSI Values</h3>
+<p>For each RSI reading, identify what it means and what action to consider:</p>
+<p><strong>Your Analysis:</strong></p>
+<ol>
+<li>RSI = 72 on a stock in uptrend</li>
+</ol>
+<p>   - <strong>Condition:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p>   - <strong>Signal:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p>   - <strong>Action:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<ol>
+<li>RSI = 28 on a stock in downtrend</li>
+</ol>
+<p>   - <strong>Condition:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p>   - <strong>Signal:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p>   - <strong>Action:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<ol>
+<li>RSI = 52 on a stock in uptrend</li>
+</ol>
+<p>   - <strong>Condition:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p>   - <strong>Signal:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p>   - <strong>Action:</strong> <strong></strong><strong></strong><strong></strong>_</p>
+<p><strong>Answer Key:</strong></p>
+<ol>
+<li>Overbought, Sell signal, Take profits or go short</li>
+<li>Oversold, Buy signal, Buy the dip or cover shorts</li>
+<li>Neutral/Strong, Continue trend, Stay in position</li>
+</ol>
+<h3>Exercise 2: Identify Divergences</h3>
+<p>Analyze this price and RSI data:</p>
+<pre><code>
+Day 1:  Price = $100, RSI = 50
+
+Day 2:  Price = $105, RSI = 65
+
+Day 3:  Price = $108, RSI = 72
+
+Day 4:  Price = $110, RSI = 68 (lower high than Day 3!)
+
+Day 5:  Price = $112, RSI = 64 (even lower high!)
+
+</code></pre>
+<p><strong>Questions:</strong></p>
+<ol>
+<li>What type of divergence occurred?</li>
+<li>What does this mean?</li>
+<li>What action would you take?</li>
+</ol>
+<p><strong>Answer Key:</strong></p>
+<ol>
+<li>Bearish divergence (price makes higher highs, RSI makes lower highs)</li>
+<li>Uptrend is losing momentum, reversal likely</li>
+<li>Sell, take profits, or get ready to exit</li>
+</ol>
+<h3>Exercise 3: Real Chart Analysis</h3>
+<ol>
+<li>Open a charting platform (TradingView, Finviz, etc.)</li>
+<li>Pick any stock currently in strong uptrend</li>
+<li>Add 14-period RSI to the chart</li>
+<li>Answer these questions:</li>
+</ol>
+<p>   - Is RSI above or below 50?</p>
+<p>   - When was the last overbought reading (RSI > 70)?</p>
+<p>   - How did price react after that overbought reading?</p>
+<p>   - Is there any divergence visible?</p>
+<p><strong>Report:</strong> Write 3-4 sentences about what RSI tells you about the current momentum.</p>
+<hr>
+<h2>Key Takeaways</h2>
+<p>✓ <strong>RSI 0-100</strong> = Momentum scale</p>
+<p>✓ <strong>RSI > 70</strong> = Overbought (potential sell)</p>
+<p>✓ <strong>RSI < 30</strong> = Oversold (potential buy)</p>
+<p>✓ <strong>Divergence</strong> = Price and RSI disagree, reversal coming</p>
+<p>✓ <strong>14-period</strong> = Standard setting for swing trading</p>
+<p>✓ <strong>Confirm with trends</strong> = Don't fight the trend using RSI alone</p>
+<hr>
+<h2>Next Steps</h2>
+<p><strong>Before moving to Lesson 6.3:</strong></p>
+<ul>
+<li>[ ] Understand what overbought and oversold mean</li>
+<li>[ ] Recognize the difference between RSI and price trends</li>
+<li>[ ] Spot at least one divergence on a real chart</li>
+<li>[ ] Add RSI to your broker's charting platform</li>
+<li>[ ] Practice identifying potential reversal setups</li>
+</ul>
+<hr>
+<p><a href="README.md">← Back to Chapter 6</a> | <a href="../../MASTER<em>INDEX.md">↑ Back to Course Index</a> | <a href="lesson</em>6.3_macd.md">Next Lesson →</a></p>
+<hr>
+<p><em>Lesson 6.2 Complete | Next: Lesson 6.3 - MACD - Moving Average Convergence Divergence</em></p>
+
+                <div class="lesson-checkbox">
+                    <input type="checkbox" id="lessonComplete">
+                    <label for="lessonComplete">Mark this lesson as complete</label>
+                </div>
+            </article>
+
+            <div class="lesson-navigation">
+                <a href="lesson-6-1-moving-average-strategies.html" class="nav-btn">← Previous Lesson</a>
+                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
+                <a href="lesson-6-3-macd.html" class="nav-btn">Next Lesson →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
