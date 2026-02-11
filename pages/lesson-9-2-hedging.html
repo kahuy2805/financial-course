@@ -49,23 +49,16 @@
                             <span>Chapter 0</span>
                         </div>
                     </div>
-                </div>
 
-                <h1>Lesson 9.2: Hedging Techniques (Basic Protection)</h1>
 <h2>Learning Objectives</h2>
-<ul>
 <li>Understand hedging as a risk management tool</li>
 <li>Apply basic hedging strategies to protect positions</li>
 <li>Use inverse positions to manage downside</li>
 <li>Calculate hedge costs vs. protection benefits</li>
 </ul>
-<h2>What is Hedging?</h2>
 <p>Hedging is taking an offsetting position to protect against losses in your primary position.</p>
-<h3>Key Concepts</h3>
 <pre><code>
-Basic principle:
 
-- Long position: Stock purchased, profits if up
 
 - Hedge position: Short or put, profits if down
 
@@ -77,9 +70,7 @@ Simple example:
 
 - Long 100 shares AAPL at $180
 
-- Worry: Market could crash
 
-- Hedge: Buy put option at $175
 
 - If AAPL crashes to $150:
 
@@ -91,13 +82,46 @@ Simple example:
 
 
 
-Cost of hedge:
 
-- Put option cost: $50 per contract (lost if price rises)
 
-- Net outcome if AAPL rallies to $200:
 
   - Stock profit: +$2,000
+                            <div class="example-block">
+                                <strong>Basic principle:</strong>
+                                <ul>
+                                    <li>Long position: Stock purchased, profits if up</li>
+                                    <li>Hedge position: Short or put, profits if down</li>
+                                    <li>Purpose: Limit downside while allowing upside</li>
+                                </ul>
+                                <strong>Simple example:</strong>
+                                <ul>
+                                    <li>Long 100 shares AAPL at $180</li>
+                                    <li>Worry: Market could crash</li>
+                                    <li>Hedge: Buy put option at $175</li>
+                                    <li>If AAPL crashes to $150:</li>
+                                    <ul>
+                                        <li>Stock loss: -$3,000</li>
+                                        <li>Put profit: +$500</li>
+                                        <li>Net loss: -$2,500 (limited!)</li>
+                                    </ul>
+                                </ul>
+                                <strong>Cost of hedge:</strong>
+                                <ul>
+                                    <li>Put option cost: $50 per contract (lost if price rises)</li>
+                                    <li>Net outcome if AAPL rallies to $200:</li>
+                                    <ul>
+                                        <li>Stock profit: +$2,000</li>
+                                        <li>Put loss: -$50 (put expires worthless)</li>
+                                        <li>Net profit: +$1,950 (insurance cost)</li>
+                                    </ul>
+                                </ul>
+                                <strong>Insurance analogy:</strong>
+                                <ul>
+                                    <li>Like car insurance: Pay for it, hope not to use it</li>
+                                    <li>If accident: Insurance covers most damage</li>
+                                    <li>Hedge = Protection against market accident</li>
+                                </ul>
+                            </div>
 
   - Put loss: -$50 (put expires worthless)
 

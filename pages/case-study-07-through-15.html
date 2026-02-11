@@ -162,20 +162,14 @@
 <li>Total premium collected: $3.00/share</li>
 </ul>
 <h3>The Math</h3>
-<pre><code>
-Max profit: $300 (premiums collected)
-
-Max loss: $1,700 (width of strikes minus premium)
-
-Required margin: $2,000
-
-Return if max profit: 15%
-
-Return if max loss: -85%
-
-Probability of profit: 65-70%
-
-</code></pre>
+<div class="example-block">
+  Max profit: $300 (premiums collected)<br>
+  Max loss: $1,700 (width of strikes minus premium)<br>
+  Required margin: $2,000<br>
+  Return if max profit: 15%<br>
+  Return if max loss: -85%<br>
+  Probability of profit: 65-70%
+</div>
 <h3>Results</h3>
 <ul>
 <li>SPY didn't move significantly</li>
@@ -234,18 +228,13 @@ Probability of profit: 65-70%
 <li>Didn't understand short squeeze mechanics</li>
 </ol>
 <h3>The Short Squeeze</h3>
-<pre><code>
-Heavily shorted stock: 140% of float short (more shares shorted than exist!)
-
-Retail investors buy: GME price rises
-
-Short sellers panic cover: Buy back shares (more demand)
-
-Price rises faster: Infinity squeeze potential
-
-Short seller loss: Unlimited (no maximum price)
-
-</code></pre>
+<div class="example-block">
+  Heavily shorted stock: 140% of float short (more shares shorted than exist!)<br>
+  Retail investors buy: GME price rises<br>
+  Short sellers panic cover: Buy back shares (more demand)<br>
+  Price rises faster: Infinity squeeze potential<br>
+  Short seller loss: Unlimited (no maximum price)
+</div>
 <h3>The Lesson</h3>
 <p>Never short if:</p>
 <ul>
@@ -297,46 +286,24 @@ Short seller loss: Unlimited (no maximum price)
 <p><strong>Impact</strong>: Account loses $45,000 (loses ALL margin buffer)</p>
 <p><strong>Result</strong>: Forced liquidation of all positions at worst prices</p>
 <h3>The Math</h3>
-<pre><code>
-Capital: $50,000
-
-Margin borrowed: $250,000
-
-Total invested: $300,000
-
-Margin requirement: 30% = $90,000 required
-
-
-
-After 15% decline:
-
-Portfolio value: $255,000
-
-Margin requirement still: $90,000
-
-Available equity: $165,000 (still fine)
-
-
-
-But broker uses dynamic margin:
-
-Margin required for $250,000 borrowed: 25% = $62,500
-
-Margin required + positions: $255,000 × 30% = $76,500
-
-Available: Only $49,500
-
-Margin call!
-
-
-
-Forced to sell $50,000 of positions in falling market
-
-Selling creates more losses
-
-Spiral continues until account liquidated
-
-</code></pre>
+<div class="example-block">
+  Capital: $50,000<br>
+  Margin borrowed: $250,000<br>
+  Total invested: $300,000<br>
+  Margin requirement: 30% = $90,000 required<br><br>
+  After 15% decline:<br>
+  Portfolio value: $255,000<br>
+  Margin requirement still: $90,000<br>
+  Available equity: $165,000 (still fine)<br><br>
+  But broker uses dynamic margin:<br>
+  Margin required for $250,000 borrowed: 25% = $62,500<br>
+  Margin required + positions: $255,000 × 30% = $76,500<br>
+  Available: Only $49,500<br>
+  Margin call!<br><br>
+  Forced to sell $50,000 of positions in falling market<br>
+  Selling creates more losses<br>
+  Spiral continues until account liquidated
+</div>
 <h3>The Lesson</h3>
 <p>Leverage amplifies BOTH gains and losses:</p>
 <ul>
@@ -375,14 +342,54 @@ Spiral continues until account liquidated
 <li>Volatility: 18% annual standard deviation</li>
 </ul>
 <h3>The Comparison</h3>
-<p>| Metric | Concentrated | Diversified | Winner |</p>
-<p>|---|---|---|---|</p>
-<p>| Total return | +180% | +95% | Concentrated |</p>
-<p>| Annual volatility | 67% | 18% | Diversified |</p>
-<p>| Best year | +700% | +25% | Concentrated |</p>
-<p>| Worst year | -65% | -15% | Diversified |</p>
-<p>| Drawdown | -73% | -18% | Diversified |</p>
-<p>| Sleep quality | Poor | Great | Diversified |</p>
+<table>
+    <thead>
+        <tr>
+            <th>Metric</th>
+            <th>Concentrated</th>
+            <th>Diversified</th>
+            <th>Winner</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Total return</td>
+            <td>+180%</td>
+            <td>+95%</td>
+            <td>Concentrated</td>
+        </tr>
+        <tr>
+            <td>Annual volatility</td>
+            <td>67%</td>
+            <td>18%</td>
+            <td>Diversified</td>
+        </tr>
+        <tr>
+            <td>Best year</td>
+            <td>+700%</td>
+            <td>+25%</td>
+            <td>Concentrated</td>
+        </tr>
+        <tr>
+            <td>Worst year</td>
+            <td>-65%</td>
+            <td>-15%</td>
+            <td>Diversified</td>
+        </tr>
+        <tr>
+            <td>Drawdown</td>
+            <td>-73%</td>
+            <td>-18%</td>
+            <td>Diversified</td>
+        </tr>
+        <tr>
+            <td>Sleep quality</td>
+            <td>Poor</td>
+            <td>Great</td>
+            <td>Diversified</td>
+        </tr>
+    </tbody>
+</table>
 <h3>The Lesson</h3>
 <p><strong>Concentrated portfolio</strong>:</p>
 <ul>

@@ -92,6 +92,25 @@ $25,000 portfolio
 └─ 10% cash reserve ($2,500)
 
 </code></pre>
+<div class="example-block">
+    <strong>Allocation Decision Framework:</strong>
+    <ul>
+        <li>Total capital available</li>
+        <li>Risk tolerance (percentage drawdown acceptable)</li>
+        <li>Number of positions (diversification)</li>
+        <li>Sector allocation (concentration risk)</li>
+        <li>Position size per trade</li>
+        <li>Cash reserves (for opportunities/emergency)</li>
+    </ul>
+    <strong>Example:</strong>
+    <ul>
+        <li>$25,000 portfolio</li>
+        <li>40% in active trading ($10,000)</li>
+        <li>30% in swing positions ($7,500)</li>
+        <li>20% in position trades ($5,000)</li>
+        <li>10% cash reserve ($2,500)</li>
+    </ul>
+</div>
 <h2>Position-Based Allocation</h2>
 <h3>Fixed Position Sizing</h3>
 <p><strong>Method 1: Equal Weight Allocation</strong></p>
@@ -102,11 +121,8 @@ All positions equal size:
 
 $20,000 portfolio with 4 positions
 
-- Position size: $20,000 / 4 = $5,000 each
 
-- Pros: Simple, equal risk exposure
 
-- Cons: Ignores stop loss distance, position risk varies
 
 
 
@@ -125,6 +141,24 @@ Total risk: $1,175 (5.875% of account)
 Problem: Position 3 has too much risk!
 
 </code></pre>
+<div class="example-block">
+    <strong>All positions equal size:</strong>
+    <ul>
+        <li>$20,000 portfolio with 4 positions</li>
+        <li>Position size: $20,000 / 4 = $5,000 each</li>
+        <li>Pros: Simple, equal risk exposure</li>
+        <li>Cons: Ignores stop loss distance, position risk varies</li>
+    </ul>
+    <strong>Position Examples:</strong>
+    <ul>
+        <li>$5,000 Position 1: Entry $100, Stop $95 (-$250, 5%)</li>
+        <li>$5,000 Position 2: Entry $50, Stop $48 (-$200, 4%)</li>
+        <li>$5,000 Position 3: Entry $200, Stop $190 (-$500, 10%)</li>
+        <li>$5,000 Position 4: Entry $75, Stop $72 (-$225, 4.5%)</li>
+    </ul>
+    <strong>Total risk:</strong> $1,175 (5.875% of account)<br>
+    <strong>Problem:</strong> Position 3 has too much risk!
+</div>
 <h3>Risk-Based Position Sizing (Preferred)</h3>
 <p><strong>Method 2: Fixed Risk Per Position</strong></p>
 <pre><code>
@@ -136,25 +170,17 @@ Account: $20,000 = $300 risk per position
 
 Position 1 (AAPL):
 
-- Entry: $180.00
 
-- Stop Loss: $175.00 (distance = $5)
 
-- Position size: $300 / $5 = 60 shares
 
-- Capital: $10,800 (54% of account)
 
 
 
 Position 2 (NVDA):
 
-- Entry: $850.00
 
-- Stop Loss: $830.00 (distance = $20)
 
-- Position size: $300 / $20 = 15 shares
 
-- Capital: $12,750 (64% of account)
 
 
 
@@ -163,16 +189,43 @@ Problem: Both positions exceed full account capital!
 Solution: Use alternate allocations or reduce simultaneous positions
 
 </code></pre>
+<div class="example-block">
+    <strong>Decision:</strong> Maximum 1.5% risk per position<br>
+    <strong>Account:</strong> $20,000 = $300 risk per position
+    <ul>
+        <li>Position 1 (AAPL):</li>
+        <ul>
+            <li>Entry: $180.00</li>
+            <li>Stop Loss: $175.00 (distance = $5)</li>
+            <li>Position size: $300 / $5 = 60 shares</li>
+            <li>Capital: $10,800 (54% of account)</li>
+        </ul>
+        <li>Position 2 (NVDA):</li>
+        <ul>
+            <li>Entry: $850.00</li>
+            <li>Stop Loss: $830.00 (distance = $20)</li>
+            <li>Position size: $300 / $20 = 15 shares</li>
+            <li>Capital: $12,750 (64% of account)</li>
+        </ul>
+    </ul>
+    <strong>Problem:</strong> Both positions exceed full account capital!<br>
+    <strong>Solution:</strong> Use alternate allocations or reduce simultaneous positions
+</div>
 <h3>Percentage Position Sizing</h3>
 <p><strong>Better method for multiple positions:</strong></p>
 <pre><code>
 Allocation strategy:
 
-- Max 4 simultaneous positions
 
-- Position 1: 35% of capital
 
-- Position 2: 25% of capital
+<div class="example-block">
+    <strong>Allocation strategy:</strong>
+    <ul>
+        <li>Max 4 simultaneous positions</li>
+        <li>Position 1: 35% of capital</li>
+        <li>Position 2: 25% of capital</li>
+    </ul>
+</div>
 
 - Position 3: 20% of capital
 

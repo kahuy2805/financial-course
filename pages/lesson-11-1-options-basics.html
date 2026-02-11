@@ -46,76 +46,61 @@
                     <h1 class="lesson-title">Lesson 11.1: Options Basics - What are Options?</h1>
                     <div class="lesson-meta">
                         <div class="lesson-meta-item">
-                            <span>Chapter 0</span>
                         </div>
                     </div>
                 </div>
 
                 <h1>Lesson 11.1: Options Basics - What are Options?</h1>
-<h2>Introduction</h2>
 <p>Options are <strong>derivative contracts</strong> that give the holder the right (but not the obligation) to buy or sell an underlying asset at a predetermined price before or on a specific date. They're called "derivatives" because their value derives from an underlying security—typically a stock.</p>
 <p>This lesson provides a foundation for understanding options trading before moving to more advanced strategies.</p>
-<hr>
 <h2>What Makes Options Unique?</h2>
 <p>Unlike stock ownership, which requires capital commitment upfront, options offer:</p>
-<ol>
-<li><strong>Leverage</strong>: Control a large amount of stock with a small upfront investment</li>
 <li><strong>Flexibility</strong>: Profit in rising, falling, or sideways markets</li>
-<li><strong>Risk Control</strong>: Define maximum losses and profits upfront</li>
-<li><strong>Income Generation</strong>: Generate returns from assets you already own</li>
-</ol>
-<hr>
 <h2>The Two Main Option Types</h2>
 <h3>Call Options</h3>
-<p>A <strong>call option</strong> gives the holder the right to <strong>BUY</strong> an underlying asset at a specified price (the strike price) before or on the expiration date.</p>
 <p><strong>Who trades calls?</strong></p>
-<ul>
-<li>Bullish investors expecting the stock to rise</li>
-<li>Income generators using covered calls</li>
 <li>Speculators betting on price increases with leverage</li>
-</ul>
-<p><strong>Real Example:</strong></p>
-<pre><code>
+                            <div class="example-block">
 Stock: Apple (AAPL) trading at $180
-
-Call Option: Buy the right to purchase AAPL at $185 (strike)
-
 Cost: $5 per share (or $500 per contract, since 1 contract = 100 shares)
 
-Expiration: 30 days from now
 
 
+<div class="example-block">
 
+<div class="example-block">
 Scenario 1 - Stock rises to $200
-
-- You exercise: Buy 100 shares at $185, sell at $200 market price
-
-- Profit: ($200 - $185) × 100 - $500 premium paid = $1,500 - $500 = $1,000
-
-- Return on investment: $1,000/$500 = 200%
 
 
 
 Scenario 2 - Stock falls to $170
 
-- You don&#39;t exercise (option expires worthless)
 
-- Loss: -$500 (premium paid)
 
-- You lost your entire investment but didn&#39;t have to buy 18,000 shares of AAPL
+<ul>
+    <li>You exercise: Buy 100 shares at $200 market price, sell at $240 strike</li>
+    <li>Profit: ($240 - $200) × 100 - $400 premium paid = $4,000 - $400 = $3,600</li>
+    <li>Return: $3,600/$400 = 900%</li>
+</ul>
 
-</code></pre>
+<div class="example-block">
+Scenario 2 - Stock rises to $270
+
+<ul>
+    <li>You don't exercise (right to sell at $240 is worthless)</li>
+    <li>Loss: -$400 (premium paid)</li>
+    <li>You lost your entire investment but were protected from $250 to $240</li>
+</ul>
 <p><strong>Call payoff formula:</strong></p>
-<pre><code>
-Maximum Loss = Premium Paid
-
-Breakeven = Strike Price + Premium Paid
-
+<ul>
+    <li><strong>Maximum Loss:</strong> Premium Paid</li>
+    <li><strong>Breakeven:</strong> Strike Price + Premium Paid</li>
+    <li><strong>Maximum Profit:</strong> Unlimited (in theory)</li>
+</ul>
 Maximum Profit = Unlimited (in theory)
 
 </code></pre>
 <hr>
-<h3>Put Options</h3>
 <p>A <strong>put option</strong> gives the holder the right to <strong>SELL</strong> an underlying asset at a specified price (the strike price) before or on the expiration date.</p>
 <p><strong>Who trades puts?</strong></p>
 <ul>
@@ -128,75 +113,64 @@ Maximum Profit = Unlimited (in theory)
 Stock: Tesla (TSLA) trading at $250
 
 Put Option: Buy the right to sell TSLA at $240 (strike)
-
 Cost: $4 per share (or $400 per contract)
-
 Expiration: 30 days from now
-
 
 
 Scenario 1 - Stock falls to $200
 
 - You exercise: Buy 100 shares at $200 market price, sell at $240 strike
-
 - Profit: ($240 - $200) × 100 - $400 premium paid = $4,000 - $400 = $3,600
-
 - Return: $3,600/$400 = 900%
 
 
-
+<div class="example-block">
 Scenario 2 - Stock rises to $270
 
-- You don&#39;t exercise (right to sell at $240 is worthless)
+- You don't exercise (right to sell at $240 is worthless)
 
 - Loss: -$400 (premium paid)
 
 - You lost your entire investment but were protected from $250 to $240
 
-</code></pre>
+</div>
 <p><strong>Put payoff formula:</strong></p>
-<pre><code>
-Maximum Loss = Premium Paid
-
-Breakeven = Strike Price - Premium Paid
-
-Maximum Profit = Strike Price × 100 - Premium Paid
-
-</code></pre>
+<div class="example-block">
+  Maximum Loss = Premium Paid<br>
+  Breakeven = Strike Price - Premium Paid<br>
+  Maximum Profit = Strike Price × 100 - Premium Paid
+</div>
 <hr>
 <h2>Call vs. Put Comparison</h2>
-<p>| Aspect | Call | Put |</p>
-<p>|--------|------|-----|</p>
-<p>| <strong>Right to</strong> | BUY at strike | SELL at strike |</p>
-<p>| <strong>Profitable when</strong> | Stock rises | Stock falls |</p>
-<p>| <strong>Buyer sentiment</strong> | Bullish | Bearish |</p>
-<p>| <strong>Buyer's max loss</strong> | Premium paid | Premium paid |</p>
-<p>| <strong>Buyer's max profit</strong> | Unlimited | Strike price minus premium |</p>
-<p>| <strong>Seller sentiment</strong> | Bearish | Bullish |</p>
-<p>| <strong>Seller's max loss</strong> | Unlimited (calls) | Strike minus premium |</p>
-<p>| <strong>Seller's max profit</strong> | Premium received | Premium received |</p>
+<table class="comparison-table">
+    <thead>
+        <tr><th>Aspect</th><th>Call</th><th>Put</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Right to</strong></td><td>BUY at strike</td><td>SELL at strike</td></tr>
+        <tr><td><strong>Profitable when</strong></td><td>Stock rises</td><td>Stock falls</td></tr>
+        <tr><td><strong>Buyer sentiment</strong></td><td>Bullish</td><td>Bearish</td></tr>
+        <tr><td><strong>Buyer's max loss</strong></td><td>Premium paid</td><td>Premium paid</td></tr>
+        <tr><td><strong>Buyer's max profit</strong></td><td>Unlimited</td><td>Strike price minus premium</td></tr>
+        <tr><td><strong>Seller sentiment</strong></td><td>Bearish</td><td>Bullish</td></tr>
+        <tr><td><strong>Seller's max loss</strong></td><td>Unlimited (calls)</td><td>Strike minus premium</td></tr>
+        <tr><td><strong>Seller's max profit</strong></td><td>Premium received</td><td>Premium received</td></tr>
+    </tbody>
+</table>
 <hr>
 <h2>Options Pricing Basics</h2>
 <h3>Why Do Options Cost What They Do?</h3>
 <p>An option's price (called the <strong>premium</strong>) depends on two components:</p>
 <p><strong>1. Intrinsic Value</strong></p>
 <p>The profit you could make if you exercised today.</p>
-<pre><code>
-For Calls: MAX(Stock Price - Strike, 0)
-
-For Puts: MAX(Strike - Stock Price, 0)
-
-
-
-Example:
-
-- Stock at $180, Call strike $175: Intrinsic = $180 - $175 = $5
-
-- Stock at $180, Call strike $185: Intrinsic = $0 (not profitable)
-
-- Stock at $180, Put strike $185: Intrinsic = $185 - $180 = $5
-
-</code></pre>
+<div class="example-block">
+  For Calls: MAX(Stock Price - Strike, 0)<br>
+  For Puts: MAX(Strike - Stock Price, 0)<br><br>
+  <strong>Example:</strong><br>
+  - Stock at $180, Call strike $175: Intrinsic = $180 - $175 = $5<br>
+  - Stock at $180, Call strike $185: Intrinsic = $0 (not profitable)<br>
+  - Stock at $180, Put strike $185: Intrinsic = $185 - $180 = $5
+</div>
 <p><strong>2. Time Value</strong></p>
 <p>The additional cost for the <em>potential</em> for the option to become more profitable before expiration.</p>
 <pre><code>
@@ -222,7 +196,7 @@ Example: AAPL $180
 
   - Time Value: $2 (entire premium is time value)
 
-  - You&#39;re betting stock rises $5+ in the remaining time
+  - You're betting stock rises $5+ in the remaining time
 
 </code></pre>
 <hr>
@@ -236,20 +210,13 @@ Example: AAPL $180
 <li>Benefit from time value early in the contract's life</li>
 </ul>
 <p><strong>Buy Call Profit/Loss:</strong></p>
-<pre><code>
-Profit/Loss = (Stock Price at Expiration - Strike) × 100 - Premium Paid
-
-
-
-If AAPL was $180, you buy $185 call for $500:
-
-- Stock at $190: ($190-$185) × 100 - $500 = $500 - $500 = $0 (breakeven)
-
-- Stock at $200: ($200-$185) × 100 - $500 = $1,500 - $500 = $1,000 profit
-
-- Stock at $170: ($170-$185) × 100 - $500 = $0 (can&#39;t go negative) - $500 loss
-
-</code></pre>
+<div class="example-block">
+  Profit/Loss = (Stock Price at Expiration - Strike) × 100 - Premium Paid<br><br>
+  If AAPL was $180, you buy $185 call for $500:<br>
+  - Stock at $190: ($190-$185) × 100 - $500 = $500 - $500 = $0 (breakeven)<br>
+  - Stock at $200: ($200-$185) × 100 - $500 = $1,500 - $500 = $1,000 profit<br>
+  - Stock at $170: ($170-$185) × 100 - $500 = $0 (can't go negative) - $500 loss
+</div>
 <h3>Selling Options (Going Short)</h3>
 <p>When you <strong>sell</strong> an option, you:</p>
 <ul>
@@ -259,20 +226,13 @@ If AAPL was $180, you buy $185 call for $500:
 <li>Benefit from time decay</li>
 </ul>
 <p><strong>Sell Call Profit/Loss:</strong></p>
-<pre><code>
-Profit/Loss = Premium Received - (Stock Price at Expiration - Strike) × 100
-
-
-
-If AAPL was $180, you sell $185 call for $500:
-
-- Stock at $190: $500 - ($190-$185) × 100 = $500 - $500 = $0 (breakeven)
-
-- Stock at $200: $500 - ($200-$185) × 100 = $500 - $1,500 = -$1,000 loss
-
-- Stock at $170: $500 - ($170-$185) × 100 = $500 - $0 = $500 profit
-
-</code></pre>
+<div class="example-block">
+  Profit/Loss = Premium Received - (Stock Price at Expiration - Strike) × 100<br><br>
+  If AAPL was $180, you sell $185 call for $500:<br>
+  - Stock at $190: $500 - ($190-$185) × 100 = $500 - $500 = $0 (breakeven)<br>
+  - Stock at $200: $500 - ($200-$185) × 100 = $500 - $1,500 = -$1,000 loss<br>
+  - Stock at $170: $500 - ($170-$185) × 100 = $500 - $0 = $500 profit
+</div>
 <hr>
 <h2>Key Takeaways</h2>
 <ol>

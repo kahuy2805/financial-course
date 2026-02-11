@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 8.4: Momentum Trading Strategies - Stock Trading Mastery</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066cc'>📈</text></svg>">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <a href="../index.html" class="logo">📈 Stock Trading Mastery</a>
-            <div class="nav-controls">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search lessons..." class="tab-focus">
-                </div>
-                <button id="darkModeToggle" class="theme-toggle tab-focus">🌙 Dark Mode</button>
-                <button id="menuToggle" class="menu-toggle tab-focus">☰ Menu</button>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
+<div class="example-block">
+  <strong>Definition:</strong> Percentage change over a set period<br>
+  <strong>Formula:</strong> ROC = ((Close today - Close N periods ago) / Close N periods ago) × 100<br>
+  <strong>Settings:</strong> 10-period or 12-period ROC
+  <ul>
+    <li>Positive ROC: Uptrend</li>
+    <li>Negative ROC: Downtrend</li>
+    <li>Extreme ROC (±10%): Exhaustion approaching</li>
+    <li>ROC crossing zero: Trend change</li>
+  </ul>
+  <strong>Momentum Trade Usage:</strong>
+  <ul>
+    <li>ROC +5% to +10%: Strong momentum, buy</li>
+    <li>ROC +15%+: Extreme, consider fade/short</li>
+    <li>ROC -10%: Strong downtrend, short</li>
+    <li>ROC -15% to -20%: Exhaustion, potential bounce</li>
+  </ul>
+</div>
         <aside id="sidebar" class="sidebar">
             <div class="nav-section">
                 <div class="nav-section-title">Navigation</div>
@@ -72,63 +68,29 @@
 </ul>
 <h2>Types of Momentum</h2>
 <h3>1. Absolute Momentum</h3>
-<pre><code>
-Definition: Stock moving up or down in absolute terms
-
-Example: Stock rallies +5% in 3 days = positive momentum
-
-
-
-Identification:
-
-- Higher closes each day
-
-- Volume increasing on ups
-
-- Higher lows maintained
-
-- Price above 20-day MA
-
-
-
-Fade (Short):
-
-- Stock down 5% in 2 days = negative momentum
-
-- Lower closes
-
-- Volume on downs
-
-- Price below 20-day MA
-
-</code></pre>
-<h3>2. Relative Momentum</h3>
-<pre><code>
-Definition: Stock outperforming or underperforming market average
-
-
-
-Example:
-
-- S&amp;P 500 up 1% (positive market)
-
-- AAPL up 4% (outperforming) = relative momentum
-
-- AAPL down 2% = underperforming despite market strength
-
-
-
-RS (Relative Strength) ratio:
-
-- AAPL price / S&amp;P 500 price
-
-- Rising ratio = outperformance (positive momentum)
-
-- Falling ratio = underperformance (negative momentum)
-
-</code></pre>
+<div class="example-block">
+  <strong>Definition:</strong> Stock moving up or down in absolute terms<br><br>
+  <strong>Example:</strong> Stock rallies +5% in 3 days = positive momentum<br>
+  <ul>
+    <li>Higher lows maintained</li>
+    <li>Price above 20-day MA</li>
+  </ul>
+  <strong>Fade (Short):</strong>
+  <ul>
+    <li>Stock down 5% in 2 days = negative momentum</li>
+    <li>Lower closes</li>
+    <li>Volume on downs</li>
+    <li>Price below 20-day MA</li>
+  </ul>
+</div>
+  <strong>Example:</strong>
+  <ul>
+    <li>S&amp;P 500 up 1% (positive market)</li>
+    <li>AAPL up 4% (outperforming) = relative momentum</li>
+    <li>AAPL down 2% = underperforming despite market strength</li>
+  </ul>
+</div>
 <h2>Momentum Indicators</h2>
-<h3>1. RSI (Relative Strength Index)</h3>
 <p><strong>Standard Setup: 14-period</strong></p>
 <pre><code>
 Calculation: RSI = 100 - (100 / (1 + RS))
@@ -139,29 +101,38 @@ RS = Average gain over 14 periods / Average loss over 14 periods
 
 Levels:
 
-- RSI &gt; 70: Overbought (extended move)
 
-- RSI 50-70: Strong uptrend
 
-- RSI 30-50: Weak uptrend
 
-- RSI &lt; 30: Oversold (extended down move)
 
-- RSI 30: Potential bounce zone
 
 
 
 Momentum Trading:
 
-- BUY: RSI 50-70 AND price making new highs = momentum confirmed
 
-- SELL: RSI above 70 AND price makes lower high = divergence
 
-- SHORT: RSI below 30 AND price making new lows = momentum down
-
-- COVER: RSI crosses above 50 from below = bounce signal
 
 </code></pre>
+<div class="example-block">
+  <strong>Calculation:</strong> RSI = 100 - (100 / (1 + RS))<br>
+  RS = Average gain over 14 periods / Average loss over 14 periods<br>
+  <strong>Levels:</strong>
+  <ul>
+    <li>RSI &gt; 70: Overbought (extended move)</li>
+    <li>RSI 50-70: Strong uptrend</li>
+    <li>RSI 30-50: Weak uptrend</li>
+    <li>RSI &lt; 30: Oversold (extended down move)</li>
+    <li>RSI 30: Potential bounce zone</li>
+  </ul>
+  <strong>Momentum Trading:</strong>
+  <ul>
+    <li>BUY: RSI 50-70 AND price making new highs = momentum confirmed</li>
+    <li>SELL: RSI above 70 AND price makes lower high = divergence</li>
+    <li>SHORT: RSI below 30 AND price making new lows = momentum down</li>
+    <li>COVER: RSI crosses above 50 from below = bounce signal</li>
+  </ul>
+</div>
 <p><strong>Practical Example:</strong></p>
 <pre><code>
 Stock: TSLA daily chart
@@ -191,34 +162,20 @@ Momentum Trade Setup:
 Why it works: RSI 65 shows momentum but not yet extreme (70)
 
 Price making new highs confirms RSI reading
-
-</code></pre>
+</div>
 <h3>2. MACD (Moving Average Convergence Divergence)</h3>
 <p><strong>Settings: 12-26-9</strong></p>
-<pre><code>
 Components:
-
 - MACD Line: 12-period EMA minus 26-period EMA
 
-- Signal Line: 9-period EMA of MACD
-
-- Histogram: MACD minus Signal line (visual momentum)
 
 
 
 Momentum Signals:
 
-- BUY: MACD above signal line AND histogram expanding upward
-
-- SELL: MACD below signal line OR histogram shrinking
-
-- Divergence: Price makes new high but MACD doesn&#39;t = momentum failure
 
 
 
-Setup Example:
-
-Price: $100 moving up
 
 MACD just crossed above signal line
 
@@ -226,6 +183,25 @@ Histogram expanding (getting taller)
 
 → MOMENTUM CONFIRMED - good entry
 
+<div class="example-block">
+  <strong>Practical Example:</strong>
+  <ul>
+    <li>Stock: TSLA daily chart</li>
+    <li>RSI: 65 (strong momentum)</li>
+    <li>Price: $850 (making higher highs)</li>
+    <li>Support: $840 (recent swing low)</li>
+  </ul>
+  <strong>Momentum Trade Setup:</strong>
+  <ul>
+    <li>Entry: At breakout of $850 resistance</li>
+    <li>Position: 20 shares</li>
+    <li>Stop Loss: Below $840 (-$200)</li>
+    <li>Target: +$5 move = $855 (+$100)</li>
+    <li>Expected hold: 2-5 days</li>
+  </ul>
+  <strong>Why it works:</strong> RSI 65 shows momentum but not yet extreme (70)<br>
+  Price making new highs confirms RSI reading
+</div>
 
 
 Price: $105 making new high
@@ -233,43 +209,47 @@ Price: $105 making new high
 MACD getting shorter, rolling over
 
 → MOMENTUM FAILURE - exit signal
-
-</code></pre>
+<div class="example-block">
+  <strong>MACD Components:</strong>
+  <ul>
+    <li>Signal Line: 9-period EMA of MACD</li>
+    <li>Histogram: MACD minus Signal line (visual momentum)</li>
+  </ul>
+  <strong>Momentum Signals:</strong>
+  <ul>
+    <li>BUY: MACD above signal line AND histogram expanding upward</li>
+    <li>SELL: MACD below signal line OR histogram shrinking</li>
+    <li>Divergence: Price makes new high but MACD doesn&#39;t = momentum failure</li>
+  </ul>
+  <strong>Setup Example:</strong>
+  <ul>
+    <li>Price: $100 moving up</li>
+    <li>MACD just crossed above signal line</li>
+    <li>Histogram expanding (getting taller)</li>
+    <li>→ MOMENTUM CONFIRMED - good entry</li>
+    <li>Price: $105 making new high</li>
+    <li>MACD getting shorter, rolling over</li>
+    <li>→ MOMENTUM FAILURE - exit signal</li>
+  </ul>
+</div>
+</div>
 <p><strong>3-Day Momentum Trade Example:</strong></p>
-<pre><code>
-Stock: AMD
-
-Day 1 (Tuesday):
-
-- MACD crosses above signal line
-
-- Histogram positive and expanding
-
-- Price: $105.00 | Stop: $102.00 | Entry: 50 shares
-
-
-
-Day 2 (Wednesday):
-
-- Price rallies to $107.00
-
-- MACD histogram still expanding
-
-- Action: Hold, momentum strong
-
-
-
-Day 3 (Thursday):
-
-- Price: $108.50
-
-- MACD histogram starts shrinking
-
-- Divergence warning: Price high but momentum lower
-
-- Exit at $108.30 for +$163 profit (3.1%)
-
-</code></pre>
+<div class="example-block">
+  <strong>Stock:</strong> AMD<br>
+  <strong>Day 1 (Tuesday):</strong><br>
+  - MACD crosses above signal line<br>
+  - Histogram positive and expanding<br>
+  - Price: $105.00 | Stop: $102.00 | Entry: 50 shares<br><br>
+  <strong>Day 2 (Wednesday):</strong><br>
+  - Price rallies to $107.00<br>
+  - MACD histogram still expanding<br>
+  - Action: Hold, momentum strong<br><br>
+  <strong>Day 3 (Thursday):</strong><br>
+  - Price: $108.50<br>
+  - MACD histogram starts shrinking<br>
+  - Divergence warning: Price high but momentum lower<br>
+  - Exit at $108.30 for +$163 profit (3.1%)
+</div>
 <h3>3. Rate of Change (ROC) Indicator</h3>
 <pre><code>
 Definition: Percentage change over a set period
@@ -294,560 +274,2544 @@ Momentum Trade Usage:
 
 - ROC +5% to +10%: Strong momentum, buy
 
-- ROC +15%+: Extreme, consider fade/short
+- ROC +15%+:</strong> Extreme, consider fade/short
 
-- ROC -10%: Strong downtrend, short
+- ROC -10%:</strong> Strong downtrend, short
 
-- ROC -15% to -20%: Exhaustion, potential bounce
-
-</code></pre>
+- ROC -15% to -20%:</strong> Exhaustion, potential bounce
+</div>
 <h2>Momentum Trading Strategies</h2>
 <h3>Strategy 1: Momentum Breakout Trade</h3>
 <p><strong>The Setup:</strong></p>
-<pre><code>
-Identification:
-
-1. Stock consolidates for 3-7 days (lower volatility)
-
-2. Volume dries up during consolidation
-
-3. Strong directional bar (high volume) breaks consolidation
-
-4. Momentum indicators confirm (RSI 60+, MACD strong)
-
-
-
-Entry Conditions:
-
-- Price closes above consolidation resistance
-
-- Volume 50%+ above average
-
-- RSI above 60 (not yet extreme)
-
-- MACD showing momentum
-
-
-
-Position Management:
-
-- Entry: Market order at breakout close
-
-- Stop Loss: Below consolidation low
-
-- Target: 1:1 risk-reward initially
-
-- Scale out at 1:2 if momentum continues
-
-</code></pre>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
 <p><strong>Real Example with $15,000 Portfolio:</strong></p>
-<pre><code>
-Stock: NVIDIA (NVDA)
-
-Consolidation: 5 days between $875-$885 (range $10)
-
-Volume: Declining to 60% of average
-
-Day 5: Gap breakout above $887 on volume 200% average
-
-
-
-Entry Setup:
-
-- Price: $887.50 (at breakout)
-
-- Position: 16 shares (consolidation range $10)
-
-- Total invested: $14,200 (94% of account)
-
-- Stop Loss: $884.00 (-$3.50 per share = -$56)
-
-- Target 1: $890.50 (+$3 = +$48)
-
-- Target 2: $897.50 (+$10 = +$160)
-
-
-
-Risk: $56 (0.37%)
-
-Reward: $48-$160 (0.32%-1.07%)
-
-</code></pre>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+</div>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
 <h3>Strategy 2: Momentum Continuation Trade</h3>
 <p><strong>The Setup:</strong></p>
-<pre><code>
-Identification:
-
-1. Stock has strong 3-5 day uptrend already
-
-2. NOT at all-time high (not extended)
-
-3. Minor pullback (1-2 days)
-
-4. Bounce from pullback, resuming uptrend
-
-
-
-Entry:
-
-- Buy on bounce from minor pullback
-
-- RSI in 50-70 range (momentum but not extreme)
-
-- MACD still positive and above signal line
-
-- Price above 20-day MA
-
-
-
-Example Setup:
-
-Stock rallied: $100 → $108 (uptrend 4 days)
-
-Pullback: $108 → $104.50 (2-day pullback)
-
-Bounce: Entering at $105.50 pullback recovery
-
-
-
-Rationale: Previous momentum continues, minor dip absorbed
-
-</code></pre>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
 <p><strong>Trade Example:</strong></p>
-<pre><code>
-Stock: Tesla (TSLA)
-
-- 4-day uptrend: $840 → $858
-
-- 2-day pullback: $858 → $850
-
-- Bounce entry: $853.00
-
-
-
-Position:
-
-- Entry: 20 shares @ $853
-
-- Total: $17,060 (slightly overleveraged on $15K)
-
-- Better: 15 shares @ $853 = $12,795
-
-
-
-Stop Loss: $845.00 (-$8 = -$120 for 15 shares)
-
-Target 1: $860.00 (+$7 = +$105)
-
-Target 2: $870.00 (+$17 = +$255)
-
-
-
-Hold: 3-7 days expected
-
-Risk: $120 (0.8%)
-
-Reward: $105-$255 (0.7%-1.7%)
-
-</code></pre>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
 <h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
 <p><strong>The Setup:</strong></p>
-<pre><code>
-Identification:
-
-1. Stock in momentum move (up 10%+ in 2-3 days)
-
-2. Momentum indicators show DIVERGENCE
-
-   - Price making new high
-
-   - RSI rolling over from 70+
-
-   - MACD histogram shrinking
-
-3. Failed breakout above key resistance
-
-
-
-Entry (SHORT):
-
-- Sell at pullback from extreme high
-
-- Stop loss above recent high
-
-- Target: Previous support level
-
-
-
-Example:
-
-Stock rallied 10%: $100 → $110 in 3 days
-
-RSI hit 75 then rolling over
-
-Price tries $112 but rejected (failed breakout)
-
-→ Short setup triggered
-
-</code></pre>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
 <p><strong>Short Trade Example:</strong></p>
-<pre><code>
-Stock: Rivian (RIVN)
-
-- 3-day momentum rally: $18 → $23
-
-- RSI now 72 (overbought)
-
-- Price attempts $24 but rejected at high
-
-
-
-Short Entry:
-
-- Entry: $23.00 (short 200 shares)
-
-- Total short: $4,600
-
-- Stop Loss: $23.50 (+$100 loss if stopped)
-
-- Target 1: $20.00 (-$600 profit)
-
-- Target 2: $18.00 (-$1,000 profit)
-
-
-
-Risk: $100 (0.67% on $15K)
-
-Reward: $600-$1,000 (4%-6.7%)
-
-Risk-Reward: 1:6.0 (excellent)
-
-
-
-Hold: 3-7 days expected
-
-Exit: RSI bounces back above 50 or price reversal confirmed
-
-</code></pre>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
 <h2>Sector Momentum vs. Stock Momentum</h2>
 <h3>Sector Momentum = Market Tailwind</h3>
-<pre><code>
-Scenario 1: TAILWIND (favorable)
-
-- Tech sector trending up 8% (NASDAQ up)
-
-- AAPL trending up 5% (stock momentum)
-
-- Combined benefit: Easier to trade, higher success rate
-
-
-
-Strategy: Enter AAPL momentum trades
-
-Rationale: Sector strength supports stock move
-
-
-
-Scenario 2: HEADWIND (unfavorable)
-
-- Tech sector down 3% (NASDAQ down)
-
-- AAPL up 2% (stock momentum vs market)
-
-- Contradiction: Hard to sustain, reversal risk high
-
-
-
-Strategy: Be cautious, smaller positions, tight stops
-
-Rationale: Going against sector strength is risky
-
-</code></pre>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
 <h3>Momentum Stock Screener</h3>
 <p>Track daily for momentum setups:</p>
-<pre><code>
-Criteria:
-
-1. Up 5%+ last 3 days
-
-2. RSI &gt; 60 (momentum)
-
-3. Price &gt; 50-day MA (in trend)
-
-4. Volume 50%+ above 20-day average
-
-5. MACD above signal line
-
-
-
-Morning Scan Results (example):
-
-- AAPL: ✓✓✓✓✓ (5/5 criteria) = HIGH priority
-
-- MSFT: ✓✓✓✓✗ (4/5 criteria) = MEDIUM priority
-
-- AMD: ✓✓✓✗✗ (3/5 criteria) = LOW priority
-
-
-
-Focus entries on HIGH priority stocks
-
-</code></pre>
-<h2>Multi-Day Momentum Trade Example</h2>
-<h3>Day-by-Day Trade Development</h3>
-<p><strong>Entry Day (Monday)</strong></p>
-<pre><code>
-Stock: Broadcom (AVGO)
-
-- Pattern: Opening range breakout
-
-- Price: $615.00 (breaking above $610 resistance)
-
-- Volume: 150% of average
-
-- RSI: 62 (momentum not extreme)
-
-- MACD: Positive, above signal line
-
-
-
-Entry Decision:
-
-- 30 shares @ $615.10
-
-- Stop Loss: $610.00 (-$153)
-
-- Target 1: $625.00 (+$300)
-
-- Target 2: $635.00 (+$600)
-
-</code></pre>
-<p><strong>Day 2 (Tuesday)</strong></p>
-<pre><code>
-Morning: $615.00 again
-
-Lunch: Rally to $620.00
-
-Close: $619.50
-
-
-
-Status: +$130 paper profit (+1.4% position)
-
-RSI: 68 (momentum strong but not extreme)
-
-MACD: Histogram expanding
-
-
-
-Action: HOLD, momentum is strong
-
-Adjust stop to $612.00 to reduce risk
-
-</code></pre>
-<p><strong>Day 3 (Wednesday)</strong></p>
-<pre><code>
-Open: Gap up to $623.00
-
-Close: $625.00 (hit Target 1!)
-
-
-
-Action: Sell 10 shares (1/3 position) @ $625.20
-
-Profit taken: +$305
-
-
-
-Remaining: 20 shares
-
-Move stop to cost: $615.00
-
-Let remaining run to Target 2
-
-</code></pre>
-<p><strong>Day 4-5 (Thursday-Friday)</strong></p>
-<pre><code>
-Thursday: Consolidation $624-$627
-
-Friday: Rally to $635.50 (Target 2 hit!)
-
-
-
-Action: Sell remaining 20 shares @ $635.00
-
-Final profit: +$400
-
-
-
-Total Trade Results:
-
-- Partial profit: +$305
-
-- Final profit: +$400
-
-- Total profit: +$705 (+7.6% total position)
-
-- Hold: 4 days
-
-- Win: YES
-
-</code></pre>
-<h2>Momentum Trading Risk Management</h2>
-<h3>Daily Checklist</h3>
-<pre><code>
-Before Each Trade:
-
-☐ Verify momentum indicators aligned (RSI + MACD + ROC)
-
-☐ Check sector momentum (NASDAQ, XLK, XLV, etc.)
-
-☐ Volume confirms price move (50%+ above average)
-
-☐ Risk calculated and position sized accordingly
-
-☐ Stop loss placed at logical technical level
-
-
-
-During Trade:
-
-☐ Monitor divergences (price vs. indicators)
-
-☐ Watch volume (declining = momentum ending)
-
-☐ Check RSI for extremes (&gt;70 or &lt;30)
-
-☐ Track profit/loss vs. target
-
-☐ Scale out at predefined profit targets
-
-
-
-Exit Conditions:
-
-☐ Stop loss hit (discipline)
-
-☐ Target hit (take profits)
-
-☐ Divergence confirmed (momentum failure)
-
-☐ Hold time exceeded (move stalled)
-
-☐ Daily loss limit hit (reduce position size)
-
-</code></pre>
-<h2>Common Momentum Trading Mistakes</h2>
-<ol>
-<li><strong>Chasing climactic moves</strong>: Entering at extremes (RSI 80+)</li>
-<li><strong>Ignoring divergences</strong>: Price high but momentum rolling over</li>
-<li><strong>Trading against sector</strong>: Stock up but sector down = risky</li>
-<li><strong>Over-position</strong>: Risking too much on momentum trade</li>
-<li><strong>Holding through reversals</strong>: Not exiting on divergence</li>
-<li><strong>Low-liquidity stocks</strong>: Momentum evaporates with gap downs</li>
-<li><strong>Revenge trading</strong>: Adding after stop hit</li>
-<li><strong>No profit-taking plan</strong>: All or nothing mentality</li>
-</ol>
-<h2>Momentum Trading Journal</h2>
-<p>Track momentum trades for improvement:</p>
-<pre><code>
-Trade #53 - Momentum Continuation
-
-Entry Date: 2024-02-12
-
-Stock: AAPL
-
-Entry Price: $182.50
-
-Entry Signal: Bounce from pullback in 4-day uptrend
-
-Position Size: 40 shares
-
-Stop Loss: $180.00 (1:1 risk $100)
-
-Target 1: $185.00 (1:1 ratio)
-
-Target 2: $188.00 (2:1 ratio)
-
-
-
-Indicators at Entry:
-
-- RSI: 58 (momentum, not extreme)
-
-- MACD: Positive, histogram expanding
-
-- Volume: 120% of average
-
-
-
-Exit 1: 2024-02-14 @ $185.10 (10 shares) | +$106
-
-Exit 2: 2024-02-15 @ $188.50 (30 shares) | +$600
-
-
-
-Total Profit: +$706 (+9.7% on position)
-
-Hold Time: 3 days
-
-Win/Loss: WIN
-
-
-
-Learning: Strong pullback buy in uptrend momentum worked well.
-
-Divergence: MACD histogram shrank before final exit, exit timed well.
-
-</code></pre>
-<h2>Summary</h2>
-<p>Momentum trading captures short-term directional acceleration:</p>
-<ul>
-<li>Identifies momentum with RSI, MACD, and ROC</li>
-<li>Enters on breakouts or continuation trades</li>
-<li>Holds 3-7 days capturing 3%-8% moves</li>
-<li>Fades extended moves showing divergence</li>
-<li>Scales out on predefined targets</li>
-</ul>
-<p>Success requires alignment of technical indicators and discipline.</p>
-<h2>Key Takeaways</h2>
-<ol>
-<li>Momentum indicators (RSI 60-70, MACD positive, expanding histogram) confirm entry</li>
-<li>Breakout trades use consolidation range as stop</li>
-<li>Continuation trades enter on pullbacks in established trends</li>
-<li>Divergence (price high, momentum rolling over) = exit signal</li>
-<li>Sector momentum provides tailwind or headwind to trade</li>
-<li>Scale out 1/3-1/3-1/3 on targets rather than all-or-nothing</li>
-<li>Never enter at momentum extremes (RSI >75)</li>
-<li>Volume confirms momentum - without volume, move is suspect</li>
-</ol>
-<h2>Next Steps</h2>
-<ul>
-<li>Scan for 5 stocks showing all momentum criteria</li>
-<li>Identify sector momentum for each candidate</li>
-<li>Plan entry on consolidation breakout</li>
-<li>Set targets based on previous resistance</li>
-<li>Track momentum divergences for 1 week</li>
-</ul>
-
-                <div class="lesson-checkbox">
-                    <input type="checkbox" id="lessonComplete">
-                    <label for="lessonComplete">Mark this lesson as complete</label>
-                </div>
-            </article>
-
-            <div class="lesson-navigation">
-                <a href="lesson-8-3-position-trading.html" class="nav-btn">← Previous Lesson</a>
-                <a href="../index.html" class="nav-btn" style="background: var(--accent-secondary);">Back to Home</a>
-                <a href="lesson-8-5-breakout-trading.html" class="nav-btn">Next Lesson →</a>
-            </div>
-        </main>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Stock Trading Mastery Course | Educational Content Only</p>
-    </footer>
-
-    <script src="../js/app.js"></script>
-</body>
-</html>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  → Short setup triggered
+</div>
+<p><strong>Short Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Rivian (RIVN)<br>
+  - 3-day momentum rally: $18 → $23<br>
+  - RSI now 72 (overbought)<br>
+  - Price attempts $24 but rejected at high<br><br>
+  <strong>Short Entry:</strong><br>
+  - Entry: $23.00 (short 200 shares)<br>
+  - Total short: $4,600<br>
+  - Stop Loss: $23.50 (+$100 loss if stopped)<br>
+  - Target 1: $20.00 (-$600 profit)<br>
+  - Target 2: $18.00 (-$1,000 profit)<br><br>
+  <strong>Risk:</strong> $100 (0.67% on $15K)<br>
+  <strong>Reward:</strong> $600-$1,000 (4%-6.7%)<br>
+  <strong>Risk-Reward:</strong> 1:6.0 (excellent)<br>
+  <strong>Hold:</strong> 3-7 days expected<br>
+  <strong>Exit:</strong> RSI bounces back above 50 or price reversal confirmed
+</div>
+<h2>Sector Momentum vs. Stock Momentum</h2>
+<h3>Sector Momentum = Market Tailwind</h3>
+<div class="example-block">
+  <strong>Scenario 1: TAILWIND (favorable)</strong><br>
+  - Tech sector trending up 8% (NASDAQ up)<br>
+  - AAPL trending up 5% (stock momentum)<br>
+  - Combined benefit: Easier to trade, higher success rate<br><br>
+  <strong>Strategy:</strong> Enter AAPL momentum trades<br>
+  <strong>Rationale:</strong> Sector strength supports stock move<br><br>
+  <strong>Scenario 2: HEADWIND (unfavorable)</strong><br>
+  - Tech sector down 3% (NASDAQ down)<br>
+  - AAPL up 2% (stock momentum vs market)<br>
+  - Contradiction: Hard to sustain, reversal risk high<br><br>
+  <strong>Strategy:</strong> Be cautious, smaller positions, tight stops<br>
+  <strong>Rationale:</strong> Going against sector strength is risky
+</div>
+<h3>Momentum Stock Screener</h3>
+<p>Track daily for momentum setups:</p>
+<div class="example-block">
+  <strong>Criteria:</strong><br>
+  1. Up 5%+ last 3 days<br>
+  2. RSI &gt; 60 (momentum)<br>
+  3. Price &gt; 50-day MA (in trend)<br>
+  4. Volume 50%+ above 20-day average<br>
+  5. MACD above signal line
+</div>
+<h2>Momentum Trading Strategies</h2>
+<h3>Strategy 1: Momentum Breakout Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock consolidates for 3-7 days (lower volatility)<br>
+  2. Volume dries up during consolidation<br>
+  3. Strong directional bar (high volume) breaks consolidation<br>
+  4. Momentum indicators confirm (RSI 60+, MACD strong)<br><br>
+  <strong>Entry Conditions:</strong><br>
+  - Price closes above consolidation resistance<br>
+  - Volume 50%+ above average<br>
+  - RSI above 60 (not yet extreme)<br>
+  - MACD showing momentum<br><br>
+  <strong>Position Management:</strong><br>
+  - Entry: Market order at breakout close<br>
+  - Stop Loss: Below consolidation low<br>
+  - Target: 1:1 risk-reward initially<br>
+  - Scale out at 1:2 if momentum continues
+</div>
+<p><strong>Real Example with $15,000 Portfolio:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> NVIDIA (NVDA)<br>
+  Consolidation: 5 days between $875-$885 (range $10)<br>
+  Volume: Declining to 60% of average<br>
+  Day 5: Gap breakout above $887 on volume 200% average<br><br>
+  <strong>Entry Setup:</strong><br>
+  - Price: $887.50 (at breakout)<br>
+  - Position: 16 shares (consolidation range $10)<br>
+  - Total invested: $14,200 (94% of account)<br>
+  - Stop Loss: $884.00 (-$3.50 per share = -$56)<br>
+  - Target 1: $890.50 (+$3 = +$48)<br>
+  - Target 2: $897.50 (+$10 = +$160)<br><br>
+  <strong>Risk:</strong> $56 (0.37%)<br>
+  <strong>Reward:</strong> $48-$160 (0.32%-1.07%)
+</div>
+<h3>Strategy 2: Momentum Continuation Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock has strong 3-5 day uptrend already<br>
+  2. NOT at all-time high (not extended)<br>
+  3. Minor pullback (1-2 days)<br>
+  4. Bounce from pullback, resuming uptrend<br><br>
+  <strong>Entry:</strong><br>
+  - Buy on bounce from minor pullback<br>
+  - RSI in 50-70 range (momentum but not extreme)<br>
+  - MACD still positive and above signal line<br>
+  - Price above 20-day MA<br><br>
+  <strong>Example Setup:</strong><br>
+  Stock rallied: $100 → $108 (uptrend 4 days)<br>
+  Pullback: $108 → $104.50 (2-day pullback)<br>
+  Bounce: Entering at $105.50 pullback recovery<br><br>
+  <strong>Rationale:</strong> Previous momentum continues, minor dip absorbed
+</div>
+<p><strong>Trade Example:</strong></p>
+<div class="example-block">
+  <strong>Stock:</strong> Tesla (TSLA)<br>
+  - 4-day uptrend: $840 → $858<br>
+  - 2-day pullback: $858 → $850<br>
+  - Bounce entry: $853.00<br><br>
+  <strong>Position:</strong><br>
+  - Entry: 20 shares @ $853<br>
+  - Total: $17,060 (slightly overleveraged on $15K)
+</div>
+<h3>Strategy 3: Momentum Reversal/Fade Trade</h3>
+<p><strong>The Setup:</strong></p>
+<div class="example-block">
+  <strong>Identification:</strong><br>
+  1. Stock in momentum move (up 10%+ in 2-3 days)<br>
+  2. Momentum indicators show DIVERGENCE<br>
+     - Price making new high<br>
+     - RSI rolling over from 70+<br>
+     - MACD histogram shrinking<br>
+  3. Failed breakout above key resistance<br><br>
+  <strong>Entry (SHORT):</strong><br>
+  - Sell at pullback from extreme high<br>
+  - Stop loss above recent high<br>
+  - Target: Previous support level<br><br>
+  <strong>Example:</strong><br>
+  Stock rallied 10%: $100 → $110 in 3 days<br>
+  RSI hit 75 then rolling over<br>
+  Price tries $112 but rejected (failed breakout)<br>
+  →
